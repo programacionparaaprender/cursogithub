@@ -23,6 +23,39 @@ git push -u origin master
 git remote add origin https://github.com/luis13711/cursogithub.git
 git push -u origin master
 
-## Clonar repositorio 
+## Clonar repositorio publico
 
 git clone https://github.com/luis13711/cursogithub.git
+
+## Clonar un repositorio privado 
+
+git clone https://username:password@github.com/luis13711/cursogithub.git
+
+## Agregar glabalmente usuario
+
+git config --global user.email "correo"
+git config --global user.name "nombreusuario"
+
+## Crear ramas
+
+git branch
+git branch rama
+
+
+## Movernos entre ramas
+
+git checkout rama
+
+## Regresar cambio
+
+git chechout --index.html
+git diff index.html
+
+## Extras
+
+git log
+
+git commit -m "" 
+git commit -a
+git commit 
+
