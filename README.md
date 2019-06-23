@@ -51,6 +51,14 @@ git checkout rama
 git chechout --index.html
 git diff index.html
 
+
+## Al modificar el .gitignore
+
+git rm -r --cached .
+git add *
+git commit -m "Verificando gitignore"
+git push origin rama
+
 ## Extras
 
 git log
