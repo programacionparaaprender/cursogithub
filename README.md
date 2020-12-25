@@ -15,6 +15,10 @@ echo "# cursogithub" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
+
+## permite ver el nombre del commit
+git log
+
 git remote add origin https://github.com/luis13711/cursogithub.git
 git push -u origin master
 
