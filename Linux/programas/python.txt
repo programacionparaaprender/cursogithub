@@ -1,0 +1,14 @@
+---------------------
+Python 2.7
+--------------------
+sudo apt install python27
+
+
+-----------------------
+Python 3.4
+----------------------------
+sudo apt install python34
+--------------------------
+controlar la versión de python usada en el sistema operativo
+--------------------------
+sudo update-alternatives --config python

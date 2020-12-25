@@ -1,0 +1,8 @@
+------------------------
+Definicion
+-----------------------
+Gestionar y solucionar errores de paquetes
+
+.............
+
+apt-get install gdebi; gdebi install teamviewer.deb

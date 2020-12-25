@@ -1,0 +1,20 @@
+-----------------------
+Antes de instalar
+----------------------
+sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6 openjdk-8-jdk
+
+---------------------------
+Android Studio 
+---------------------------
+mover la carpeta a opt
+luego ir a bin y ./studio.sh elegir la opción de abajo
+
+elegir instalación custom te descargara y configurara todo
+
+Crear lanzador de la aplicación de Android Studio
+
+este es el comando que se debe colocar
+/opt/android-studio/bin/./studio.sh
+
+y listo faltaria añadir el icono que se encuentra normalmente en bin
+

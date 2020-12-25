@@ -1,0 +1,14 @@
+----------------------------------
+Paquetes de programación de avr
+----------------------------------
+avra     //programación de ensamblador del atmel avr
+avrdude  //programación del atmel avr
+avrp     //programación del atmel avr
+avrprog  //programación del atmel avr
+simulavr //simulador de avr
+uisp     //programar mcu's
+
+-------------------------------
+Paquetes de programación arm
+------------------------------
+

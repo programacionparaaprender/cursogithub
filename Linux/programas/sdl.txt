@@ -1,0 +1,89 @@
+-----------------------------------------
+-------------------------------------------
+SDL 1.2
+-------------------------------------------
+---------------------------------------------
+Instalación desde enlaces google
+----------------------------------
+SDL 1.2 Installation
+------------------------
+wget -O SDL-1.2.14.tar.gz  http://goo.gl/ByL0B
+tar -xzvf SDL-1.2.14.tar.gz -C ~/ && cd SDL-1.2.14
+./configure && make
+sudo make install
+-----------------
+image 1.2
+-------------
+wget -O SDL_image-1.2.11.tar.gz http://goo.gl/98zi6
+tar -xzvf SDL_image-1.2.11.tar.gz -C ~/ && cd SDL_image-1.2.11
+./configure && make
+sudo make install
+----------------------------------------------
+mixer 1.2 
+-------------------------------
+wget -O SDL_mixer-1.2.12.tar.gz http://goo.gl/o0GIX
+tar -xzvf SDL_mixer-1.2.12.tar.gz -C ~/ && cd SDL_mixer-1.2.12
+./configure && make
+sudo make install
+
+----------------
+net 1.2
+---------------------------------
+wget -O SDL_net-1.2.8.tar.gz http://goo.gl/AQuv5
+tar -xzvf SDL_net-1.2.8.tar.gz -C ~/ && cd SDL_net-1.2.8
+./configure && make
+sudo make install
+
+
+--------------------------------------------
+sudo apt install libsdl1.2debian libsdl1.2-dev
+-------------
+SDL_ttf.h 
+---------------
+libsdl-ttf2.0-0
+libsdl-ttf2.0-dev
+
+----------------
+SDL_image.h
+---------------
+libsdl-image1.2
+libsdl-image1.2-dev
+libsdl-image1.2-dbg
+
+---------------------
+SDL_mixer.h
+---------------------
+libsdl-mixer1.2
+libsdl-mixer1.2-dev
+
+---------------------
+freetype 2
+------------------------
+libfreetype6-dev
+libxft-dev
+
+---------------------
+SDL_GFX
+----------------------
+libsdl-gfx1.2-dev
+
+----------------
+tambien instale
+-----------------
+libsdl-sge-dev
+libsdl-console-dev
+libsdl-pango-dev
+libsdl-net1.2-dev
+-----------------------------------------
+--------------------------------------
+-----------------------------------------
+SDL 2.0
+------------------------------------------
+-----------------------------------------
+-----------------------------------
+libsdl2-image-2.0-0
+libsdl2-image-dev
+
+libsdl2-ttf-2.0-0
+libsdl2-ttf-dev
+

@@ -1,0 +1,3 @@
+tenemos una version gtk+ que más popular que la qt
+además es más popular que los otros editores incluidos 
+en ubuntu 14.04

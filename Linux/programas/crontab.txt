@@ -1,0 +1,25 @@
+.--------------- minuto (0-59) 
+|  .------------ hora (0-23)
+|  |  .--------- día del mes (1-31)
+|  |  |  .------ mes (1-12) o jan,feb,mar,apr,may,jun,jul... (meses en inglés)
+|  |  |  |  .--- día de la semana (0-6) (domingo=0 ó 7) o sun,mon,tue,wed,thu,fri,sat (días en inglés) 
+|  |  |  |  |
+*  *  *  *  *  comando a ejecutar
+
+
+##########################################################
+#minuto (0-59),                                          #
+#|  hora (0-23),                                         #
+#|  |  día del mes (1-31),                               #
+#|  |  |  mes (1-12),                                    #
+#|  |  |  |  día de la semana (0-6 donde 0=Domingo)      #
+#|  |  |  |  |       comandos                            #
+##########################################################
+15 02  *  *  *
+
+$> crontab archivo.cron (establecerá el archivo.cron como el crontab del usuario)
+$> crontab -e           (abrirá el editor preestablecido donde se podrá crear o editar el archivo crontab)   
+$> crontab -l           (lista el crontab actual del usuario, sus tareas de cron)
+$> crontab -r           (elimina el crontab actual del usuario)
+
+https://es.wikipedia.org/wiki/Cron_(Unix)

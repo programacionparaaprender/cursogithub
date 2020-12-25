@@ -1,0 +1,273 @@
+--------------------
+Redes sociales
+----------------------
+telegram
+hangough
+teamviewer
+skype
+
+-------------------------------
+frameworks dispositivos moviles
+-------------------------------
+Nombre     |  Licencia
+-----------------------------------
+PhoneGap      Apache 2.0
+Ionic         MIT LICENCE
+
+--------------------------
+Edición de imagenes
+--------------------------
+gimp      equivalente a photoshop     	
+photoshop
+corel-draw
+
+------------------------
+Edición de vídeos 
+-----------------------
+Nombre         |OS              | Descripción 
+--------------------------------------------------------
+avidemux        Multiplataforma
+vlc             Multiplataforma
+recordmydesktop Linux            Grabación de escritorio
+movie-maker
+
+-----------------------
+Edición de audio
+------------------------
+audacity
+
+
+-----------------------
+compresión de archivos
+------------------------
+Nombre    | Plataformas
+---------------------------
+peazip      Multiplataforma
+winrar
+
+
+----------------------
+----------------------
+Edición de PDF
+----------------------
+-----------------------
+libreoffice-pdfimport     para draw (despues de seleccionar imagen editar luego ir a mapa de imagen)
+foxit-reader
+pdfedit
+
+-------------------------
+------------------------
+Limpieza de aplicaciones y sistema
+-------------------------------
+------------------------------
+bleachbit
+
+
+-------------------------------
+Simular circuitos analógicos y digitales
+-----------------------------------
+qucs        en canaima 5 no esta disponible 
+proteus
+nimultisim
+
+
+----------------------------------
+Software para microcontroladores
+------------------------------------
+proteus
+Eclipse      plugin para empresa atmel
+mplab        netbeans versión para pics
+arduino-ide  para arduino procesadores atmel
+pinguino-ide para pinguino procesadores pic 
+gnusim8085
+atmel-studio
+
+-----------------------------
+Diseño de Circuitos Impresos
+-----------------------------
+kicad     	
+eagle  
+proteus
+ni-multisim
+
+---------------------------------
+----------------------------------
+software matematico de simulación
+---------------------------------
+-------------------------------------
+scilab      cuenta xcos, ode etc.
+scicos
+scicoslab   
+GNU Octave  equivalente libre de matlab
+matlab
+
+-----------------------------
+Editor web	WYSIWYG
+------------------------------
+BlueGriffon  permite ver interfaz como dreamweaver
+Amaya
+quanta plus
+adobe dreamweaver
+
+-----------------------
+Antivirus
+----------------------
+Winpooch   permite que ClamWin explore en tiempo real la computadora en búsqueda de virus, spywares.
+ClamWin    un antivirus libre para Microsoft Windows.
+Fireclam   de clamwin para navegador firefox
+ClamAV
+psafe
+    
+----------------------------------------
+------------------------------------
+game engine |  Utiliza   | 3D/2D    |OS     
+            |  lenguaje  | ?        |
+------------------------------------
+----------------------------------------
+pygame       python           2D      Windows, Linux, OS X                                       gpl
+Pyrogenesis  c++,javascript   3D      Windows, Linux, OS X  ghicieron 0ad                        gpl
+blender   	 python           3D      Windows, Linux, OS X                                       gpl
+Ardor3D 	 Java 		      3D 	  Cross-platform 	                                         zlib
+Blend4Web 	 javascript,otros 3D 	  WebGL, Windows, Linux, OS X, iOS, Android                  gplv3
+GamePlay3D 	 C++, Lua 	      3D 	  Windows, Linux, OS X, iOS, BlackBerry 10, Android 		 Apache 2.0
+Godot 	     GDScript 	      2D,3D   Cross-platform 		                                     MIT
+LibGDX 	     Java 		      2D,3D   Linux, Windows,OS X, iOS,Android, Java applet, WebGL 		 Apache 2.0 
+Unity 	     C#, otros 	      2D,3D   Windows, OS X, PlayStation 4, Vita, Android, WebGL, otros  Proprietary
+Three.js 	 Javascript 	  2D,3D   HTML5, Windows, Linux, OS X, iOS, Android 		         MIT	
+Torque       C++              2D,3D   Windows, OS X, PlayStation 4, Vita, Android, WebGL, otros  MIT
+unrealengine C++
+
+--------------------
+Diseño 3D
+----------------------
+wings3d          hecho en lenguaje funcional Erlang 
+blender          hecho en lenguaje c,c++,python
+adobe 
+
+---------------------------------
+----------------------
+diseño de animacion 2d
+----------------------------------
+----------------------------------
+Tupi       Windows, OS X, Linux tambien llamado ktoon
+Pencil2D   Windows, OS X, Linux
+SWFTools   Windows, OS X, Linux
+Synfig 	   Windows, OS X, Linux
+
+-----------------------
+diseño de animación 3d
+-----------------------
+Art of Illusion    hecho en java	
+Blender            hecho en python y c++
+adobe
+
+
+----------------------
+----------------------
+software de descarga
+---------------------
+----------------------
+vuze
+jdownloader
+
+
+---------------------
+quemadores
+------------------------------
+brasero			para quemar cd-dvd-bluray desde iso
+gmount-iso 		como power-iso
+wincdemu
+poweriso
+
+
+--------------------------
+Emuladores
+----------------------------
+pcsxr        para playstation 1
+pcsx2        para playstation 2
+mupen64plus  para nintendo 64
+
+
+--------------------------------
+-------------------------
+Juegos Linux off line
+-------------------------
+--------------------------------
+0ad        		 como age of empire 
+assaultcube		 como counter strike
+beneath-a-steel-sky 	futurista muy bueno
+pingus           version libre de lemmings
+supertuxkart     como mario cart
+paintown 		 como street figther
+Tumiki Fighters  maneja una nave 2d que se transforma en otras
+warcraft 3       frozen of the throne
+starcraft 2      blood war
+counter strike
+ 
+
+--------------------------
+Lenguajes de programación
+-----------------------
+java           jdk o openjdk
+python         python
+c++            cpp, c++
+c              gcc
+c#
+php            php5, o 7
+ 
+-------------------------------
+Entorno de Desarrollo Integrado
+----------------------------------
+android studio  programación para android
+netbeans        programación
+eclipse   	    programación
+monodevelop     necesita plugin NuGet para web c#
+anjuta
+codeblocks
+qtcreator
+visual-studio
+
+
+----------------------
+Software de ofimatica
+------------------------
+openoffice
+libreoffice
+microsoft-office
+
+
+----------------
+Servidores
+-----------------
+xampp
+wampp
+mampp
+easy-php
+
+--------------------------
+Transferencia de archivos
+----------------------------
+FileZilla 
+Azureus vuze
+utorrent
+
+-------------------------------
+Diseño Asistido por Computador
+-------------------------------
+librecad
+freecad
+blender
+autodesk autocad
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+------------------------------------
+Debian 7/8 o Canaima 5
+-------------------------------------------
+Instalar versión nueva de wine
+https://github.com/wine-compholio/wine-staging/wiki/Installation

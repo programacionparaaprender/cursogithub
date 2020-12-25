@@ -1,0 +1,13 @@
+-------------------------------
+Descripción
+-------------------------------
+Software para la gestión de multiples software de redes sociales
+twitter
+facebook
+telegram
+whatsapp
+Messenger
+Skype
+Hangough
+
+http://meetfranz.com/

@@ -1,0 +1,7 @@
+
+crear iso a partir de cd
+https://www.spamloco.net/2012/08/crear-iso-ubuntu-desde-cd-dvd.html
+Pulsamos el Tools 
+Copy Medium
+en la Pestaña Image se edita donde se desea que se 
+guarde

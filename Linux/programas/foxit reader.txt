@@ -1,0 +1,14 @@
+
+Please follow the steps below to install Foxit Reader for Linux:
+
+    Change to the directory containing the downloaded file (used /tmp as the example):
+    # cd /tmp
+    Uncompress the executable:
+    # gzip -d 'FoxitReader_version_Setup.run.tar.gz'
+    Untar the .tar file:
+    # tar xvf 'FoxitReader_version_Setup.run.tar'
+    Run the installer:
+    # ./'FoxitReader_version_Setup.run'
+    Follow the steps on the screen to complete the installation
+
+

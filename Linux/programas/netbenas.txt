@@ -1,0 +1,18 @@
+así se instala
+sudo sh netbeans_sdsds.sh
+
+solo dar siguiente 
+en customize seleccionar tomcat
+/opt/jdk1.8.0_91
+/usr/local/netbeans-8.1
+/usr/local/glassfish-4.1.1
+/usr/local/apache-tomcat-8.0.27
+
+creamos el lanzador
+netbeans 8.1
+/usr/local/netbeans-8.1/bin/netbeans
+IDE GPL de Oracle
+
+normalmente el ejecutable se encuentra en 
+/usr/local/netbeans-8.1/bin/netbeans
+

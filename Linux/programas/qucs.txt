@@ -1,0 +1,11 @@
+sudo apt-get install build-essential
+sudo apt-get install libqt4-dev libqt4-qt3support
+sudo apt-get install automake libtool gperf flex bison    
+
+seguir los pasos y se instalara en debian 8
+
+cd qucs-doc
+    [./bootstrap] #if not executed in the top level
+    ./configure
+    make
+    sudo make install

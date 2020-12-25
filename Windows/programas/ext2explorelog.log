@@ -1,0 +1,20 @@
+Error Opening \\.\PhysicalDrive5. Error Code 2
+No of disks 5
+Scanning \\.\PhysicalDrive0
+index 0 ID 7 size 204800000 
+index 1 ID 7 size 819200000 
+index 2 ID 5 size 519919618 
+index 4 ID 83 size 511694848 
+Block size 4096, inp 8192, inodesize 256
+index 5 ID 82 size 8222720 
+index 3 ID 83 size 409600000 
+Block size 4096, inp 8192, inodesize 256
+Linux Partition found on disk 0 partition 3
+Scanning \\.\PhysicalDrive1
+Scanning of \\.\PhysicalDrive1 failed: Scanning \\.\PhysicalDrive2
+Scanning of \\.\PhysicalDrive2 failed: Scanning \\.\PhysicalDrive3
+Scanning of \\.\PhysicalDrive3 failed: Scanning \\.\PhysicalDrive4
+Scanning of \\.\PhysicalDrive4 failed: Inode 10748622 with file size 0
+Inode 10748092 with file size 0
+Inode 10754115 with file size 0
+Inode 10749341 with file size 0

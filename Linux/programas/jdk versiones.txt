@@ -1,0 +1,48 @@
+----------------------
+Ubuntu 14
+-----------------
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt update
+sudo apt-get install openjdk-8-jdk openjdk-8-jre
+
+-----------------------------
+-------------------------------
+Versiones de JDK
+-------------------------------
+------------------------------
+sudo update-alternatives --config java
+
+luego se pone el numero del que se quiere se tenga prioridad
+
+----------------------------------------
+----------------------------------------
+OpenJDK 8
+----------------------------------------
+----------------------------------------
+Agregar al /etc/apt/sources.list 
+# JDK 8
+deb http://ftp.de.debian.org/debian jessie-backports main
+luego cerrar y ejecutar los siguientes comandos en terminal
+sudo apt-get update
+sudo apt-get install openjdk-8-jre-headless
+sudo apt-get install openjdk-8-jdk
+sudo apt-get install tomcat8 tomcat8-admin
+
+para instalar en ubuntu java
+----------------------------
+versión 8
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+version 7
+sudo apt-get install oracle-java7-installer
+
+luego configurar netbeans
+http://wiki.netbeans.org/FaqRunningOnJre
+
+install full JDK
+either edit <netbeans-IDE-installation>/etc/netbeans.conf
+unmark netbeans_jdkhome
+link to JDK location e.g. /usr/local/share/java/jdk1.6.0_07/
+or use --jdkhome command-line option e.g. ./bin/netbeans --jdkhome /usr/local/share/java/jdk1.6.0_07/
+

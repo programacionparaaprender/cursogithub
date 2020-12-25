@@ -1,0 +1,5 @@
+sudo apt install libatk1.0-0 libc6 libcairo2 libfontconfig1 libfreetype6 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk2.0-0  libidl0 libnspr4 libnss3 libpango1.0-0 libpng12-0 libstdc++6 libx11-6 libxft2 libxinerama1 libxrender1 libxt6 zlib1g
+
+luego
+./kompozer
+

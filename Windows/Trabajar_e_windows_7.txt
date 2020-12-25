@@ -1,0 +1,25 @@
+regedit para abrir dos ventanas excel
+
+msinfo32 para saber la version de bios
+
+dxdiag en buscar para saber version de directx
+
+systeminfo
+para deshabilitar el inicio:
+inicio/ejecutar
+escribir msconfig
+inforamacion en
+sistemas operativos/privado/windows/comandos
+tener varios buscadores
+para poder iniciar sesion de varias
+cuentas de hotmail al mismo tiempo
+
+Trabajar en simbolos del sistema
+si das en cd 
+y luego pulsas la tecla de 
+margen largo con dos flechas en la 
+tecla así ->| y |<- te muestra
+el contenido de donde estes
+
+para activar los windows
+pulsar Windows+R slui 3 o 4

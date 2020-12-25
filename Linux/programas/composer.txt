@@ -1,0 +1,12 @@
+
+descargarlo desde 
+https://github.com/composer/getcomposer.org/blob/master/web/download/1.0.0-alpha11/composer.phar
+luego ejecutar
+sudo cp composer.phar /usr/local/bin/composer
+
+-----------------------
+Laravel
+---------------------------
+----------------------------
+sudo ln -s /opt/lampp/bin/php-7.0.8 /usr/bin/php
+luego agregar el composer.phar

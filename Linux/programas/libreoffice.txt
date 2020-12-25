@@ -1,0 +1,12 @@
+-------------------------------
+En caso de no estar en español
+-------------------------------
+sudo apt-get install libreoffice-l10n-es libreoffice-help-es
+
+-----------------------------
+Crear y trabajar indices
+------------------------------
+primero inserta el indice al principio
+luego ve a formato ->Estilos y formato y ahi agregas los encabezados
+
+click derecho sobre los encabezados númerar el primero y luego los demás se actualizan

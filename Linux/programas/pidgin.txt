@@ -1,0 +1,10 @@
+
+
+sudo apt install pidgin pidgin-data purple-facebook
+
+luego agregar los emoticonos
+en /usr/share/pixmaps/pidgin/emotes/
+ahí agregamos la carpeta con los emoticones
+ahí dentro de la carpeta debe existir
+un archivo llamado theme sin extensión ahí esta 
+la configuración

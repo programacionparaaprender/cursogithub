@@ -1,0 +1,11 @@
+
+
+usuario: root
+contraseña: rootstack
+
+no solo modificar httpd.conf
+tambien bitnami.conf
+
+activar laravel 
+
+https://docs.bitnami.com/installer/components/php-frameworks/#activation-and-testing15

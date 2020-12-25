@@ -1,0 +1,10 @@
+https://mega.nz/linux/MEGAsync/
+
+para 32 bits
+https://mega.nz/linux/MEGAsync/Debian_8.0/i386/
+
+para 64 bits
+https://mega.nz/linux/MEGAsync/Debian_8.0/amd64/
+
+
+https://mega.nz/linux/MEGAsync/xUbuntu_14.04/

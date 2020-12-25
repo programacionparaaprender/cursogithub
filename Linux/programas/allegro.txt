@@ -1,0 +1,13 @@
+--------------------------
+-------------------------
+Descargamos Allegro 5.
+---------------------------
+--------------------------
+
+no usar
+$ svn co https://alleg.svn.sourceforge.net/svnroot/alleg/allegro/branches/5.0 allegro-5.0
+
+mejor
+
+liballegro5.0
+liballegro5-dev

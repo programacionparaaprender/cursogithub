@@ -1,0 +1,21 @@
+--------------------
+scilab
+-----------------------
+disponible en el gestor de paquetes synaptic
+
+-------------------------------------
+Resolver ecuaciones diferenciales
+-----------------------------------
+funciones ode de scilab
+
+
+------------------
+xcos
+---------------------
+para simulación en scilab
+
+
+---------------------
+Librerias que no vienen por defecto
+-----------------------------------
+Coselica

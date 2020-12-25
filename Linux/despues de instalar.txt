@@ -1,0 +1,15 @@
+Botón derecho del ratón sobre el panel.
+"Añadir al panel".
+Añades "Lista de ventanas".
+comenzar a añadir las aplicaciones que quieras tener con acceso rapido
+
+
+Si quieres saber dónde se
+instalarán dichos archivos, no tienes más que usar:
+dpkg --contents <nombre_paquete.deb>
+Para instalarlo:
+dpkg -i <nombre_paquete.deb>
+
+Añadir los repositorios de debian en caso de algun paquete faltante de debian 8 Jesse
+
+

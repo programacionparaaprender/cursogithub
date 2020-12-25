@@ -1,0 +1,4 @@
+
+#el mejor que hay
+
+sudo apt install viewnior

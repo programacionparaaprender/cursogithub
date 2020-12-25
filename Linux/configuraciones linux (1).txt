@@ -1,0 +1,201 @@
+ver información del sistema operativo por terminal
+------
+cat /etc/issue.net
+lsb_release -a
+
+--------------------
+cambiar formato de 24 horas a 12 horas
+http://www.ubuntu-es.org/node/116315#.V-VMHJDLZ1Z
+
+comandos especiales
+control + h permite ver las carpetas ocultas
+
+para actualizar los repositorios
+sudo pluma /etc/apt/sources.list
+modificas lo que tengas que modificar
+luego 
+sudo apt-get update
+
+-------------------
+Montar unidades
+---------------------
+sudo mount /dev/sda7 /media/luis13711/Para\ datos/
+--------------------
+Desmontar unidades
+--------------------
+sudo umount /dev/sda7 
+
+
+-----------------------------
+Cambiar usuarios de carpetas
+-----------------------------
+chown -R nuevousr directorio
+
+
+------------------
+Para mover carpetas o directorios
+--------------------
+mv archivoamover /directorioamover/
+
+--------------------------------------
+-------------------------------------
+Copiar archivos o directorios
+---------------------------------------
+----------------------------------------
+sudo cp -r EditorialWeb /opt/lampp/htdocs/
+
+-----------------------------
+-----------------------------
+Borrar directorios o carpetas
+------------------------------
+-----------------------------
+rmdir midirectorio
+cuando no esta vacio
+rm -rf nombre_directorio 
+
+--------------------------------
+-------------------------------
+Información relativa a un paquete
+-------------------------------
+--------------------------------
+apt-cache show pcsxr
+apt-cache search pcsxr
+apt-cache depends pcsxr
+
+
+-------------------------------
+Donde se instalo mi programa
+--------------------------------
+Ejemplo escribimos 
+whereis umlet
+nos dara como resultado
+umlet: /usr/bin/umlet /usr/share/umlet /usr/share/man/man1/umlet.1.gz
+
+---------------------
+elimine iconos de la barra de tareas
+-----------------------------------
+ir a añadir un elemento al panel y agregar area de notificación
+incluye todo
+
+-----------------------------------------
+regular funcionamiento del fan cooler
+------------------------------------------
+sudo apt-get install 
+thinkfan          //arroja errores
+manpages-es-extra 
+fancontrol 
+lm-sensors
+
+man thinkfan
+thinkfan --help 
+
+---------------------
+No detecta cornetas
+----------------------
+Tambien añadi la arquitectura de 32 bits para el pcsx
+cualquiera de esos pudo ser
+instale esto para el android studio
+sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+y luego esto
+aptitude install build-essential
+ahora me funcionan las cornetas
+
+-----------------------
+------------------------
+Unidades conectadas
+-----------------------------
+------------------------------
+lspci -v dice los pci que uno tiene creo
+sudo fdisk -l
+
+-------------------------
+------------------------
+para instalar programas 
+---------------------
+---------------------------
+i386 en x64
+sudo dpkg -i --force-architecture mmc_1.6.0_i386.deb
+normalmente
+sudo dpkg -i paquete.deb #así se instala
+sudo dpkg -r paquete.deb #asi se desinstala
+sudo dpkg -p paquete.deb #así se desinstalay borra todo rastro del programa
+
+para instalar .deb
+dpkg -i 'aqui direccion/archivo.deb'
+
+instalar .sh se facil solo
+chmod +x programa.sh
+./programa.sh
+y listo comienza a instalar todo
+
+instalar .run
+chmod +x coldwar_demo.run
+sudo sh ./coldwar_demo.run
+
+instalar tar.bz2
+1. lo descomprimimos en la carpeta personal
+2. en el panel añadir al panel
+
+
+
+abrir algo parecido a consola alt f2
+
+
+alacarte para agregar programas
+comando netbeans
+/bin/sh "/usr/local/netbeans-7.3.1/bin/netbeans"
+
+para tener informacion sobre algo es info programa en terminalroot
+
+
+cuando se usa por primera vez ubuntu hay que asignar una clave root
+y se hace de esta manera
+sudo passwd root 
+luego se escribe la clave
+./programa
+es para ejecutar un programa lo use en wings y funciono
+
+-----------------------------------
+------------------------------------
+para recuperar boot de linux ubuntu
+-----------------------------------
+------------------------------------
+sudo fdisk -l     
+sudo mount /dev/sdaX /mnt   ->  X la particion linux
+sudo mount --bind /dev /mnt/dev -> Montamos el resto de dispositivos
+sudo mount --bind /proc /mnt/proc
+sudo chroot /mnt -> 
+grub-install --recheck /dev/sda -> cargamos el Grub en el MBR (OJO: sda sin el número tal cual se indica)
+
+aunque esto que viene despues no lo hice y igual funciono
+3. Por último, reiniciamos el PC arrancando Ubuntu, abrimos una consola y actualizamos GRUB2
+
+sudo update-grub2 -> actualiza grub 2
+
+Si no funcionara, instalaríamos Grub 2 directamente con el siguiente comando:
+
+sudo aptitude install grub
+
+--------------------------------
+--------------------------------------------------
+para crear usuarios en caso de instalación si crear usuario se hace de la siguiente manera
+---------------------------------------
+---------------------------
+useradd juana      //crear usuario 
+passwd juana       //crear contraseña
+mkdir /home/juana  //crear carpeta para juana
+chown juana:juana -R /home/juana //para definir el grupo de /home/juana
+chmod 755 -R /home/juana //para asignarle permisos a la carpeta
+usermod -d /home/juana juana //asignarle un directorio a juana
+nano /etc/passwd //asignarle 
+
+Dar permisos de root a un usuario.
+Para poder ejecutar comandos con nuestro usuario como si fuesemos el root, lo que tenemos que hacer es incluir nuestro usuario en el archivo sudoers.
+
+El archivo a modificar encuentra en la carpeta /etc, ejecutamos el siguiente comando:
+
+sudo nano /etc/sudoers
+
+Añadimos justo debajo de "root     ALL=(ALL=ALL) ALL
+
+

@@ -1,0 +1,7 @@
+64 bits
+
+sudo apt install browser-plugin-freshplayer-pepperflash 
+
+32 bits
+
+sudo apt install adobe-flashplugin

@@ -1,0 +1,81 @@
+despues de instalar escribir en terminal
+sudo /opt/lampp/share/xampp-control-panel/xampp-control-panel
+
+
+ERROR
+------------
+Error importing pygtk2 and pygtk2-libglade
+sudo apt-get install python-glade2
+
+luego crear lanzador
+vamos a la barra de herramientas le damos en crear lanzador personalizado
+luego agregamos
+XAMPP
+gksu /opt/lampp/share/xampp-control-panel/xampp-control-panel
+Arrancar/Detener servicios
+
+-------------------------------
+--------------------------------
+Para visualizar configuraciones
+------------------------------------
+------------------------------
+http://localhost/dashboard/
+
+para conocer el estado del servicio 
+./lampp status
+
+
+si ocurre un erro ir y borrarlo con el comando rm -r  lampp
+
+si no quiere arrancar el apache ejecutar este comando
+sudo /etc/init.d/apache2 stop 
+
+
+
+abrimos en terminal sudo pluma /opt/lampp/etc/httpd.conf
+dirección /opt/lampp/etc/httpd.conf
+DocumentRoot "/opt/lampp/htdocs"
+<Directory "/opt/lampp/htdocs">
+-------------------------
+modificamos
+----------------------------
+DocumentRoot "/media/luis13711/Para datos/MEGAsync/htdocs"
+<Directory "/media/luis13711/Para datos/MEGAsync/htdocs">
+
+
+
+
+--------------------------
+--------------------------
+Comandos
+--------------------------
+-------------------------
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp stop
+
+----------------------
+-----------------------
+Laravel
+---------------------------
+----------------------------
+sudo ln -s /opt/lampp/bin/php-7.0.8 /usr/bin/php
+luego agregar el composer.phar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

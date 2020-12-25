@@ -1,0 +1,27 @@
+-----------------------
+-------------------------
+ktechlab
+------------------------
+------------------------
+
+descargar el comprimido mas actualizado desde internet
+
+instalar
+make
+checkinstall
+sudo apt-get install libjpeg62
+como depende de otros paquetes luego ejecutar
+apt-get -f install
+no quiere instalar libqt3-mt
+
+
+---------------------------
+---------------------------
+Nueva forma
+---------------------------
+-------------------------
+www.github.com/edivaldo-amaral
+ktechlab-chroot lo descargamos
+luego extraemos en descargas y abrimos
+./install.sh
+

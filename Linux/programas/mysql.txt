@@ -1,0 +1,21 @@
+sudo apt install mysql-server
+
+----------------------------
+----------------------------
+Comandos
+---------------------------
+---------------------------
+/etc/init.d/mysql start 
+/etc/init.d/mysql stop
+sudo /etc/init.d/mysql restart
+sudo service mysql start
+
+
+
+-------------------------
+-------------------------
+Contraseña
+------------------------
+-----------------------
+root
+

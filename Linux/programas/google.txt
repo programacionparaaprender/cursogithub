@@ -1,0 +1,20 @@
+para almacenamiento en la nube
+
+
+google drive pasos
+
+sudo add-apt-repository ppa:nilarimogard/webupd8
+
+sudo apt-get update
+
+sudo apt-get install grive
+
+mkdir -p ~/grive
+cd ~/grive
+grive -a 
+luego te aparecera una url pegala en el navegador
+
+luego le das en aceptar
+y 
+pegas en el terminal el codigo de google drive
+

@@ -1,0 +1,8 @@
+---------------------------------
+Web scraping
+------------------------------------
+Commons-emblem-question book orange.svg
+Este artículo o sección necesita referencias que aparezcan en una publicación acreditada. Este aviso fue puesto el 1 de junio de 2014.
+Puedes añadirlas o avisar al autor principal del artículo en su página de discusión pegando: {{sust:Aviso referencias|Web scraping}} ~~~~
+Web scraping es una técnica utilizada mediante programas de software para extraer información de sitios web. Usualmente, estos programas simulan la navegación de un humano en la World Wide Web ya sea utilizando el protocolo HTTP manualmente, o incrustando un navegador en una aplicación.
+

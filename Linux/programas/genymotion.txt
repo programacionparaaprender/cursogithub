@@ -1,0 +1,5 @@
+genymotion
+ubicación
+colocar el instalador dentro de opt antes de instlar
+igual que con lampp y otros
+por que se instala donde ejecutas el instalador

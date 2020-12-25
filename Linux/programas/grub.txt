@@ -1,0 +1,11 @@
+para uefi boot
+gummiboot
+grub2
+
+--------------
+para modificar el grub
+----------------------
+pico /etc/default/grub
+editar la linea 
+GRUB_DEFAULT={{colocar el número de boot de inicio para que inicie desde ahí desde 0 se cuenta}}
+

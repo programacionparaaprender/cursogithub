@@ -1,0 +1,13 @@
+Debian 8 Jessie 
+sudo apt-get install wine wine-bin:i386 winbind wine64
+sudo apt-get install playonlinux
+
+luego ir a la opción microsoft office versión que ya no esta en pruebas
+bien explicado como instalar office 2010
+https://pulpolibre.wordpress.com/2015/12/19/instalacion-de-microsoft-office-2010-en-debian-8-jessie/
+
+vamos a Applications 
+command history  se nos abrira una ventana
+variable browser se nos abrira otra ventana
+scilan help      se nos abrira otra ventana
+

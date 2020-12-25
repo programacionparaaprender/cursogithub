@@ -1,0 +1,127 @@
+ClamAV can be found in the apt repository. Run this command to install ClamAV:
+
+sudo apt-get install clamav
+sudo apt-get install clamav-daemon
+sudo apt-get install libclamunrar6
+
+el ultimo supuestamente era interfaz pero no muestra ninguna
+
+sudo apt install clamav-docs clamfk
+
+
+
+sintaxis en linea de comandos
+clamscan -[parámetros] [ruta de carpeta]
+
+ejemplo
+
+sudo clamscan -r /home
+
+escaneo profundo de todo el sistema
+
+sudo clamscan -r /
+
+solo muestra los archivos infectados
+sudo clamscan -r -i /home
+
+suene un pitido cada vez que detecte un virus
+sudo clamscan -r --bell /home
+
+
+También tienes la posibilidad de guardar un reporte del análisis en un archivo aparte que se creará en tu directorio personal.
+$ sudo clamscan -r /home -l archivo.txt
+
+para ver discos de partición
+sudo fdisk -l
+
+
+Para hacer un escaneo en la partición que sale identificada como sda2, y que en mi caso ejecuta Windows 7, puedo utilizar:
+$ sudo clamscan -r /media/sda2
+
+
+Escanear el directorio /home de modo recursivo, y eliminar los archivos infectados.
+$ sudo clamscan -r --remove /home
+
+
+
+podemos hacer que durante el escaneo se vayan mostrando solo los archivos infectados:
+$ sudo clamscan -r -i --remove /home
+
+Escanear la partición de Windows 7, que en este caso corresponde al identificador sda2
+y eliminar todos los archivos detectados:
+$ sudo clamscan -r --remove /media/sda2
+
+
+
+
+
+
+ayuda de clamav solo una parte
+
+NOMBRE
+       clamscan - escanear los archivos y directorios en busca de virus
+
+SINOPSIS
+       clamscan [opciones] [archivo / directorio / -]
+
+DESCRIPCIÓN
+       clamscan es un escáner antivirus línea de comandos.
+
+OPCIONES
+       La mayoría de las opciones son simples interruptores que permiten o desactivar algunas
+       caracteristicas. Las opciones marcadas con [= sí / no (*)] se puede seguir opcionalmente
+       por sí = / = no; si son llamados sin el argumento booleano la SCAN-
+       ner asumirá "sí". El asterisco marca la configuración interna predeterminada
+       por una opción determinada.
+
+       -h, --help
+              Imprimir información de ayuda y salir.
+
+       -V, --version
+              La impresión del número de versión y sale.
+-v, --verbose
+              Sea más explícito.
+
+       -a, --archive-verbosa
+              Especificar nombres de ficheros dentro de archivos escaneados
+
+       --depurar
+              Mostrar mensajes de depuración de libclamav.
+
+       --tranquilo
+              Sea (sólo mensajes de error de impresión) tranquilas.
+
+       --stdout
+              Escribe todos los mensajes (excepto para la salida libclamav) a la norma
+              salida (stdout).
+ --no-Resumen
+              No mostrar el resumen al final de la exploración.
+
+       -i, --infected
+              imprimir sólo los archivos infectados.
+
+       -o,-OK-resultados --suppress
+              Saltar la impresión de archivos OK
+
+       --bell sonido de la campana en la detección de virus.
+
+       --tempdir = DIRECTORIO
+              Crear archivos temporales en el directorio. Directorio debe tener permiso de escritura
+              para el usuario '' o usuario sin privilegios ejecuta clamscan.
+--leave-temps
+              No eliminar archivos temporales.
+
+       ARCHIVO -d / DIR, --database = ARCHIVO / DIR
+              base de datos de virus de la carga del archivo o cargar todos los archivos de base de datos de virus
+              de DIR.
+
+       --official-db-only = [sí / no (*)]
+              Sólo cargar las firmas oficiales publicados por el ClamAV
+              proyecto.
+
+       ARCHIVO -l, --log = ARCHIVO
+              Guardar el informe de escaneado en archivo.
+
+       -r, --recursive
+              directorios de escaneo de forma recursiva. Todos los subdirectorios en el
+              directorio dado será escaneado.

@@ -1,0 +1,10 @@
+----------------------
+Instalar los siguientes paquetes
+-----------------------------------
+sudo apt-get install freeglut3 freeglut3-dev
+
+--------------------------
+No se si sea necesario este 
+------------------------------------
+sudo apt-get install binutils-gold
+

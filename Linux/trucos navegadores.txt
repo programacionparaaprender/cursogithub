@@ -1,0 +1,3 @@
+firefox
+control+h es para abrir desplegable de historial
+control+b es para abrir desplegable de marcadores

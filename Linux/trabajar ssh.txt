@@ -1,0 +1,2 @@
+cp torrents.tar.gz roberth@10.172.18.90:/home/roberth/CURSOS
+luego se agrega la contraseña del servidor

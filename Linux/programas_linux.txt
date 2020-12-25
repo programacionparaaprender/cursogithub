@@ -1,0 +1,480 @@
+-------------------
+Mejor Volumen
+-----------------------
+alsamixer
+pulseaudio
+
+--------------------
+Redes sociales
+----------------------
+telegram
+hangough
+teamviewer
+skype
+
+-------------------------------
+frameworks dispositivos moviles
+-------------------------------
+Nombre     |  Licencia
+-----------------------------------
+PhoneGap      Apache 2.0
+Ionic         MIT LICENCE
+
+
+--------------------------------------
+Software de ofimatica
+---------------------------------------
+AbiWord
+gnumeric
+openoffice
+libreoffice
+
+----------------------------------------
+------------------------------------
+game engine |  Utiliza   | 3D/2D    | OS                                          |   Usado Por |     |
+------------------------------------
+----------------------------------------
+game editor
+pygame             python           2D       Windows, Linux, OS X                                       gpl
+Kivy                      python           2D       Multiples plataformas
+Ren'Py                python           2D       Windows, Linux, OS X                                      MIT
+blender   	       python           3D       Windows, Linux, OS X                                       gpl
+panda3d           c++,python  3D                                                            Disney                   gpl
+Godot 	               GDScript 	      2D,3D   Cross-platform 		                              MIT
+LibGDX 	      Java 		      2D,3D  Cross-platform 		                             Apache 2.0 
+Unity 	              C#, otros 	      2D,3D   Windows, OS X, PlayStation 4, Vita, Android, WebGL, otros  Proprietary
+
+
+
+-------------------------
+Diseño 3D
+------------------------
+wings3d          hecho en lenguaje funcional Erlang disponible en canaima 5
+blender          hecho en lenguaje c,c++,python
+
+------------------------------------------
+-------------------------------------------
+diseño de animacion 2d Pixel Art
+-------------------------------------------
+-----------------------------------------
+Nombre        | Escrito en     
+-----------------------------------------------------------------------  
+GrafX2               C(SDL)                                            GPL
+Tupi                                          Windows, OS X, Linux tambien llamado ktoon
+Pencil2D                                 Windows, OS X, Linux
+SWFTools                              Windows, OS X, Linux
+Synfig 	                                    Windows, OS X, Linux
+
+------------------------------------------
+diseño de animación 3d
+------------------------------------------
+Art of Illusion    hecho en java	
+Blender                 hecho en python y c++
+panda3d              
+
+
+----------------
+Captura de pantalla
+-------------------------------
+Shutter
+
+---------------------
+--------------------
+Radio
+----------------------
+-----------------------
+al parecer se requiere de tarjeta de radio tambien
+gradio   no funciona en canaima 5
+radio    lo instale pero no funciona
+
+
+----------------------
+Antivirus 
+---------------------
+Fireclam   de clamwin para navegador firefox
+ClamAV
+Gateway Anti-Virus
+Lynis
+
+
+-----------------------
+conversor de paquetes
+-------------------------
+alien   convertir .rpm a otros tipos
+
+-----------------------
+Software educativo
+--------------------------------------
+plm         en código de diversos lenguajes para practicar
+scratch  creación de juegos y más
+
+--------------------------
+Edición de imagenes
+--------------------------
+gimp    equivalente a photoshop     	
+pinta   equivalente a paint
+
+------------------------
+Edición de vídeos 
+-----------------------
+Nombre         |OS              | Descripción 
+cinelerra       Linux
+avidemux        Multiplataforma
+vlc             Multiplataforma
+recordmydesktop Linux            Grabación de escritorio
+
+-----------------------
+Edición de audio
+------------------------
+audacity
+
+
+---------------------------------------
+compresión de archivos
+----------------------------------------------
+Nombre    | Plataformas
+---------------------------
+peazip      Multiplataforma
+xarchiver
+
+
+----------------------
+----------------------
+Edición de PDF
+----------------------
+-----------------------
+libreoffice-pdfimport     para draw (despues de seleccionar imagen editar luego ir a mapa de imagen)
+
+
+-------------------------------
+Simular circuitos analógicos y digitales
+-----------------------------------
+qucs     en canaima 5 no esta disponible 
+gnucap   desde terminal	
+
+-------------------------------
+Simular circuitos digitales
+-----------------------------
+ktechlab en versiones actuales de linux no esta disponible 
+tkgate    	
+logisim
+
+-------------------------------
+Simular circuitos analógicos
+-----------------------------------
+oregano la simulación se lleva acabo por ngspice, gnucap
+
+----------------------------------
+Software para microcontroladores
+------------------------------------
+Eclipse      plugin para empresa atmel
+mplab        netbeans versión para pics
+arduino-ide  para arduino procesadores atmel
+pinguino-ide para pinguino procesadores pic 
+gnusim8085
+avra         para ensamblador atmrel
+avrdude
+
+-----------------------------
+Diseño de Circuitos Impresos
+-----------------------------
+kicad     	
+eagle  
+    
+
+---------------------------------
+----------------------------------
+software matematico de simulación
+---------------------------------
+-------------------------------------
+scilab      cuenta xcos, ode etc.
+scicos
+scicoslab   
+GNU Octave  equivalente libre de matlab
+OpenFOAM    problemas de mecanica de medios continuos
+FreeMat     Segun compatible con funciones MATLAB
+Elmer       Trabaja con scilab y Matlab
+
+
+-----------------------------
+Editor web sin 	WYSIWYG
+------------------------------
+bluefish
+netbeans
+eclipse 
+
+-----------------------------
+Editor web	WYSIWYG
+------------------------------
+BlueGriffon  permite ver interfaz como dreamweaver
+quanta plus
+Amaya
+Kompozer
+
+---------------------------
+---------------------------
+Software física I
+---------------------------
+Nombre                |
+---------------------------
+Step                   Linux
+Open Source Physics    Linux
+
+----------------------------------------------------------------------------------------
+Modelar multiples sistemas hidraulicos por ejemplo
+-----------------------------------------------------------------------------------------
+Modelica         	www.modelica.org
+
+-------------------------------
+Sistemas medicos
+--------------------------------
+Simulation Open Framework Architecture
+
+-----------------------------------------
+-----------------------------------------
+software de descarga
+-----------------------------------------
+------------------------------------------
+wget                        viene por defecto en linux
+cclive                       permite descargar videos de youtube
+vuze                         hecho en java
+jdownloader       hecho en java http://jdownloader.softonic.com/linux
+tucan manager hecho en python http://www.tucaneando.com/download/  http://tucan.softonic.com/linux
+
+-----------------------------------
+Software para redes
+-----------------------------------
+ns (simulator)  www.nsnam.org
+
+-------------------------------
+quemadores
+------------------------------
+brasero			para quemar cd-dvd-bluray desde iso
+gmountiso 		como poweriso
+
+--------------------------
+Emuladores
+----------------------------
+pcsxr        para playstation 1
+pcsx2        para playstation 2
+mupen64plus  para nintendo 64
+
+
+------------------------------------------------
+Emulación de programas y juegos windows en linux
+-------------------------------------------------
+wine          para instalar programas windows
+winetricks    asistente de instalación para wine
+playonlinux   para instalar programas windows requiere de wine
+microsoft-office 2010
+proteus 7 y 8 winetricks
+
+
+
+--------------------------------
+-------------------------
+Juegos Linux on line
+-------------------------
+--------------------------------
+
+
+-------------------------------------------
+--------------------------------------------
+Juegos Linux off line
+--------------------------------------------
+---------------------------------------------
+se almacenan en los juegos en /usr/games
+chromium-bsu                como star fox
+0ad        		                como age of empire 
+assaultcube		        como counter strike
+beneath-a-steel-sky 	futurista muy bueno
+supertux                            como mario bross
+pingus                                 version libre de lemmings
+supertuxkart                   como mario cart
+paintown 		                como street figther
+Egoboo			        como grandia
+torcs			                como gran turismo
+freedink-engine             como legend of zelda
+Tumiki Fighters              maneja una nave 2d que se transforma en otras
+megaglest  		         como warcraft 3 
+
+------------------------
+Juegos linux aburridos
+---------------------
+petris                            como tetris para jugar por terminal
+glest                              como warcraft 3
+7kaa                               es como sims2000
+Bomberclone	 	 para linux como bomberman
+dreamchess		 juego de ajedrez
+freecraft                    como warcraft 2 de play
+wesnoth 	                 juego por turnos 
+
+---------------------------------------
+Desarrollo de inteligencia artificial
+---------------------------------------
+clips
+
+----------------------------------
+Software petrolero
+----------------------------------
+DWSIM
+
+--------------------------------------
+--------------------------------------
+Software de economia
+----------------------------------------
+----------------------------------------
+Minsky (economic simulator)
+
+
+-----------------------------------
+Ubicación Geografia
+-----------------------------------
+josm trabaja con openstreetmap.org es como googlemaps
+grass gis  es como google earth
+
+----------------
+Drivers
+------------------
+camorama	para webcam
+TestDisk        recuperar datos borrados
+hardinfo        infornación del hardware
+
+-----------------------
+Astronomia
+------------------------
+stellarium para 	astronomia muy bueno
+
+--------------------------
+Lenguajes de programación
+-----------------------
+java           jdk o openjdk
+python         python
+c++            cpp, c++
+c              gcc
+c#
+php            php5, o 7
+ 
+-------------------------------
+Entorno de Desarrollo Integrado
+----------------------------------
+android studio  programación para android
+netbeans        programación
+eclipse   	    programación
+monodevelop     necesita plugin NuGet para web c#
+anjuta
+codeblocks
+qtcreator
+ninjaide
+
+
+--------------------------
+Base De Datos
+--------------------------
+MySQL: 
+PostgreSQL
+SQLite
+
+-------------------
+Servidores
+-------------------
+lampp
+
+------------------------------------------
+Transferencia de archivos
+------------------------------------------
+Transmission
+FileZilla 
+Azureus vuze
+
+
+----------------------------------
+Aceleración grafica 
+-----------------------------------
+glxgears sudo apt-get install mesa-utils
+provee la funcionalidad para conectar OpenGL y X Window System
+
+----------------------
+simuladores
+-----------------------
+flightgear		simulador de aviones
+Frets on fire		como guitar hero
+tuxguitar		aprender a tocar instrumentos
+
+
+------------------------------------------------------------------
+-------------------------------------------------------------------
+Diseño Asistido por Computador CAD
+--------------------------------------------------------------------
+Nombre 	     | Formatos Importación | Diseño | Licence     | OS                               | Utilizar gratis
+--------------------------------------------------------------------------
+----------------------------------------------------------------------
+qcad                    IFC, DXF, DWG          2D       GNU GPL       Linux, Windows, OS X       Si
+librecad              DWG, DXF                  2D       GNU GPL       Linux, Windows, OS X      Si
+openscad          DXF, STL                       3D       GNU GPL       Linux, Windows, OS X      Si  
+freecad              DXF, SVG, U3D          3D       LGPL          Linux, Windows, OS X            Si
+BricsCAD          DWG, DXF,etc           2D       Propietary    Linux, Windows, OS X      
+BRL-CAD           DXF, etc                        2D       Free          Linux, Windows, OS X             
+SketchUp          DWG, DXF                   3D       Free          Linux, Windows, OS X             Si
+   
+---------------------------------
+Navegadores web
+--------------------------------
+ice-weasel
+tor
+google-chrome
+mozilla-firefox
+
+
+---------------------------------------
+Software de MAC OS X
+--------------------------------------
+dmg2img
+hfsplus
+acetoneiso para convertir dmg de mac a otros formatos
+
+
+----------------------------------------
+Paginas para libros gpl
+------------------------------------------
+http://www.rinconmatematico.com/libros.htm
+http://www.e-libro.net/
+http://www.gratislibros.com.ar/libros1.htm
+
+---------------------
+Paginas musica libre
+-------------------------
+http://musicalibre.info/cd/
+https://www.jamendo.com
+
+formatos de musica libre
+ogg
+
+continuar revisando lo demás la musica ya esta revisada
+http://www.ubuntu-es.org/node/14665#.V22ltLMZHQo
+
+
+microsoft office 2010 
+de repente kingsoft wps
+notepad++ por editra
+block de notas por gedit
+utorrent por vuze
+para hacer pendrive bootiable tenemos unetbootin
+atube catcher por jdownloader
+gizmo por brasero
+unetbootin para hacer pendrive discos duros booteables
+calibre convertidor de diferentes formatos
+freetuxtv para tv por internet
+gparted para poder ver el espacio en disco
+kino es un excelente editor de vídeos digitales para GNU/Linux, con soporte para IEEE-1394
+winrar por rar y unrar para abrir .rar y crear .rar
+acetoneiso para convertir dmg de mac a otros formatos
+
+
+
+
+
+
+
+
+

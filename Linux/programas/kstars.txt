@@ -1,0 +1,10 @@
+--------------------------------
+KStars
+----------------------------------------
+KStars es un programa para Linux y otros sistemas operativos de la familia Unix, que simula un planetario. Forma parte de KDE. Licenciado bajo los términos de GPL, KStars es software 
+libre. Ofrece una detallada representación gráfica del cielo nocturno, desde cualquier lugar de la Tierra, a cualquier fecha. Incluye más de 130.000 estrellas, 13.000 objetos del espacio 
+profundo, las 88 constelaciones, miles de cometas y asteroides, así como los ocho planetas del Sistema Solar , el Sol y la Luna. Por otro lado, ofrece múltiple información sobre todos los 
+objetos estelares en forma de hipertexto. Permite además controlar telescopios y cámaras CCD desde el propio programa.
+KStars se ha empaquetado para muchas distribuciones Linux/BSD como Red Hat Linux, openSUSE, Mandriva Linux, y Debian GNU/Linux. Algunas distribuciones empaquetan KStars como 
+una aplicación separada, algunas proveen un paquete kdeedu, que incluye KStars. KStars se distribuye con KDE como parte del módulo "Educativo" de kdeedu. KStars ha participado en 
+Google Summer of Code en 2008,1 2009,2 2010,3 20114 2012,5 y 2015.6 También ha participado en el primer 'Verano de Código en el Espacio' de la Agencia Espacial Europea en 2011.

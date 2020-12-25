@@ -1,0 +1,5 @@
+ejercitador de programación en Java, Python, Scala y otros
+Aprendizaje de Máquinas de programación (PLM) es una programación multiplataforma libre
+ejercitador. Se le permite explorar diversos conceptos de programación a través
+más de 160 ejercicios interactivos, que pueda solucionar, ya sea en Java,
+Python o Scala.

@@ -1,0 +1,4 @@
+para instalar unetbootin ya no esta disponible en debian jessie
+sudo apt-get install syslinux
+sudo dpkg -i unetbootin_575-1_amd64.deb 
+ 

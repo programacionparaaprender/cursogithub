@@ -1,0 +1,27 @@
+-----------------
+sudo apt install webp
+
+--------------------
+Funciona por terminal
+-----------------------
+documentación https://developers.google.com/speed/webp/docs/using
+
+-------------------
+Podemos convertir imagen a webp
+-------------------------
+
+cwebp -q 80 image.png -o image.webp
+
+------------------------------
+Podemos convertir de webp a imagen
+-----------------------------------
+dwebp image.webp -o image.png
+
+--------------------------------
+tengo que averiguar para que es 
+------------------------------
+La orden «vwebp» del paquete «webp» (main)
+
+
+
+

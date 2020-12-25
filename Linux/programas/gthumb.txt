@@ -1,0 +1,2 @@
+sudo apt install gthumb
+#mejor programa para visualizar todos los formatos

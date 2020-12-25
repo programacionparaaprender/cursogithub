@@ -1,0 +1,12 @@
+
+
+sudo apt install clamtk
+
+Ahora iremos a analizar y escanear los archivos de nuestra unidad usb. Pero primero nos iremos a la pestaña de “Configuración” y 
+marcaremos dos opciones: “Analizar archivos que empiecen por ‘.’ ” y “Analizar archivos superiores a 20 MB”. Una vez marcadas, nos 
+vamos a la pestaña “Análisis” y “Analizar una carpeta” buscamos a dirección de la memoria usb y listo.
+
+Tanto Clamav como el editor de texto son dos grandes herramientas de Gnu/Linux que nos ayudan a limpiar nuestras memorias usb sin 
+problema alguno. Ahora bien, esto no evita que las memorias usb se infecten a través de otros equipos, sólo funciona como filtro 
+para que determinados equipos no se vean infectados a través de memorias usb, pero no son métodos infalibles, lamentablemente.
+

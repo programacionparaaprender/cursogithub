@@ -1,0 +1,4 @@
+
+Para proteus 7 y 8
+wine 1.7
+comctl32 comctl32ocx comdlg32ocx msftedit

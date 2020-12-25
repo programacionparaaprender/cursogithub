@@ -1,0 +1,17 @@
+-------------------------
+Windows xp/vista/7/8/8.1/10
+---------------------------
+wubi para ubuntu
+http://wubi.softonic.com/
+              
+win32-loader para debian
+http://goodbye-microsoft.com/
+
+JDownloader portable
+http://jdownloader-portable.softonic.com/
+
+Instagram Downloader
+http://instagram-downloader.softonic.com/
+
+complemento para evitar los captcha en jdownloader
+http://anti-recaptcha.softonic.com/

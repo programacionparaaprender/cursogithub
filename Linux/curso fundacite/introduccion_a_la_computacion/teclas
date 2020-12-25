@@ -1,0 +1,25 @@
+control-a para seleccionar todo
+
+f9 para seleccionar desde donde arrancar
+
+control-alt-supr para cerrar sesion
+
+botones
+Sistema->Preferencia->Apariencia->Tema->Personalizar(de esta manera podemos crear
+nuestros propios temas)
+como Controles,
+Colores( Ventanas, Cajas de entrada,Elementos seleccionados,Consejos)
+Borde de la ventana 
+Punteros
+
+Sistema->Preferencias->Menu principal(para poder activar o desactivar que 
+aparezcan aplicaciones del sistema operativo canaima)
+tambien se puede acceder con el comando alacarte
+
+Sistema->Administracion->Gestor de paquetes synaptic instalar para poder hacer 
+funcionar youtube que se puedan visualizar los vídeos
+flasplugin-nonfree
+
+probar luego 
+kde-config-flash-player
+flashplayer-mozilla

@@ -1,0 +1,11 @@
+Convertir a deb
+de rpm a deb
+sudo alien -d nombre_archivo.rpm y se generará el paquete deb
+de tar.gz a deb
+sudo alien nombre_archivo.tar.gz
+
+Esto generará un paquete .deb en la misma ruta 
+donde tienes el .rpm. Para instalarlo escribe en 
+la terminal:
+sudo alien -i tupaquete.deb
+

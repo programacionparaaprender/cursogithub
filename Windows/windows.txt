@@ -1,0 +1,29 @@
+Cambiar de unidad C: a D: por terminal cmd
+escribimos D: y pulsamos Intro listo ya cambiamos de unidad
+
+Recuperar GRUB de Windows
+
+En este Post os resumiremos de forma sencilla como reparar la configuración de dicho archivo y conseguir que nuestro equipo arranque de una forma correcta siendo el Sistema Operativo del PC Windows 7.
+
+PRIMERO: Disponer de un DVD de Windows 7 que introduciremos en el lector de DVD del equipo.
+
+SEGUNDO: Indicar en la BIOS arranque desde CD/DVD (esto puedes hacerlo de forma sencilla pulsando F8 en el arranque en la mayoría de las placas, o configurando el BOOT PRIORITY ORDER en la configuración de la BIOS pulsando "SUPR" o "F2" en la mayoría de las placas)
+
+TERCERO: Elegiremos idioma y disposición del teclado en el Asistente de instalación de Windows 7, una vez elegido, presionaremos Instalar.
+
+CUARTO: Elegir la opción  "reparación del equipo" y después en la pantalla que aparece "Símbolo de Sistema"
+
+QUINTO: Ejecutar los siguientes comandos.
+bootrec /fixmbr
+Intro
+bootrec /fixboot
+Intro
+Luego escribir
+Exit 
+Intro
+Apagar el equipo
+
+F12
+F9
+Enter Suprimir(Del)
+

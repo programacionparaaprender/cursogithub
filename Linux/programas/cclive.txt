@@ -1,0 +1,41 @@
+----------------------
+----------------------
+Instalar
+-----------------------
+-----------------------
+apt-get install cclive
+
+
+--------------------
+----------------------
+Para visualizar la mejor resolución
+------------------------------------
+-------------------------------------
+cclive -s https://www.youtube.com/watch?v=4TyYhBIsygw
+
+------------------------
+------------------------
+Para iniciar descarga
+--------------------------
+--------------------------
+cclive -s best "URL"
+cclive -s fmt22_720p "YOUTUBE_URL"
+
+
+-----------------------
+---------------------
+para ver los formatos disponibles
+----------------------------------
+-------------------------------------
+cclive -F https://www.youtube.com/watch\?v\=iNJdPyoqt8U
+
+para descargar el formato que nos guste
+
+cclive -F formato-que-más-nos-guste    la-url-que-hemos-copiado-del-navegador
+
+con el formato mp4 dice que es obsoleto averiguar
+
+tambien se puede usar
+
+$clive [url1 url2 url3...] 
+

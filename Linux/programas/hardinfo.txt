@@ -1,0 +1,5 @@
+ofrece información sobre el hardware del computador
+
+sudo apt install hardinfo
+
+tiene interface grafica

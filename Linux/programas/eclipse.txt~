@@ -1,0 +1,29 @@
+-----------------------
+Desinstalar plugins
+-----------------------
+Window->Preferences->Install/Unistall software lo clicleamos
+luego seleccionamos el modulo que deseamos desinstalar
+
+-------------------------
+Pydev
+-----------------------------
+Para eclipse 3.8
+http://www.pydev.org/update_sites/old/	
+Para eclipse 4.2 o superior
+http://pydev.org/updates
+
+
+---------------------
+Android
+----------------------
+en esta pagina web
+https://developers.google.com/eclipse/docs/download_older
+dice que para versiones en particular hay enlaces
+por ejempo para eclipse 3.8/4.2
+https://dl.google.com/eclipse/plugin/archive/3.8.0/4.2
+para eclipse 4.3
+https://dl.google.com/eclipse/plugin/archive/3.8.0/4.3
+
+Hay otro plugin este 
+https://dl-ssl.google.com/android/eclipse/
+

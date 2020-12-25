@@ -1,0 +1,9 @@
+-----------------------------
+-----------------------------
+Para laravel 5.2 en Debian 8 o Canaima 5
+-----------------------------
+-----------------------------
+sudo apt install apache2
+sudo apt install php5
+sudo apt install mysql-server
+sudo apt install phpmyadmin

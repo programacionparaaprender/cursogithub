@@ -1,0 +1,12 @@
+xarchiver
+utilización ejemplo de pasos para guardar un archivo
+
+1 Crear nuevo archivo 
+2 Colocar el nobre del archivo ubicacion y la extensión
+3 Crear archivo
+4 Luego pulsamos en el boton que se activa para añadir archivos dentro y añadimos el archivo que queremos guardar
+5 Tambien podemos añadir carpetas
+6
+7
+8
+

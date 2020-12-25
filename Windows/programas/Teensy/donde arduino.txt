@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\
+
+donde se guardan los programas
+C:\Users\luis13711\AppData\Local\Temp

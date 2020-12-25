@@ -1,0 +1,3 @@
+whereis skype
+skype: /usr/bin/skype /usr/share/skype
+

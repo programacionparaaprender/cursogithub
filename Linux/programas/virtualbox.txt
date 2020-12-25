@@ -1,0 +1,28 @@
+whereis virtualbox
+virtualbox: /usr/bin/virtualbox /usr/lib/virtualbox /usr/share/virtualbox /usr/share/man/man1/virtualbox.1.gz
+
+-----------------
+Redimensionar unidad virtual
+-----------------------------
+vboxmanage modifyhd VirtualBox\ VMs/Windows\ XP\ 32bits/Windows\ XP\ 32bits.vdi --resize 14000
+
+-------------------
+Paquetes a instalar
+---------------------
+virtualbox
+virtualbox-guest-addition-iso
+virtualbox-guest-dkms
+virtualbox-guest-utils
+virtualbox-guest-x11
+
+-------------------------------
+Configurar carpetas compartidas
+-------------------------------
+https://www.youtube.com/watch?v=WromXI9HdCs
+instalar west additions
+mis sitios de red
+agregar un sitio de red
+share folder virtualbox
+siguiente 
+siguiente
+

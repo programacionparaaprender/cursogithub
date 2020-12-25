@@ -1,0 +1,34 @@
+-----------------------------
+-----------------------------
+Para Debian 8 o Canaima 5
+-----------------------------
+-----------------------------
+sudo apt install apache2
+sudo apt install php5
+sudo apt install mysql-server
+sudo apt install phpmyadmin
+
+----------------------------
+---------------------------
+--------------------------
+---------------------------
+debian 8 o canaima 5
+no disponible en los repositorios php7
+
+-------------------------------
+-----------------------------
+Carpeta html en /var/www
+---------------------------
+-----------------------------
+
+--------------------
+--------------------
+Comandos 
+--------------------
+-------------------
+sudo /etc/init.d/apache2 stop 
+sudo /etc/init.d/apache2 start
+sudo /etc/init.d/apache2 restart
+sudo /etc/init.d/apache2 status
+sudo service apache2 start
+

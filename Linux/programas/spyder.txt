@@ -1,0 +1,4 @@
+-------------
+Spyder
+----------------
+sudo apt install spyder spyder3

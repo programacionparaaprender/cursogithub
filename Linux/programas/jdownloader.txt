@@ -1,0 +1,4 @@
+----------------------------
+Ejecución
+---------------------------
+sh JD2Setup_x64.sh  //requiere acceso a internet
