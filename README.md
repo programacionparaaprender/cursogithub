@@ -2,6 +2,10 @@
 
 ## páginas
 www.aulafacil.com
+https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+
+## obtener ultimo pull
+git log -p -2
 
 ## subir una actualización
 
