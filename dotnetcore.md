@@ -40,6 +40,8 @@ Protocol Buffer File                              proto                         
 
 ## crear proyectos con dotnet
 
+dotnet add sln
+
 dotnet new webapp -o WebPage -f netcoreapp3.1
 dotnet new mvc -o WebMvc -f netcoreapp3.1
 
@@ -49,6 +51,11 @@ dotnet new worker -o workerPrueba
 dotnet new grpc -o grpcPrueba
 dotnet new react -o React
 dotnet new reactredux -o ReactRedux -f netcoreapp3.1
+
+
+## crear un proyecto dotnet api
+dotnet new webapi -o server
+
 
 ## agregar proyecto a solución
 dotnet add reference .\pro\pro.csproj
