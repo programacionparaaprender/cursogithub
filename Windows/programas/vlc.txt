@@ -1,0 +1,4 @@
+
+
+## plugin para vlc para grabar pantalla
+https://github.com/rdp/screen-capture-recorder-to-video-windows-free
