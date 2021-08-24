@@ -70,6 +70,9 @@ git add *
 git commit -m "Verificando gitignore"
 git push origin rama
 
+## volver a un commit
+git checkout codigocommit
+
 ## Extras
 
 git log
