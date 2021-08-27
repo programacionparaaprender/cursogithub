@@ -1,0 +1,15 @@
+Evaluación N°1.
+a) Comprobar entradas y salidas del arduino uno 
+b) Salida PWM
+c) Entrada de potenciometro
+d)
+e)
+
+Evaluación N°2.
+
+
+codigos en proyectos teensy guardados de la siguiente manera
+1a_arquitectura
+1b_arquitectura
+1c_arquitectura no me quiere funcionar ahora no recuerdo que potenciometro use
+1d_arquitectura falta mejorar

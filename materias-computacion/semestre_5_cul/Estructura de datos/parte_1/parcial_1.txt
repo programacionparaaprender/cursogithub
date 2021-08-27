@@ -1,0 +1,5 @@
+que leyera cualquier archivo binario y mostrara 
+en patalla byte por byte
+cadena y sustitua palabras por lo que sea
+que leyera cualquier archivo binario y mostrara en patalla byte por byte
+Pantalla**

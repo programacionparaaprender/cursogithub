@@ -1,0 +1,16 @@
+4a) va desde 1 hasta n
+el 4b)(2t-1+1)+2t*(2t-1+1)+2t*2t(2t-1+1) donde t=4
+4c) tienes que ir calculando y sumando que nunca se pase de 1000
+nunca lo hice
+pero solo lo plantee
+
+
+asi no fue como yo lo plantee
+ve en un nivel 0
+solo puedo almacenar 7 claves
+por lo tanto son 7 registros
+y eso no llega a 1000 registros
+tengo que tener otro nivel
+el nivel 1 tiene 2t*(2t-1)
+y asi vas
+hasta que la sumatoria de todas ellas sean mayor a 1000 registro

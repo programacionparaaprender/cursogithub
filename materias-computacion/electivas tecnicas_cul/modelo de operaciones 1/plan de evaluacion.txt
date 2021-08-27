@@ -1,0 +1,17 @@
+Temas de evaluación
+Parcial I
+1 CPM
+2 PERT-CPM
+3 PERT-CPM Ejercicios
+4 Teoria de Juegos
+Parcial II
+5 Programación Dinamica Basica
+6 Volumen de Carga
+7 Modelo de Tamaño de Fuerza de Trabajo
+8 Modelo de Tamaño de Fuerza de Trabajo Ejercicios
+Parcial III
+9 Teorica de Optimización Clasica
+10 LAGRANGE
+11 Karush Kush Tucker
+
+

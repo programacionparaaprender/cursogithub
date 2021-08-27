@@ -1,0 +1,241 @@
+Creación de la base de datos y las tablas:
+CREATE DATABASE Tienda
+CREATE TABLE EmpleadoC
+(
+Cedula int not null
+,Nombre varchar(20) not null
+,Apellido varchar(20) not null
+,Direccion varchar(40) not null
+,Salario real not null
+,constraint cp_idEmpleadoC primary key (Cedula)
+)
+
+CREATE TABLE Cliente
+(
+Cedula int not null
+,Nombre varchar(50) not null
+,Apellido varchar(50) not null
+,Direccion varchar(60) not null
+,constraint cp_Cliente PRIMARY KEY(Cedula)
+)
+
+CREATE TABLE Telefono
+(
+Telefono varchar(50) not null
+,Cedula int not null
+,constraint cp_TelefonoC PRIMARY KEY(Cedula)
+)
+
+CREATE TABLE CD
+(
+Codigo int not null
+,Nombre varchar(50) not null
+,Precio real not null
+,constraint cp_Codigo PRIMARY KEY(Codigo)
+)
+
+Instancias:
+
+Cliente:
+Cedula   Nombre	  Apellido Dirección
+12342161 Adel	  Diaz	   2321321423
+18888887 Patricia Correa   028112345861
+
+CD:
+Codigo	Nombre	                Precio
+123	Guitarra Electrica	300
+124	Violin	                300
+125	Cuatro	                300
+
+Empleado:
+Cedula	Nombre	Apellido	Direccion	Salario
+10000000	Jose	Martinez	Hospital 	8000
+11000000	Gabriela	Hurtado	Alterna	8000
+
+Teléfono:
+Teléfono	Cedula
+04167827869	19888888
+04169827653	20789654
+
+Vende:
+Fecha	CedulaC	CedulaE	Código	Pago
+1900-01-01 	12342161	11000000	125	300
+1900-01-01 	19888887	10000000	123	300
+
+DISTINCT:
+Sirve para mostrar datos de las consultas sin repertir datos, por ejemplo todos los apellidos de un empleado sin repetir la consulta seria así, 
+SELECT DISTINCT Apellido FROM Cliente.
+Respuesta seria:
+Apellido
+Correa
+Delgado
+Villegas
+Diaz
+
+UNION: 
+	Permite trabajar las columnas de las tablas, por ejemplo al realizar la unión de dos columnas como la de los nombres de empleados con los nombres de los clientes mostraria los nombres de los clientes y empleados sin mostrar nombres repetidos, para que funcione las columnas deben tener el mismo tipo de dato, SELECT Empleado.Nombre FROM Empleado UNION SELECT Cliente.Nombre FROM Cliente.
+Respuesta seria:
+Nombre
+Luis
+Javier
+Osman
+Adel
+Jose
+Manuel
+Gabriela
+
+INTERSECT:
+Permite mostrar datos en comun en una serie de columnas a intersectar, para que funcione las columnas que se intersecten deben tener el mismo tipo de dato por ejemplo al intersectar los nombres de los clientes y los empleados obtendriamos solo los nombres que aparecen en ambas columnas sin repetir se haria así:
+SELECT Cliente.Nombre FROM Cliente INTERSECT SELECT Empleado.Nombre FROM Empleado.
+Respuesta seria:
+Nombre
+Jose
+Gabriela
+
+EXCEPT: (seria como realizar una resta)
+Permite mostrar los datos de una columna que no sean iguales a los que estan en otra columna para que funcione las columnas deben tener el mismo tipo de datos, podemos mostrar los nombres de los Clientes que no sean iguales a los de los Empleados así:
+--SELECT Nombre FROM Cliente EXCEPT SELECT Nombre FROM Empleado
+Respuesta seria:
+Nombre
+Luis
+Javier
+Osman
+Adel
+
+ANY:
+Compara un valor escalar con un conjunto de valores de una sola columna. SOME y ANY son equivalentes, por ejemplo para saber si existe un empleado con id 4, hariamos una consulta así: 
+IF 4 = ANY (SELECT idEmpleado FROM Empleado)
+PRINT 'existe un Empleado con ese id' 
+ELSE
+PRINT 'existen empleados con ese id' ;
+Respuesta seria: existe un Empleado con ese id
+
+ALL: 
+Compara un valor escalar con un conjunto de valores de una sola columna, por ejemplo para saber si todos los empleados tienen id 4, hariamos una consulta así:
+IF 4 = ALL (SELECT idEmpleado FROM Empleado)
+PRINT 'todos los empleados tienen id 4' 
+ELSE
+PRINT 'no todos los empleados tienen id 4' ;
+Respuesta seria: no todos los empleados tienen id 4
+Comparación de sub-cadenas: 
+Un ejemplo de comparar cadenas podría ser:
+IF 'Luis Correa' = (SELECT Nombre+' '+Apellido FROM Cliente WHERE idCliente=1)
+PRINT 'son iguales' 
+ELSE
+PRINT 'no son iguales' ;	
+Respuesta seria: son iguales
+
+Otro ejemplo podria ser usando LIKE.
+Definición de LIKE:
+Determina si una cadena de caracteres específica coincide con un patrón especificado. Un patrón puede contener caracteres normales y carácter comodín. Durante la operación de búsqueda de coincidencias de patrón, los caracteres normales deben coincidir exactamente con los caracteres especificados en la cadena de caracteres. Sin embargo, los caracteres comodines pueden coincidir con fragmentos arbitrarios de la cadena. Por ejemplo para lograr en una consulta que me muestre los nombres de los empleados con apellido que empiece por C seria así:
+SELECT Nombre FROM Cliente WHERE Apellido LIKE '%C%'.
+Respuesta seria:
+Nombre
+Luis
+Ana
+Patricia
+
+
+Clausula ORDER BY: 
+Ordenar el conjunto de resultados de una consulta por la lista de columnas especificada y opcionalmente limitar las filas devueltas a un intervalo especificado. Un ejemplo podría ser mostrar los nombres de los clientes por orden alfabético
+SELECT Nombre FROM Cliente ORDER by Nombre
+Respuesta seria:
+Nombre
+Adel
+Ana
+Cesar
+Jorge
+Luis
+Patricia
+
+Comparación de valores nulos: 
+El valor NULL significa que el valor de los datos de la columna no se conoce o no está disponible. NULL no es sinónimo de cero, ni de una cadena de longitud cero ni de valor en blanco. Por ejemplo no obtendríamos ningún resultado de esta consulta debido a que los id de los empleados no admiten valores nulos.
+SELECT idEmpleado, Nombre, Apellido FROM Empleado WHERE idEmpleado IS NULL
+Resultado: No mostraria nada debido a que no hay empleados con un id nulo.
+
+Especificación de conjuntos explícitos con el operador IN y consultas anidadas: 
+Determina si un valor especificado coincide con algún valor de una sub-consulta o una lista, un ejemplo seria la consulta de los clientes.
+IF ('Luis Correa' IN (SELECT Nombre+' '+Apellido FROM Cliente)) 
+PRINT 'encontro un valor igual' 
+ELSE
+PRINT 'todos no tienen el mismo valor' ;
+Respuesta seria: encontró un valor igual
+Uso del operador IN y consultas anidadas:
+	Determina si un valor especificado coincide con algún valor de una sub-consulta o una lista. Un ejemplo podría ser ver si existe un cliente de esta forma se haría:
+IF ('Luis Correa' IN (SELECT Nombre+' '+Apellido FROM Estudiante)) 
+PRINT 'encontro un valor igual' 
+ELSE
+PRINT 'todos no tienen el mismo valor' ;
+Uso del EXISTS y NOT EXISTS: 
+Especifica una sub-consulta para probar la existencia de filas. [NOT] EXISTS (orden SELECT): El operador EXISTS nos informa de si una sub-consulta ha obtenido algún resultado: devuelve verdadero si hay al menos una fila en la relación derivada y falso si la relación derivada es vacía, por ejemplo queremos mostrar los clientes con id igual al de los empleados 
+SELECT a.Nombre, a.Apellido FROM Cliente AS a
+WHERE EXISTS (SELECT * FROM Empleado AS b
+    WHERE a.idCliente = b.idEmpleado
+    --AND a.Apellido LIKE '%C%'
+    AND a.Apellido = 'Correa'
+ );
+La respuesta seria así:
+Nombre	Apellido
+Luis	Correa
+Ana	Correa
+En este caso solo muestra dos clientes por que solo dos profesores y clientes tienen un id igual.
+Operador de División:
+La división como operador definido en el álgebra relacional nos da como resultado "algo que se relaciona con todos los que cumplen una condición". Por ejemplo, VENDE[idCD,id] ÷ (EMPLEADO[id]) Esta expresión daría como resultado los id de los CD que son vendidos por todos los empleados de la tabla empleados. El operador división en SQL podemos simularlo con EXISTS. EXISTS es un operador de un único argumento y cuyo resultado es un valor de verdad, informa de la presencia o no de filas en una tabla. 
+SELECT Nombre FROM Empleado AS p
+WHERE NOT EXISTS (SELECT Nombre from CD AS a 
+WHERE NOT EXISTS (select Codigo FROM Vende AS pp WHERE 
+pp.Codigo=a.Codigo AND p.idEmpleado=pp.idEmpleado))
+Cambios de nombres de atributos y uso de seudónimos:
+	Se puede cambiar el nombre de una columna de la tabla mediante una consulta SQL, un ejemplo podría ser el de cambiar el atributo cedula con id y luego devolverlo a su estado original así:
+EXEC sp_rename 'Cliente.Cedula', 'Id', 'COLUMN';
+SELECT * FROM Cliente
+Respuesta seria:
+Id	Nombre	Apellido	Dirección 
+
+EXEC sp_rename 'Persona.Id', 'Cedula', 'COLUMN';
+SELECT * FROM Persona
+Respuesta seria:
+Cedula	Nombre	Apellido	Dirección 
+
+Consultas con JOIN, LEFT OUTER JOIN, RIGHT OUTER JOIN: 
+LEFT OUTER JOIN
+Retorna la pareja de todos los valores de la tabla izquierda con los valores de la tabla de la derecha correspondientes, o retorna un valor nulo en caso de no correspondencia. Por ejemplo si queremos mostrar la tabla de los clientes que han realizado una compra lo haríamos de la siguiente manera:
+SELECT * FROM Cliente LEFT OUTER JOIN Venta ON
+Cliente.Cedula = Venta.CedulaC
+Respuesta nos daría todos los datos de los clientes que han realizado compras con las fechas que realizaron las compras al lado.
+RIGHT OUTER JOIN
+Esta operación es inversa a la anterior; el resultado de esta operación siempre contiene todos los registros de la segunda tabla que se menciona en la consulta, aun cuando no exista un registro correspondiente en la tabla de la izquierda para uno de la derecha.
+La sentencia RIGHT OUTER JOIN retorna la pareja de todos los valores de la tabla derecha con los valores de la tabla de la izquierda correspondientes, o retorna un valor nulo en caso de no correspondencia. Por ejemplo:
+SELECT * FROM Cliente RIGHT OUTER JOIN Compra ON
+Cliente.idCliente = Compra.idCliente
+Respuesta nos daría todos los datos de los clientes que han realizado compras con las fechas que realizaron las compras al lado.
+Funciones agregadas: 
+El lenguaje SQL incorpora una serie de funciones que nos permiten obtener distintos resultados numéricos al ejecutar consultas. Son las siguientes:
+Count:
+Muestra el número de registros que devuelve una consulta.
+Avg:
+Muestra el promedio de los valores evaluados.
+Sum:
+Muestra la suma de los valores evaluados.
+Max:
+Muestra el valor más alto de los valores evaluados.
+First:
+Muestra el primer valor entre los valores evaluados, teniendo en cuenta el método de ordenación aplicado.
+Last:
+Muestra el último valor entre los valores evaluados, teniendo en cuenta el método de ordenación aplicado.
+Stdev:
+Muestra la desviación estándar de los valores evaluados, a partir
+de una muestra de la población.
+Stdevp:
+Muestra la desviación estándar de los valores evaluados, teniendo en cuenta toda la población.
+Var:
+Muestra la varianza de los valores evaluados, a partir de una muestra de la población.
+Varp:
+Muestra la varianza de los valores evaluados, teniendo en cuenta toda la población.
+Uso de la cláusula GROUP BY y HAVING:
+GROUP BY:
+Una consulta con una cláusula GROUP BY se denomina consulta agrupada ya que agrupa los datos de la tabla origen y produce una única fila resumen por cada grupo formado. Las columnas indicadas en el GROUP BY se llaman columnas de agrupación.
+Ejemplo Mostrar el resultado del descuento de 30% al costo de cada CD.
+HAVING:
+Es utilizada junto con SELECT para especificar una condición de búsqueda para un grupo. HAVING se comporta como WHERE, pero se aplica a grupos (las columnas o filas en el conjunto de resultados representan grupos). La cláusula WHERE se aplica solo a columnas o filas individuales. Ejemplo se desea saber que cliente ha comprado más de 1 vez en la tienda se haría la consulta así:
+

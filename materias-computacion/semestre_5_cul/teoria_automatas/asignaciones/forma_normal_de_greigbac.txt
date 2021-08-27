@@ -1,0 +1,16 @@
+FORMA   NORMAL DE GREIBACH
+Se dice que una gramática independiente del contexto (GIC) está en Forma normal de Greibach (FNG), si todas y cada una de sus reglas de producción tienen un consecuente que empieza por un carácter del alfabeto, también llamado símbolo terminal. Formalmente, cualquiera de las reglas tendrá la estructura:
+?	A - > aw
+Donde "A" es el antecedente de la regla, que en el caso de las GIC debe ser necesariamente un solo símbolo auxiliar. Por su parte, "a" es el mencionado comienzo del consecuente y, por tanto, un símbolo terminal. Finalmente, "w" representa una concatenación genérica de elementos gramaticales, esto es, una sucesisión exclusivamente de auxiliares, inclusive, pudiera ser la palabra vacía; en este caso particular, se tendría una regla llamada "terminal":
+?	A - > a
+Definición: Una Gramática Libre de Contexto (GLC) está en Forma Normal de Greibach (FNG) si todas las producciones son de la forma: 
+A   ? aB1B2…..Bk
+Donde A es un símbolo no Terminal, a es un símbolo Terminal y B1B2…..Bk son símbolos no Terminales.
+Además tiene la característica de: Ai ?Aj solo si j > i 
+Ejemplo de FNG:
+S ? aSB | aB
+B   ? b
+Ejemplo que NO es FNG:
+S ? aSB | aB
+A   ? abB
+B   ?   b | A

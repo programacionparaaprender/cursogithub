@@ -1,0 +1,10 @@
+Asignacion de teoria de automatas
+
+1) defina formalmente una maquina de turing
+
+2) ¿que diferencia existe entre la memoria de una maquina de pila y la memoria 
+de una maquina de turing?
+3) de ejemplo de un lenguaje l definido sobre sigma = {0,1} que puede ser 
+reconocido por una maquina de turing y no por una maquina de pila 
+4) explique que es un problema np
+5) explique que es un problema np-completo

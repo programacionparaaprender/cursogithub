@@ -1,0 +1,6 @@
+infinitivo: verbos que terminan en ar, er, ir:
+estudiar
+desarrollar
+reubicar
+programar
+reunir

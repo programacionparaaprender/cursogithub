@@ -1,0 +1,13 @@
+Capítulo 15 Análisis de decisiones y juegos 
+15.1 Toma de decisiones bajo certidumbre. Proceso de jerarquía
+analítica (PJA) 
+15.2 Toma de decisiones en condiciones de riesgo 
+15.2.1 Árbol de decisiones. Basado en el criterio
+del valor esperado 523
+15.2.2 Variantes del criterio del valor esperado
+15.3 Decisión bajo incertidumbre 
+15.4 Teoría de juegos 
+15.4.1 Solución óptima de juegos de suma cero entre
+dos personas 
+15.4.2 Solución de juegos con estrategias combinadas 
+Bibliografía 

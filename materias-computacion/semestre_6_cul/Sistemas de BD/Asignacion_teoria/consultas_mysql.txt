@@ -1,0 +1,10 @@
+la división
+La división como operador definido en el álgebra relacional nos da como resultado "algo que se relaciona con todos los que cumplen una condición". Por ejemplo la cedula, nombres y apellidos de todos los clientes que han comprado todos los diferentes tipos de cd en la tienda.
+use tienda;
+select cedula, nombre, apellido from cliente 
+where ( 
+(select codigo from venta venta.cedulac=cedula)
+contains
+(select codigo from cd)
+);
+

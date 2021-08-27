@@ -1,0 +1,165 @@
+create database parcialbasedatos2;
+
+use parcialbasedatos2; 
+
+create table Personas
+(
+Nombre varchar(15) not null
+,Apellido varchar(15) not null
+,Cedula int not null
+,Telefono varchar(20) not null
+,Direccion varchar(50) not null
+,constraint cp_Cedula PRIMARY KEY(Cedula)
+);
+--para personas
+INSERT INTO Personas(Cedula,Nombre,Apellido,Direccion,Telefono)
+VALUES(19888888,'Luis','Correa','Hospital','20320302330');
+INSERT INTO Personas(Cedula,Nombre,Apellido,Direccion,Telefono)
+VALUES(19888889,'Ana','Correa','02812345861','20320302330');
+INSERT INTO Personas(Cedula,Nombre,Apellido,Direccion,Telefono)
+VALUES(19888887,'Patricia','Correa','02812345861','20320302330');
+INSERT INTO Personas(Cedula,Nombre,Apellido,Direccion,Telefono)
+VALUES(21888887,'Jorge','Garcia','02812342861','20320302330');
+INSERT INTO Personas(Cedula,Nombre,Apellido,Direccion,Telefono)
+VALUES(12342161,'Adel','Diaz','21848887','20320302330');
+INSERT INTO Personas(Cedula,Nombre,Apellido,Direccion,Telefono)
+VALUES(21808880,'Cesar','Diaz','02812320191','20320302330');
+
+create table Automoviles
+(
+Placa varchar(15) not null
+,Color varchar(15) not null
+,Fabricante varchar(20) not null
+,Modelo varchar(20) not null
+,Anio int not null
+,constraint cp_Placa PRIMARY KEY(Placa)
+);
+
+INSERT INTO Automoviles(Placa,Color,Fabricante,Modelo,Anio)
+VALUES('74ls100','Azul','Renault','Twingo',2007);
+
+INSERT INTO Automoviles(Placa,Color,Fabricante,Modelo,Anio)
+VALUES('74ls101','Rojo','Ford','Fiesta',2007);
+
+INSERT INTO Automoviles(Placa,Color,Fabricante,Modelo,Anio)
+VALUES('74ls102','Rojo','Toyota','Maos',2007);
+
+INSERT INTO Automoviles(Placa,Color,Fabricante,Modelo,Anio)
+VALUES('74ls103','Rojo','Ferrary','Caballo',2007);
+
+INSERT INTO Automoviles(Placa,Color,Fabricante,Modelo,Anio)
+VALUES('74ls104','Rojo','Renault','Twingo',2007);
+
+INSERT INTO Automoviles(Placa,Color,Fabricante,Modelo,Anio)
+VALUES('74ls105','Rojo','Renault','Twingo',2007);
+
+
+create table Propietarios
+(
+Cedula int not null
+,Placa varchar(15) not null
+,foreign key(Cedula) references Personas(Cedula)
+ON UPDATE CASCADE ON DELETE CASCADE
+,foreign key(Placa) references Automoviles(Placa)
+ON UPDATE CASCADE ON DELETE CASCADE
+,constraint cp_CedulaPlaca 
+primary key(Cedula,Placa)
+);
+//sin update o delete con innodb
+create table Propietarios
+(
+Cedula int not null
+,Placa varchar(15) not null
+,foreign key(Cedula) references Personas(cp_Cedula)
+,foreign key(Placa) references Automoviles(cp_Placa)
+,constraint cp_CedulaPlaca 
+primary key(Cedula,Placa)
+)engine=innodb;
+
+INSERT INTO Propietarios(Cedula,Placa)
+VALUES(19888888,'74ls00');
+
+INSERT INTO Propietarios(Cedula,Placa)
+VALUES(19888889,'74ls01');
+
+INSERT INTO Propietarios(Cedula,Placa)
+VALUES(19888887,'74ls02');
+
+INSERT INTO Propietarios(Cedula,Placa)
+VALUES(21888887,'74ls03');
+
+INSERT INTO Propietarios(Cedula,Placa)
+VALUES(12342161,'74ls04');
+
+INSERT INTO Propietarios(Cedula,Placa)
+VALUES(21808880,'74ls05');
+
+create table Multas(
+NroTiket int
+,Placa varchar(15)
+,Fecha int
+,DireccionMulta varchar(15)
+,constraint cp_NroTiket primary key(NroTiket)
+);
+
+INSERT INTO Multas(NroTiket,Placa,Fecha,DireccionMulta)
+VALUES(1,'74ls100',2007,"Pto la cruz");
+INSERT INTO Multas(NroTiket,Placa,Fecha,DireccionMulta)
+VALUES(2,'74ls101',2007,"Barcelona");
+INSERT INTO Multas(NroTiket,Placa,Fecha,DireccionMulta)
+VALUES(3,'74ls102',2007,"Lecheria");
+INSERT INTO Multas(NroTiket,Placa,Fecha,DireccionMulta)
+VALUES(4,'74ls103',2007,"San Diego");
+INSERT INTO Multas(NroTiket,Placa,Fecha,DireccionMulta)
+VALUES(5,'74ls104',2007,"Puente Real");
+INSERT INTO Multas(NroTiket,Placa,Fecha,DireccionMulta)
+VALUES(6,'74ls105',2007,"Los seresos");
+INSERT INTO Multas(NroTiket,Placa,Fecha,DireccionMulta)
+VALUES(7,'74ls100',2007,"Pto la cruz");
+INSERT INTO Multas(NroTiket,Placa,Fecha,DireccionMulta)
+VALUES(8,'74ls100',2007,"Pto la cruz");
+
+ejemplos usando count
+SELECT Count(*) FROM Personas;
+SELECT Personas.Nombre,Count(Personas.Nombre) FROM Personas
+group by Personas.Nombre;
+
+//pregunta nro1
+
+//a)liste le nombre y la cedula de todos aquellas personas que no son 
+propietarios de automoviles fabricados por toyota
+
+select Personas.Nombre,Personas.Cedula from Personas,Propietarios,Automoviles where Personas.Cedula=Propietarios.Cedula &&Propietarios.Placa=Automoviles.Placa&&Automoviles.Fabricante<>'Toyota';
+//; si se hace la consulta en mysq
+otra forma
+(select Nombre,Cedula from Personas where Cedula in 
+
+(select Cedula from Propietarios where Placa in 
+
+(select Placa from Automoviles where  Fabricante<>'Toyota')
+
+)
+
+)
+
+b)liste el nombre y la cedula de la persona que ha recibido la mayor cantidad de multas
+este da la respuesta no se como
+SELECT count(Multas.Placa) as CantidadMultas
+,Multas.Placa,Personas.Nombre FROM Multas,Propietarios,Personas 
+where Multas.Placa=Propietarios.Placa
+&&Propietarios.Cedula=Personas.Cedula
+GROUP BY Multas.Placa 
+HAVING COUNT(Multas.Placa) = 
+(
+	SELECT MAX(contador) from 
+		( SELECT  COUNT(Multas.Placa) as contador FROM Multas 
+		GROUP BY Multas.Placa  
+		) 
+	as T
+) 
+
+
+
+
+
+

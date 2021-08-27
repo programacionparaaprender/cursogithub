@@ -1,0 +1,102 @@
+#include<iostream>
+#include<fstream>
+#include<conio.h>
+#include<stdio.h>
+
+using namespace std;
+
+void main (){
+
+	ofstream file ("Archivo.txt");
+	char d[128];
+	cout<<"Ingrese una cadena de caracter"<<endl;
+    gets(d);
+    file<<d;
+	file.close();
+
+
+    ifstream archivo;
+	archivo.open("Archivo.txt", ios::in);
+	if(!archivo){
+		cerr<<"Error al intentar abrir el archivo"<<endl;
+	return ;
+	}
+	char c, aux; int contador=0;
+	file.open("Archivo.txt", ios::in, ios::out);
+	while(archivo){	
+		c=archivo.get();
+		/*if(c!=' '&&!archivo.eof())
+		  file<<c;   		
+		if(c==' ')
+		  {c=','; file<<c;}*/
+
+		if(c==' '){
+		   file.seekp(-1L, ios::cur);
+		   file<<',';
+		  
+		  }
+	
+	}
+
+	archivo.close();
+	file.close();
+	getch(); 
+}
+
+
+
+
+/*#include<iostream>
+#include<fstream>
+#include<conio.h>
+#include<stdio.h>
+
+using namespace std;
+
+void main (){
+
+	ofstream file ("Archivo.txt");
+	char d[128], aux[128];
+	cout<<"Ingrese una cadena de caracter"<<endl;
+    gets(d);
+    file<<d;
+	file.close();
+
+
+    ifstream archivo;
+	archivo.open("Archivo.txt", ios::in);
+	if(!archivo){
+		cerr<<"Error al intentar abrir el archivo"<<endl;
+	return ;
+	}
+
+	char c; int contador=0;
+	while(archivo){
+		c=archivo.get();
+	if(c==' ')
+	  contador++;
+	}
+	cout<<"La cantidad de espacios en blanco en archivo.txt es ";
+	cout<<contador<<endl;	
+	getch(); 
+}
+
+
+#include<iostream>
+#include<fstream>
+#include<conio.h>
+#include<stdio.h>
+
+using namespace std;
+
+void main (){
+ofstream archivo("Texto.txt");
+char c[128];
+
+cout<<"Ingrese una cadena de caracter"<<endl;
+gets(c);
+
+archivo<<c;
+getch();
+
+}*/

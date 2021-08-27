@@ -1,0 +1,12 @@
+En el siguiente ejemplo agregamos el campo "cantidad" a la tabla "libros", de tipo tinyint, que acepta valores nulos:
+
+alter table libros add cantidad tinyint;
+
+estas son las alteraciones
+
+alter table cd add cantidad int not null default 50;
+
+alter table venta add cantidad int not null default 50;
+pero luego los modifique por 5 
+
+

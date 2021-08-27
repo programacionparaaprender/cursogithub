@@ -1,0 +1,9 @@
+informe
+1.- Diferencia entre un archivo de texto y un binario:
+2.- ¿Por qué existen los archivos binarios y de texto?:
+3.- ¿Por qué Linux considera que todos los archivos deben ser binarios?:
+4.- ¿Por qué Microsoft defiende que existan archivos de texto y binarios?:
+5.- ¿Métodos de acceso y manejo de archivos en c++?:
+6.- ¿Por qué un archivo de texto plano puede ser considerado como una lista doble?:
+7.- Diferencias de Linux y Windows:
+

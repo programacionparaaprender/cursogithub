@@ -1,0 +1,97 @@
+-  Haga uso del diagrama entidad relación para modelar el siguiente escenario simplificado que describe las ventas de casas. La venta de una casa involucra a varias personas: Un propietario que desea vender una casa; Un comprador que quiere comprar una casa. Ellos llegan a un acuerdo para fijar el precio de la casa. Cuando este acuerdo es alcanzado, ellos contratan a un agente de bienes raíces quien es el que se va a encargar de los trámites necesarios para vender la casa. El agente puede ser un mismo comprador de la casa. El comprador paga el monto de la casa a través de un préstamo que solicita a una entidad bancaria. Cualquier par de compradores-propietarios pueden estar involucrados en más de una transacción. Para cada transacción, el agente de bienes raíces se queda con una comisión la cual es un porcentaje del precio de venta de la casa. Para el diagrama resultante, indique la cardinalidad y participación de los tipos de relación. Especifique con una oración el por qué de la cardinalidad elegida. Minimice el número de tipos de entidad que puede tener el diagrama. En tal sentido, usted debe minimizar el número de tipos de entidad sin importar que se indiquen atributos que no están presentes en todas las entidades sino en una parte de ellas. (2.5 ptos)
+
+- Se quiere diseñar una base de datos para el manejo de un zoológico. Muestre el diagrama entidad relación que capture las especificaciones que a continuación se dan:
+
+·         Los empleados del zoológico son conocidos como Custodios del Zoológico.  Cada Custodio del Zoológico tiene un nombre, un identificador de empleado, y un salario. Él o ella puede trabajar  en diferentes exhibiciones del zoológico, y también se puede dar el caso que sean personal administrativo y por lo tanto no trabajen en exhibiciones. Un Custodio del Zoológico no necesariamente tiene que trabajar en una exhibición del zoológico para poder ser el coordinador de la exhibición.
+
+·         El zoológico puede tener múltiples exhibiciones. Cada una tiene un nombre y un coordinador que está a cargo de la exhibición. Un Custodio del Zoológico puede coordinar múltiples exhibiciones, pero cada exhibición tiene como máximo un coordinador.
+
+·         Cada Custodio del Zoológico tiene un supervisor, quien es otro Custodio del Zoológico (algunos Custodios del Zoológico tales como el director del zoológico no tienen supervisor). Un Custodio del Zoológico puede supervisar múltiples empleados.
+
+·         El zoológico tiene muchos animales. Cada uno tiene una especie, un nombre, un número identificador, y un presupuesto semanal que se utiliza para el cuidado del animal. Cada animal es atendido por al menos  un Custodio del Zoológico, y el animal puede participar en múltiples exhibiciones
+
+ 
+
+- Dibuje el diagrama entidad-relación para un programa de televisión que es un reality show de cocina. El programa tiene un grupo de 4 chefs, cada uno experto en cocina china, francesa, italiana y japonesa. Los Chefs son famosos y sus nombres sirven para identificarlos de manera única. Cada episodio, identificado por  un número de episodio, presenta una competencia entre un Chef retador (es un Chef invitado a participar en el programa) y uno de los 4 Chefs del programa. Cada retador es también un reconocido Chef y puede ser identificado por su nombre y el restaurante donde trabaja. El Chef retador selecciona a uno de los 4 Chefs con el cual el o ella quiere competir. Cada episodio del programa presenta un ingrediente secreto que es presentado al inicio del programa. El ingrediente secreto nunca se repite, por lo que en dos programas distintos no se utiliza el mismo ingrediente secreto. El Chef retador y el Chef seleccionado tienen una hora para preparar una serie de platos que utilizan como ingrediente principal al ingrediente secreto. Después de una hora de iniciado el programa los jueces prueban los platos. Cada juez evalúa a cada competidor con un puntaje de hasta 10 puntos. El competidor con el máximo puntaje gana. Por políticas del programa no pueden haber empates. Una persona puede ser jurado en múltiples programas. Documente el modelo acerca de cualquier hecho que esté asumiendo.
+
+ 
+
+ÁLGEBRA RELACIONAL
+
+- Suponga que A es la clave de una relación R(A,B) que contiene n tuplas, y se tiene una relación S(B,C) que tiene m tuplas. Cuál es el máximo número de tuplas que R ⋈ S puede contener? Explique su respuesta.
+
+- Considere los siguientes esquemas relacionales:
+
+Proveedores(idProveedor:entero,Nombre:cadena,dirección:cadena)
+
+Partes(idParte:entero,NombreParte:entero;color:cadena)
+
+Inventario(idProveedor:entero,idParte:entero,costo:flotante)
+
+Muestre en álgebra relacional las siguientes consultas:
+
+a.       Encuentre todos los identificadores de los proveedores que nos suministran partes de color verde y partes de color rojo.
+
+b.       Encuentre todos los identificadores de los proveedores que nos suministran todas las partes de color rojo.
+
+- Considere las siguientes relaciones:
+
+Estudiantes              CargaAcadémica         Preparadores
+
+     id  |  Nombre        id    |   Código        Código | Preparadores
+
+ ------------------     --------------------    ---------------------
+
+    1234 |  jose         1234   |   cs1500        cs1500 |  curtis   
+
+    4000 | hector        1234   |   cs1200        cs2001 |  david      
+
+    2000 |  juan         1234   |   cs2001        cs3010 |  curtis          
+
+                         4000   |   cs3010        cs2001 |  oliver
+
+                         4000   |   ma3000        ma3000 |  roger 
+
+ 
+
+Muestre en álgebra relacional las expresiones que generan los siguientes resultados:
+
+a.
+
+     id  |  Nombre      
+
+ ------------------  
+
+    1234 |  jose     
+
+    4000 | hector
+
+b.
+
+     id  |   Código     
+
+ ------------------- 
+
+    1234 |  cs1500    
+
+    1234 |  cs1200        
+
+1234      cs200
+
+ 
+
+- Considere los siguientes esquemas relacionales:
+
+DirecciónPersona(NombrePersona,Dirección,Ciudad)
+
+TrabajaEn(NombrePersona,NombreCompañía,Salario)
+
+DirecciónCompañía(NombreCompañía,Ciudad)
+
+Supervisores(NombrePersona,NombreSupervisor)
+
+Muestre en álgebra relacional las siguientes consultas:
+
+a.       Encuentre todas las personas que no trabajan en Banesco.
+
+b.       Encuentre todos los empleados que viven en la misma ciudad donde está ubicada la Compañía donde trabajan.

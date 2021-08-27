@@ -1,0 +1,8 @@
+1) Considere un universo de claves U={1,......,3000}. Calcule el valor de la funcion h para las claves 61,62,63,64 y 65
+utilizando el metodo de la division teniendo en cuenta que se quiere tener un "Simbolo "alfa=3.
+
+2) Disene una funcion en c++ que muestre la cantidad de v ertices que tienen un grado igual a 1 en un grafo a traves
+ de listas de adyacencias, disene un algoritmo que determine en G aquellos arcos que al ser eliminados generan dos o mas componentes conexas.
+
+3)Dado un grafo G conexo no dirigido representado a traves de listas de adyacencias, disene un algoritmo que determine en G aquellos
+arcis que al ser  eliminados generan dos o mas componentes conexas.

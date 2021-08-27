@@ -1,0 +1,41 @@
+Ejemplo de interseccion en mysql
+use Tienda;
+/*simula intersect en mysql*/
+
+SELECT Nombre FROM Empleado
+INNER JOIN Cliente
+USING (Nombre);
+
+/*simular except en mysql aun no se*/
+
+/*simula el if y print en mysql*/
+SELECT IF (10000000 = ANY (SELECT Cedula FROM Empleado)
+,'existe un Empleado con ese id' 
+,'existen empleados con ese id');
+/*comparar cadenas de caracteres*/
+select IF ('Luis Correa' = (SELECT Nombre+' '+Apellido FROM Cliente WHERE Cedula=19888888)
+,'son iguales' 
+,'no son iguales');
+
+/*usando in en mysql*/
+select IF (('Luis Correa' IN (SELECT Nombre+' '+Apellido FROM Cliente)) 
+,'encontro un valor igual' 
+,'todos no tienen el mismo valor');
+
+/*los nombres y apellidos de todos los clientes que han comprado todos los diferentes tipos de cd en la tienda*/
+select Nombre,Apellido from Cliente
+where
+not exists(select * from Venta b
+where 
+(Codigo in (select Codigo from CD)
+and not exists(select * from Venta c
+where c.CedulaC=Cedula and c.Codigo=b.Codigo)
+)
+);
+
+/*realizar una reunion para obtener el nombre y apellido
+de los clientes junto con sus compras en la tienda, solo 
+los clientes que han comprado*/
+use tienda;
+select Cliente.Nombre,Apellido,CD.Nombre 
+from (Cliente Join Venta on Cedula=CedulaC),CD where Venta.Codigo=CD.Codigo;

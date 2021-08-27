@@ -1,0 +1,4 @@
+C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\Program Files\Intel\TXE Components\TCS\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\opencv\build\java\x86;C:\Program Files (x86)\Java\jdk1.8.0_45\jre\lib\ext\RXTXcomm.jar;C:\Program Files (x86)\Skype\Phone\
+
+Copy the win32/rxtxSerial.dll into C:\Windows\System32
+Copy the win64/rxtxSerial.dll into C:\Windows\SysWOW64

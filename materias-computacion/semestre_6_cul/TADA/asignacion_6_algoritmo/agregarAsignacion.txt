@@ -1,0 +1,5 @@
+estudiantes del Taller de Algoritmos, la asig 6, tiene como entrada:
+
+- en la primera linea la cantidad de arboles (n)
+- en la segunda linea la posición de la granja
+- en las siguientes n lineas las posiciones (x, y) de cada árbol

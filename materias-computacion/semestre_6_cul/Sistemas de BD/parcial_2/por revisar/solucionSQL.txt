@@ -1,0 +1,2 @@
+alter table Multas add Placa  varchar(15) not null references
+Propietarios(Placa);
