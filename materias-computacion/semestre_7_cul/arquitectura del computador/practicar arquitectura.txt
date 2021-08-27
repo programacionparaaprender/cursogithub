@@ -1,0 +1,156 @@
+Capitulo 3 Perspectiva de alto nivel del funcionamiento y de las
+interconexiones del computador
+
+Componentes de un bus--------
+-1-Procesador o CPU
+-Unidad de ejecucion
+-MBR
+-MAR
+-E/S AR
+-E/S BR
+-IR
+-PC
+-2-Memoria
+-Instrucciones
+-Datos
+-3-Dispositivos de E/S
+-Registros
+
+Estructura de un bus----------
+-Linea de datos
+-Linea de control
+-Linea de direcciones
+-Linea de alimentación
+-Linea de aislamiento(tierra)
+
+Elementos de diseño de un bus-----------
+con 5
+1-tipo: Unica función o multiples
+-dedicado
+-multiplexado
+2-método de arbitraje: Como es que trabaja
+-Centralizado
+-Distribuido
+3-temporización: Si usa reloj
+-asincrono 
+-sincrono
+4-Anchura del bus: Más ancho mas acceso a direcciones y datos
+-Direccion
+-Datos
+5-tipo de transferencia de datos
+-lectura
+-escritura
+-lectura-modificacion-escritura
+-escritura-modificacion-lectura
+-Bloque
+
+Ejemplo de configuraciones de bus----------------
+Figura 3.18 Ejemplos de configuraciones con bus
+-Arquitectura de bus tradicional
+-1-Bus local: siempre al procesador con la cache
+-2-Bus de expansión:a traves de una interfaz con el bus de sistema
+-3-Bus de sistema: siempre a la memoria principal con la cache
+-Arquitectura de bus de altas prestaciones
+-1-Bus local: siempre al procesador con la cache
+-2-Bus de expansion:a traves de una interfaz con el bus de alta velocidad
+-3-Bus de sistema: siempre a la memoria principal con la cache
+-4-Bus de alta velocidad: se conecta a la cache
+
+
+Capitulo 4 Memoria cache
+-Caracteristicas clave de los sistemas de memoria de computadores
+-1-Ubicación
+--Procesador
+--Interna
+--Externa
+-2-Método de acceso
+--Secuencial: Cintas
+--Directo: Discos duros,CD,DVD,Disquetes
+--Aleatorio:Memoria RAM y Cache
+--Asociativo: Cache
+-3-Capacidad
+--Tamaño de palabra 
+--Tamaño de bloque
+-4-Unidad de transferencia
+--Bloque 
+--Palabra
+-5-Prestaciones
+--Tiempo de acceso: Tiempo de lectura y escritura
+--Tiempo de ciclo:  Tiempo para realizar una segunda lectura o escritura
+--Velocidad de transferencia:Velocidad a la que se transfiere a o desde memoria
+-6-Dispositivos fisicos
+--Semiconductores:ROM,RAM; DRAM,SDRAM,SRAM,DDR DRAM, DDR2 DRAM, RDRAM
+--Magneticos: Discos duros,Disquetes, Cintas
+--Opticos: CD-ROM,CD-RW,DVD-RW,Bluray
+--Magnetico-Opticos: Disco magneto-optico
+-7-Caracteristicas fisicas
+--Volatil/No volatil: RAM, SRAM,DRAM/ ROM, PROM,EPROM,EEPROM,Memoria flash
+--Borrable/No borrable RAM,SRAM,DRAM, EPROM,EEPROM,Memoria flash/ROM, PROM
+
+Jerarquia de memoria
+-Se cumplen las siguientes relaciones en las tecnologias
+-Menor tiempo de acceso mayor coste por bit
+-Mayor capacidad menor coste por bit
+-Mayor capacidad mayor tiempo de acceso
+
+-la piramide figura 4.1 Jerarquia de memoria
+la piramide te muestra a la izquierda 
+--en tarjeta impresa
+--fuera de tarjeta impresa
+--fuera de linea
+la piramide te muestra en la derecha
+--en la parte de tarjeta impresa
+---registros
+---cache
+---memoria principal
+--en la parte fuera de tarjeta impresa
+---dispositivos magneticos
+---CD-ROM,CD-RW,DVD-RW,DVD-RAM
+--en la parte de fuera de linea
+---Cintas magneticas
+---MO
+---WORM
+
+-la ventaje de usar este sistema es que
+--Disminuye el coste por bit
+--Aumenta la capacidad
+--Aumenta el tiempo de acceso
+--Disminuye el acceso a memoria por parte del procesador
+
+-principio de localidad de las referencias
+agrupamiento de las lecturas de memoria por medio de la cpu
+
+elementos de diseño de la memoria cache
+son 6
+-1-Tamaño de la cache:  
+-2-Función de correspondencia
+--Directa: linea a bloque
+--Asociativa: cualquier bloque a cualquier linea
+--Asociativa por conjuntos: No presenta las desventajas de Directa y Asociativa
+-3-Algoritmos de sustitución
+--LRU:El menos referenciado por más tiempo
+--LFU:El menos frecuentemente usado
+--FIFO:Primero en entrar primero en salir
+--Aleatorio: Se elige aleatoriamente que bloque se sustituye
+-4-Politica de escritura
+--Escritura Inmediata
+--Post-escritura
+--Escritura Unica
+-5-Tamaño de linea
+-6-Numeros de caches
+--uno o dos niveles
+--unificada o partida
+
+En una estructura de bus en la que más de un dispositivo tiene una cache y la
+memoria principal es compartida, se dice que mantiene la coherencia de cache:
+entre las posibles aproximaciones tenemos:tres
+--Vigilancia de bus con escritura inmediata
+--Transparencia de hardware
+--Memoria excluida de cache
+
+Segun el principio de localidad
+--la relación entre tamaño de bloque y tasa de aciertos es compleja, dependiendo
+de las caracteristicas de localidad de cada programa particular, no habiendose
+encontrado un valor optimo definitivo
+
+

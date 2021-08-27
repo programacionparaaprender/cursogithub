@@ -1,0 +1,271 @@
+1 Definición Diagrama de Objetos
+OMT (Técnica de Modelado de Objetos) 
+POO (Programación Orientada a Objetos)
+MOO (Metodologia Orientada a Objetos):
+permite simplificar la construcción de programas a travez del 
+concepto de objeto ayudando a la reutilización de código, 
+simplificación de sintaxis y lectura
+
+2 Fases de OMT
+2.1 Analisis : El Analista construye un modelo del dominio del problema
+2.2 Diseño del sistema : El Diseñador del sistema toma decisiones
+sobre la arquitectura del software del sistema
+2.3 Diseño de objetos : El Diseñador de Objetos construye un
+modelo basandose en el modelo de analisis, pero incorporando 
+detalles de implementación
+2.4 Implementación: Los objetos y relaciones desarrollados
+durante el analisis de objetos se traducen finalmente a una 
+implementación concreta.
+
+3 Modelos de OMT
+3.1 Modelo de Objetos:Describe la estructura estatica de los 
+objetos, se representa mediante el diagrama de objetos
+3.2 Modelo Dinamico:  Trata la temporización y la secuencia de
+los mensajes, se representa mediante el diagrama de estado
+3.3 Modelo Funcional: Describe las transformaciones de valores de 
+datos, se representa mediante el diagrama de flujo de datos
+
+4 Ventajas de la Metodologia Orientada a Objetos
+4.1 Reutilización : Las clases se diseñan para ser reutilizadas
+4.2 Estabilidad   : El código al ser probados muchas veces
+se vuelve estable.
+4.3 Calidad       : Los objetos han sido verificados y pulidos
+muchas veces
+4.4 Integridad    : Los objetos tienen seguridad
+
+5. Lenguaje Unificado de Modelado: Es un lenguaje grafico para 
+diseñar un conjunto de diagramas que al unirlos se pueden crear
+vistas del sistema, por ejemplo la casos de uso, diseño, 
+interacción, implementación y despliegue.
+
+6. Para UML se considera que el modelo de proceso de software
+sea
+6.1 Basado en casos de uso: Que sea el artefacto basico para 
+establecer el comportamiento del sistema
+6.2 Centrado en la arquitectura: Que sea el artefacto basico para 
+conceptuar
+6.3 Iterativo: Que involucre la gestión del flujo de ejecutables
+6.4 Incremental: Donde cada nueva versión corrige defectos de la
+anterior
+
+7 Ciclo de vida de UML o Fases de UML
+7.1 Iniciación o concepción: En esta fase de desarrollan las 
+ideas para otorgar un sistema final.
+7.2 Elaboración: Se establecen los casos de uso que usaran en el
+programa
+7.3 Construcción: Se comienza a construir la aplicación
+7.4 Transición: El software es continuamente reexaminado y 
+mejorado erradicando errores
+
+8 Modelo de la arquitectura
+son un conjunto de decisiones significativas sobre:
+8.1.	Se especifica la organización del sistema
+8.2.	Se seleccionan los elementos estructurales a través de los
+cuales se constituye el sistema.
+8.3.	Se especifica el comportamiento, colaboraciones entre los 
+componentes del sistema.
+8.4.	Se especifica la composición de los elementos 
+estructurales y de comportamiento en subsistemas progresivamente 
+más grandes.
+8.5.	Se especifica el estilo arquitectónico que guía la 
+organización del sistema
+	
+
+
+9 Las vistas para describir mejor el sistema son:
+9.1.	La vista de casos de uso	
+9.1.1.	Aspectos estáticos Diagramas de Casos de Uso	
+9.1.2.	Aspectos dinámicos Diagramas de Interacción, Estado, Actividades	12
+
+9.2.	La vista de diseño	
+9.2.1.	Aspectos estáticos Diagrama de Clases, Objetos	
+9.2.2.	Aspectos dinámicos Diagramas de Interacción, Estado, Actividades	12
+
+9.3.	La vista de interacción	
+9.3.1.	Igual que en la vista de diseño	
+
+9.4.	La vista de implementación	
+9.4.1.	Aspectos estáticos Diagrama de Componentes	
+9.4.2.	Aspectos dinámicos Diagrama de Interacción, Estado, Actividades	12
+
+9.5.	La vista de despliegue	
+9.5.1.	Aspectos estáticos Diagrama de Despliegue	
+9.5.2.	Aspectos dinámicos Diagramas de Interacción, Estado, Actividades.
+	
+
+
+
+10.	Elementos del UML
+
+11.	Elementos Estructurales	
+11.1.	Clase	
+11.2.	Interfaz	
+11.3.	Colaboración	
+11.4.	Casos de uso	
+11.5.	Clases activas	
+11.6.	Nodos	
+11.7.	Artefactos	
+11.8.	Componentes	
+	
+12.	Elementos de Comportamiento	
+12.1.	Mensajes	
+12.2.	Actividades	
+12.3.	Estados	
+
+13.	Elementos de Agrupación	
+13.1.	Paquete	
+
+14.	Elementos  de Anotación	
+14.1.	Nota
+	
+15.	Elementos de Notación	
+15.1.	Nota.	
+15.2.	Dependencia.	
+15.3.	Clase.	
+15.4.	Objetos.	
+15.5.	Atributos.	
+15.6.	Métodos.	
+15.7.	Asociaciones.	
+15.8.	Dependencias.	
+15.9.	Responsabilidades.	
+15.10.	Navegabilidad.	
+15.11.	Composición.	
+15.12.	Relaciones.	
+15.13.	Herencia.	
+15.14.	Generalización.	
+15.15.	Actores.	
+15.16.	Relaciones.	
+15.17.	Caso de uso.	
+15.18.	Línea de vida.	
+15.19.	Activación.	
+15.20.	Mensaje.	
+
+
+15.	Diagrama de caso de uso	
+Es la representación gráfica de cómo debería interactuar el 
+sistema con el usuario o con otro sistema
+
+15.1.	Actor	
+15.2.	Relaciones
+15.3.	Caso de Uso	
+15.4.	Límite de Sistema	
+15.5.	Escenario	
+15.6.	Extends	
+15.7.	Generalización	
+15.8.	Include	
+
+
+14.	Diagrama de secuencia: Muestra una interacción ordenada 
+según la secuencia temporal de eventos
+14.1.	Línea de vida de un objeto	
+14.2.	Activación	
+14.3.	Mensaje	
+
+
+15.	Diagrama de Estados	
+15.1.	Estado	
+15.2.	Transición	
+15.3.	Evento disparador	
+15.4.	Acción	
+15.5.	Condición de guarda	
+
+16.	Diagrama de Actividades	
+16.1.	Actividad	
+16.2.	División Sincronización	
+16.3.	Transición de terminación	
+16.4.	Unión Sincronización	
+16.5.	Bifurcación o Reunificación	
+16.6.	Calles y Flujo de objetos
+	
+17.	Diagrama de Componentes	
+17.1.	Interfaz
+Muestra la organización y dependencia entre un conjunto de componentes.
+17.2.	Puerto 
+Especifica los servicios que uno de los componentes requiere.
+permite que se especifique un servicio o comportamiento a su 
+entorno así como también un servicio o comportamiento que un 
+componente requiere. 
+17.3.	Artefacto
+En el se sitúan librerías, tablas, archivos, documentos, ejecutable.
+17.4.	Componentes
+Es una parte física de un sistema (módulos, base de datos, programa ejecutable, etc).
+17.5.	Paquetes o subsistemas
+Los componentes se pueden agrupar en paquetes.
+17.6.	Relaciones de dependencia, generalización, asociación y realización
+17.7.	Nodo
+Agrupa varios componentes
+
+
+18.	Diagrama de Ejecución	
+1.1.	Nodos	
+1.2.	Componentes	
+
+19.	Diagrama de Clases	
+1.3.	Clase	
+1.4.	Asociaciones	
+a)	Asociación binaria	
+b)	Sentido	
+c)	Multiplicidad	
+d)	Roles	
+e)	Composición	
+1.5.	Generalización	
+1.6.	Clase paramétrica	
+
+20.	Diagrama de Objetos
+20.1.	Objetos	
+20.2.	Enlaces	
+
+	
+21.	Características de Diagrama de Objetos
+21.1.	Los objetos se representan etiquetando el nombre de la instancia seguido de dos puntos (:) frente al nombre de la clase El icono de un objeto es un rectángulo dividido en secciones.	31
+21.2.	Se centra en comunicar un aspecto de la vista de diseño estática o la vista de procesos estática de un sistema.	31
+21.3.	Representa una escena de la historia representada por un diagrama de interacción.	31
+21.4.	Contiene solo aquellos elementos esenciales para comprender ese aspecto.	31
+21.5.	No es minimalista, no deja de informar al lector sobre la semántica importante.	31
+21.6.	Los diagramas de objetos `pueden contener notas y restricciones.	31
+21.7.	A veces se colocarán clases en los diagramas de objetos, especialmente cuando se quiera mostrar la clase que hay detrás de cada instancia.	31
+
+
+22.	Técnicas comunes de modelado de Objetos	
+22.1.	Modelado de estructuras de objetos	
+22.2.	Ingeniería Inversa	
+22.3.	Modelado de Instancias discretas	
+
+25.     Clase Estructurada	
+26.1.	Modelado de una API	
+26.2.	Para modelar una API	
+	
+
+26.	Diagrama de Comunicación	
+26.1.	Objeto activo	
+26.2.	Enlace	
+26.3.	Mensaje	
+26.4.	Multiobjeto	
+26.5.	Objeto pasivo	
+26.6.	Enlace transitorio	
+
+27.	Diagrama de Despliegue	
+27.1.	Componentes	
+27.2.	Interfaz	
+27.3.	Puerto	
+27.4.	Artefacto	
+27.5.	Paquetes o subsistemas	
+27.6.	Relaciones de dependencia, generalización, asociación y realización	35
+27.7.	Nodo	
+
+28.	Diagrama de Paquetes	
+28.1.	Paquetes	
+28.2.	Diagramas de UML internos
+	
+29.	Diagrama de Tiempo	
+29.1.	Mensaje	
+29.2.	Objetos	
+
+30.	Diagrama de Visión Global de Interacciones	
+30.1.	Actividad	
+30.2.	División Sincronización	
+30.3.	Transición de terminación	
+30.4.	Unión Sincronización	
+30.5.	Bifurcación o Reunificación	
+30.6.	Diagrama de Secuencia	
+

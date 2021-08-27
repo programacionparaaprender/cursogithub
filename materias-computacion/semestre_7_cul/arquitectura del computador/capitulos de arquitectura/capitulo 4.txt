@@ -1,0 +1,253 @@
+Capitulo 4
+
+memoria cache (tipo de memoria interna)
+
+SISTEMAS DE MEMORIA
+
+-ubicacion
+indica si la memoria es interna o externa.
+
+la interna suele identificare con la memoria principal
+la externa consta de dispositivos perifericos como discos y cintas, accasibles al computador atravez de 
+dispositivos de E/S
+ 
+-capacidad
+para memorias internas se expresa en palabras (1 bytes = 8 bits)  (8,16,32 bits)
+para memorias externas solo en bytes
+
+-unidad de transferencia (para memorias internas)
+es el numero de bits que se  leen o escriben en memoria a la vez
+
+palabra
+es la unidad de organizacion de la memoria
+
+bloque
+para memorias externas los datos se transfieren normalmente en unidades mas grandes que la palabra.
+
+-metodo de acceso
+
+acceso secuencial
+se organiza en unidades de datos llamadas registros,debe realizarse con una secuencia lineal,
+se utiliza un mecanismo de lectura/escritura compartida
+
+acceso directo
+se utiliza tambien un mecanismo de lectura/escritura,los registros tienen una direccion unica basada
+en su direccion fisica
+
+acceso aleatorio
+cada posicion  direccionable de memoria tiene un unico mecanismo de acceso cableado fisicamente
+
+asociativa
+es del tipo de acceso aleatorio q permite hacer una comparacion de ciertas posiciones de bits dentro
+de una palabra buscando que coincidan con unos valores dados 
+
+-prestaciones
+
+tiempo de acceso
+es el tiempo que tarda en realizarse una operacion de escritura o de lectura
+
+tiempo de ciclo de memoria
+consiste en el tiempo de acceso y algun tiempo mas que se requiere antes de q pueda iniciarce un 
+segundo acceso a memoria
+
+velocidad de transferencia
+ea la velocidad a la que se pueden transferir los datos a, o desde una unidad de memoria
+
+
+-dispositivos fisicos
+las mas comunes son las semiconductoras, las de superficie magnetica(discos y cintas), 
+las memorias opticas y magneto-opticas
+
+-caracteristicas fisicas
+memorias volatiles: la informacion se pierde con el tiempo
+memorias no volatiles: permanece grabada hasta que se modifique intencionadamente
+memoria de superficie magnetica: son no volatiles
+memorias semiconductoras: pueden ser volatiles o no volatiles
+memorias no borrables: no pueden borrarse a menos uqe se destruya la unidad de almacenamiento es 
+necesariamente no volatil
+memorias semiconductoras: son memorias de solo lectura (ROM read only memory)
+
+-organizacion
+es un aspecto clave de diseño, su disposicion o estructura fisica en bits para formar palabras
+
+
+JERARQUIA DE MEMORIA
+
+se basa en 3 simples cosas CAPACIDAD,RAPIDEZ,COSTE
+
+a menor tiempo de acceso, mayor coste por bit
+a mayor capacidad, menor coste por bit
+a mayor capacidad, mayor tiempo de acceso
+
+Piramide..............jerarquica
+
+ memoria en          /registros           
+ tarjetas           /cache                
+ impresas__________/memoria proncipal     
+ almacenamiento   /disco magnetico
+fuera de la      /cd-rom,cd-rw,
+tarjeta_________/dvd-ram
+almacenamiento /cinta magnetica
+fuera de linea/MO,WORM
+
+a) disminuye el costo por bit
+b) aumenta la capacidad
+c) aumenta el tiempo de acceso
+d) disminuye la frecuencia de accesos a la memoria por parte del procesador
+
+
+PRINCIPIOS BASICOS DE LA MEMORIA CACHE
+
+lo principal de la memoria cache es lograr que la velocidad de la memoria se lo mas rapida posible
+la cache contiene una copia de partes de la memoria principal
+
+(complementar con el ultimo dibujo 4.6)
+
+ELEMENTOS DE DISEÑO DE LA CACHE
+
+-tamaño de la cache
+lo ideal es que el tamaño fuer apequeño para que su coste total medio por bit se aproxime al de 
+la memoria principal sola pero suficientemente grande como para q el tiempo de acceso medido total
+sea proximoal de la cache sola
+
+-funcion de correspondencia
+es un algoritmo que hace corresponder bloque de memoria principal a lineas de cache(hay menos)
+
+tipos
+
+correspondencia directa
+consiste en hacer corresponder cada bloque de memoria principal a solo una linea posible de cache
+su principal desventaja es el thrashing(el intercambio de palabras de bloques distintos asignados en
+una misma linea) 
+
+correspondencia asociativa
+no tiene las desventajas de la directa ya que esta posee una logica de control que es la que se encarga
+de interpretar una direccion de  memoria simplemente como un aetiqueta, esta examina simultaneamente 
+todas las etiquetas de lineas  para buscar coincidencias.
+su desventaja es la compleja circuiteria necesaria para examinar en paralelo las etiquetas de todas las
+lineas de la cache
+
+corespondencia asociativa por conjuntos
+reune lo positivo de la directa y asociativa sin precentar sus desventajas.
+la cache se diide en v conjuntos, cada uno de k lineas. donde v=m y k=1 toma la correspondencia
+directa y con v=1 y k=m se reduce a la totalmente asociativa
+
+-algoritmos de sustitucion
+una vez ya llenada la cache para introducir un nuevo bloque es necesario sustituir uno ya existente
+para eso utilizamos diversos algoritmos como
+
+LRU(utilizado menos recientemente):sustituye el bloque que se ha mantenido en la cache por mas tiempo
+sin haber sido referenciado.
+
+FIFO(primero en entra primero en salir): se sustituye aquel bloque del conjunto que ha estado mas
+tiempo en la cache
+
+LFU(utilizado menos frecuentemente): se sustituye aquel bloque del conjunto que ha experimentado 
+menos referencias
+
+-politica de estructura
+hay 2 casos a conciderar cuando se ha de remplazar un bloque de la cache.
+si el bloque antiguo de la cache no debe ser modificado, se puede sobreescribir con el nuevo bloque 
+sin necesidad de actualizar el antiguo. si se ha realizado al menos una operacion de escritura sobre
+una palabra de la linea correspondiente de la cache
+
+la tecnica mas sencilla se denomina escritura inmediata: utilizando esta tecnica todas las operaciones
+de escritura se hacen tanto en la cache como en la memoria principal y la principal desventaja de esta
+tecnica es que genera un trafico con la memoria q puede originar un cuello de botella
+
+una tecnica alternativa postescritura, minimizando la escritura en memoria , las actualizaciones se 
+hacen solo en la cache
+
+-tamaño de linea(no lo entendi)
+
+-numero de caches
+
+cache multinivel: con el aumento de intensidad  de integracion ha sido posible tener una chache en el
+mismo chip del procesador (cache on chip). reduce la actividad del bus externo del prcesador y por 
+tanto reduce los tiempo de ejecucion e incrementa las pestaciones globales del sistema
+
+los diseños actuales contienen tanto la cache on chip como la externa. la estructura mas sencilla
+de este tipo se le denomina cache de 2 niveles siendo la interna L1 y la externa L2
+
+cache unificada:
+se ha hecho normalseparar la cache en 2 una dedicada a instrucciones y otra a datos
+
+una cache unificada tienes varias ventajas potenciales:
+una unificada tiene una tasa de aciertos mayor que una cache partida
+nivela automaticamente la carga entre captacion de instrucciones y de datos
+solo necesita diseñar e implementar una cache
+
+las ventajas claver del diseño de una cahce partida es que elimina la competicion por la cache 
+entre el procesador de instrucciones y launidad de ejecucion
+
+ORGANIZACION DE LA CACHE EN EL PENTIUM 4 Y POWERPC
+
+-organizacion de la cache en pentium 4
+se observa claramente en la evolucion de los microprocesadores de intel la estructura de la pentium 4
+consta de 4 componetes principales
+-
+1) unidad de captacion/decodificacion: capta instrucciones en L2 las decodifica y memoriza en L1
+
+2) logica de ejecucion fuera-de-orden: planifica la ejecucion de micro-operaciones teniendo en 
+cuenta las dependencias de datos y los recursos disponibles 
+
+3) unidades de ejecucion: ejecutan las micro-operaciones captando los datos necesarios de la
+cache L1 y almacenando los resultados en registros
+
+4) subsistemas de memoria: incluye las caches L2 y L3 y el bus de sistema, que se usa para 
+acceder a la memoria principal cuando las caches L1 y L2 fallan
+
+la cache de la pentium 4 esta situada entre la logica de decodificacion y el nucleo de ejecucion
+
+la cache de datos emplea una politica de postescritura los datos se escriben en memoria principal 
+solo cuando habiendo sido actualizados se eliminan de la cache. El procesador pentium 4 puede 
+configurarse dinamicamente para utilizar la politica de escritura inmediata
+
+la cache L1 se controla por 2 bits de uno de los registros de control
+
+las dos caches L2 y L3 son asociativas por conjuntos de 8 vias, con un tamaño de lineas de 
+128 bytes
+
+ 
+-organizacion de la cache en el powerpc
+ha ido evolucionado paralelamente a la arquitectura
+
+POWERPC G5
+la cache de istrucciones que es solo lectura, alimenta a la unidad de instrucciones.
+las caches L1 son asociativas por conjuntos. la cache L2 es asociativa por conjuntos de 2 vias
+y la G5 admite una cache L3 externa y esta previsto incorporar una cache L3 on-chip en 
+implementaciones avanzadas del G5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

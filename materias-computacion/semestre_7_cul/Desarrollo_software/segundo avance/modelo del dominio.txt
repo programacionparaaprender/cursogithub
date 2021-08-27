@@ -1,0 +1,11 @@
+clases conceptuales no son software, ni responsabilidades
+Ejemplo gestion academica:
+ALUMNO
+DOCENTE
+ASIGNATURA
+Se utiliza un diagrama de clases
+Diagrama de clases conceptual del dominio de ventas
+no se colocan metodos
+clases
+asociaciones
+atributos

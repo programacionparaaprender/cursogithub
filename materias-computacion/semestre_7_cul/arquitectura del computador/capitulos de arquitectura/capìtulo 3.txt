@@ -1,0 +1,282 @@
+Capitulo 3
+
+Perspectiva de alto nivel.....
+
+COMPONENTES DEL COMPUTADOR
+
+los componentes esenciales del sistema:
+un interprete y un modulo para las funciones aritmeticas y logicas y estas 2 constituyen la CPU
+a parete se requiere otro comonete esencia para el funcionamiento  que seria los componentes de E/S
+la memoria o memoria principal para almacenar temporalmente las instrucciones
+
+PC = controlador del programa
+IR = registro de instruccion
+MAR = registro de direccion de memoria
+MBR = registro de buffer de memoria
+E/S AR = registro de direccion deE/S
+E/S BR = registro buffer de E/S
+
+FUNCIONAMIENTO DEL COMPUTADOR
+
+la funcion basica es la ejecucion de un programa. que son un conjunto de instrucciones almacenadas
+ en memoria. el procesador se encarga de ejecutar las istrucciones, lee las instrucciones de memoria
+y la ejecuta.
+
+el computador tambien posee un ciclo de instruccion que se basa en 2 etapas, ciclo de camptacion
+y ciclo de ejecucion
+
+CICLOS DE CAPTACION Y EJECUCION
+
+al comienzo de cada ciclo de instruccion, la CPU capta una instruccion de memoria. la instruccion
+se almacena en un registro de la CPU conocido como registro de intruccion (IR). la CPU 
+interpreta la instruccion y lleva a cabo la accion requerida y esta puede ser de 4 tipos:
+
+-procesador-memoria:
+deben transferirse datos de la CPU a la memoria, o desde la memoria a la CPU
+
+-procesador-E/S:
+deben transferirse datos a o desde el exterior ediante trasnferencias entre la CPU
+y un modulo E/S
+
+-procesamiento de datos:
+la CPU ha de realizar alguna operacion aritmetica o logica con los datos
+
+-control:
+una instruccion puede especificar que la secuencia de ejecucion se altere
+
+La ejecucion de una instruccion puede implicar una combinacion de estas acciones
+
+para un ciclo de instruccion dado, algunos estados pueden o no darse y otros pueden visitarse 
+mas de una vez.
+
+los estados se describen asi:
+
+calculo de la direccion de la instruccion (IAC):determina la direccion de la siguiente 
+instruccion a ejecutar
+
+captacion de instruccion (IF):la CPU lee la instruccion desde su posicion de memoria
+
+decodificacion de la operacion indicada de la instruccion(IDO): analiza la instruccion para 
+determinar el tipo de operacion a realizar
+
+calculo de la direccion del operando(OAC):determina la direccion del operando
+
+captacion de operando(OF):capta el operando desde memoria o se lee desde el dipositivo
+
+operacion con los datos(DO):realiza la operacion indicada en la instruccion
+
+almacenamiento de operando(OS):escribe o saca el resultado en memoria
+
+INTERRUPCIONES
+
+puede interrumpir el procesamiento normal de la CPU
+en primer lugar las interrupciones proporcionan una forma de mejorar la eficiencia del 
+procesador
+
+-las inerrupciones y el ciclo de instruccion
+el procesador puede dedicarse a ejecutar otras instrucciones mientras una operacion es de E/S
+esta en curso
+
+cuando un dispositivo externo pasa a estar preparado para actuar, es decir, cuando esta 
+listo para aceptar mas datos del procesador, el modulo de E/S envia una señal de peticion
+de interrupcion al procesador. el proceso responde suspendiendo la operacion del programa
+que estaba ejecutando y salta a un programa conocido como gestor de interrupcion
+
+una interrupcion es una INTERRUPCION en la secuencia normal de funcionamiento. cuando el 
+procesamiento de la interrumpcion se completa la ejecucion prosigue.
+
+-interrupciones multiples
+el controlador de la linea de comunicacion genera una interrupcion cada vez que llegue una 
+unidad de datos
+
+-Funcionamiento de la E/S
+el modulo de E/S puede intercambiar datos directamente con el procesador, este tambien 
+puede leer o escribir datos de un modulo de E/S
+
+en algunos casos es deseable permitir que los intercambios de E/S se produzcan directamente
+con la memoria
+
+ESTRUCTURAS DE INTERCONEXION
+
+es un medio para interconectar distintos dispositivos
+funciona con conexion punto a punto
+las lineas que conectan los diversos modulos se denominan estructura de interconexion
+
+INTERCONEXION CON BUSES
+
+un bus es un camino de comunicacion entre 2 o mas dispositivos
+usualmente un bus esta costituido por varios caminos de comunicacion o lineas
+
+-estructura del bus
+un bues esta constituido por entre 50 y 100 lineas y cada una se le asigna una funcion en 
+particular
+
+-clasificacion de las lineas
+
+lineas de datos:proporcionan un camino para trasnmitir datos entre los modulos del sistema
+
+lineas de direccion:se utilizan para designar la fuente o el destino del dato
+
+lineas de control(alimentacion):se utiliza para controlar el acceso y el uso de la linea
+de datos y de direcciones
+
+-jerarquia de buses
+
+bus unico:
+
+bus local:conecta el procesador con la memoria cache
+
+bus sistema: conecta todos los modulos de la memoria principal
+
+bus expancion: regula la transferencia de datos
+
+-elementos de diseño de un bus
+
+tipode buses:
+
+dedicadas y multiplexadas
+
+las multiplexadas: se puede utiliza para que la informacion de direcion o datos use el mismo
+conjunto de lineas.ventajas usa menos lineas, ahorra espacio y costes, la desventaja necesita 
+una circuiteria mas compleja en cada modulo no pueden producirce en paralelo
+
+dedicacion: se refiere al uso de multiples buses, una desventaja incremento de tamaño y costo
+
+-metodo de arbitraje
+es responsable de asignar tiempos en el bus, cada modulo dispone de logica para controlar el 
+acceso y los modulos actuan conjuntamente para compartir el bus
+
+-temporizacion
+hace referencia a la forma en que coordinan los eventos en el bus soncronica o asincronica
+
+sincronica:esta determinada por un reloj
+asincronica: depende de un evento previo
+
+-anchura de un bus
+la anchura del bus de datos afecta las prestaciones del sistema, cuanto mas ancho es el bus 
+de datos mayor es el numeroed bits que se transmiten a la vez
+
+-tipos de transferencia de datos
+un bus permite varios tipos de transferencia, y todos permiten tanto transferencia  escrita
+como de lectura 
+
+PCI
+
+el bus PCI es un bus muy popular se uede utilizar como bus de perifericos o bus para una 
+arquitectura de entreplanta, proporciona mejores prestaciones, esta diseñado para permitir
+una cierta variedad de configuraciones basada en microprocesadores, utiliza temporisacion 
+sincronica y esquema de arbitraje centralizado
+
+-estructura del bus PCI
+se puede configurar como bus de 32bits o 64bits
+
+grupos funcionales 
+
+-terminales de sistemas: constituidas por los terminales de reloj e inicio
+-terminales de direcciones y datos: incluye 32 lineas para datos y direcciones 
+multiplexadas en el tiempo
+-terminales de la interfaz: controla la temporizacion  y proporcona coordinacion
+-terminales de arbitraje: no son lineas compartidas  tiene su par propopio de lineas
+que lo conecta directamente al arbitro del bus PCI
+-terminales para señales de error:errores de paridad u otros
+-terminales de interrupcion: para los que deben generr peticiones de servicio
+-terminales de soporte de cache: necesario para permitir memorias cache
+-terminales de ampliacion a bus de 64 bits: incluye 32 lineas multiplexadas en 
+el tiempo para direcciones y datos y se combinan con las lineas de direcciones y datos
+-terminales de test:se ajustan al estandar IEEE
+
+-ordenes del PCI
+consiste en transferencias entre elementos conectados al bus. durante la fase de 
+direccionamiento de transferencia se utilizan las lineas C/BE para indicar el tipo de 
+tranferencia.
+
+tipos:
+
+reconocimiento de interrupcion
+ciclo especial
+lectura de E/S
+escritura de E/S
+lectura de memoria
+lectura de linea de memoria
+lectura multiple de memoria
+escritura de memoria
+escritura e invalidacion de memoria
+lectura de configuracion
+escritura de configuracion
+ciclo de direccion dual
+
+el reconocimiento de interrupcion es una orden de lectura proporcionada por el dispositivo
+que actua como controlador
+
+la ordende ciclo especial se utiliza para iniciar la difusion de un mensaje a uno o mas
+destinos
+
+las ordenes de lectura  de E/S y escritura en E/S se utilizan para intercambiar datos entre 
+el modulo que inicia la tranferencia y un contralador de E/S
+
+las ordenes de lectura y escritura en memoria se utilizan para especificar la transferencia
+de una secuencia de datos, utilizando uno o mas ciclos de reloj
+
+los datos de ordenes de configuracion permiten que un dipositivo maestro lea y actualice los
+parametros de configuracion de un dispositivo conectado al bus PCI
+
+la orden de ciclo de direccion dual se utiliza por el dispositivo que inicia la tranferencia
+para indicar que esta  utilizando direcciones de 64 bits
+
+-tranferencia de datos
+toda tranferencia de datos en el bus PCI es una transaccion unica que consta de una fase de 
+direccionamiento y una o mas fases de datos
+
+-arbitraje
+el bus PCI utiliza un esquema de arbitraje centralizado sincronico en el que cada maestro 
+tiene una unica señal de peticion y cesion de bus
+
+la especificacion PCI no indica un algoritmo particular de arbitraje. el arbitro puede utilizar
+un procedimiento de primero en llegar-primero en servirse o cualquier esquema de prioridad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+es software de facturacion de proposito general
+la aplicacion es para el cajero y para el administrador
+el cliente solo se encarga de comprar nada mas
+
+se registra el cliente en el modulo de facturacion
+
+exacto, el usuario del software es la cajer@ del supermercado
+el de administrador si es mas complejo aun
+
+aplicacion para el cliente la borras
+
+
+administrador se encarga de cargar el inventario, cargar las compras, registrar en el sistemas a los proveedores de los supermercados
+y el tipo de producto que vende ese proveedor

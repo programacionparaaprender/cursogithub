@@ -1,0 +1,5 @@
+no lo he estudiado todavia pero por lo que recuerdo son diagramas que especifican como estarán acoplados las partes del software
+
+por ejemplo una aplicación que hagas en php podrá ser acoplada con mysql para trabajar bases de datos
+
+también se podrá intercambiar mysql por otro manejador como el de oracle o sqlserver

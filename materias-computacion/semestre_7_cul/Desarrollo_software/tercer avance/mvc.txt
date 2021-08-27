@@ -1,0 +1,33 @@
+de cada clase busca la vista controlador modelo por ejemplo
+Ventana tiene MVentana, VVentana, CVentana
+1.gestion inicio de sesión
+Ventana
+
+2.gestion producto
+RegistrarProducto
+ModificarDatosProducto
+BuscarProducto
+
+3. gestion proveedor
+BuscarProveedor
+RegistrarProveedor
+
+4. gestion cliente
+AgregarCliente
+BuscarCliente
+
+5. gestion empleado
+AgregarEmpleado
+UbicarEmpleado
+
+6. gestion venta
+Venta
+
+7. gestion compra
+Compra
+
+No lo hagas todavia tengo que corregirlo
+8. Facturar
+
+
+

@@ -1,0 +1,4 @@
+los dispositivos externos se clasifican en 3: interacción con humanos maquinas 
+y de comunicacion
+
+las señales con las que se conecta los dispositivos de E/S.... son: control estado y datos

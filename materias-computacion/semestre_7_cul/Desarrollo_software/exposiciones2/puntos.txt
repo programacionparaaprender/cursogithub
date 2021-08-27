@@ -1,0 +1,5 @@
+Modelo de construccion
+Implementacion
+Despliegue
+Prueba
+Gestion de cambio de configuracion

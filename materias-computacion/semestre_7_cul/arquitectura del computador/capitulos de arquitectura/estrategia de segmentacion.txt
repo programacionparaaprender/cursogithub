@@ -1,0 +1,9 @@
+los 3 se conectan a la memoria
+(rectangulo pequeño de la derecha)
+y a la izq el grande
+es el procesador
+que internamente tiene 4 partes
+pc mar mbr y unidad de control
+unidad de control envia a mar y pc
+y pc envia a mbr
+eso es todo

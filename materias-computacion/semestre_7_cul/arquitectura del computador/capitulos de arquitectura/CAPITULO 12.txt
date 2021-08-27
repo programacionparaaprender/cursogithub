@@ -1,0 +1,262 @@
+capitulo 12
+
+Organizacion del procesador.
+
+1) captar instruccion: el procesador lee una instruccion de la memoria.
+2) interpretar instruccion: la instruccion se decodifica para determinar que accion es necesaria.
+3) captar datos:la ejecucion de una instruccion puede exigir leer datos de la memoria o de un modulo de E/S.
+4) procesar datos: la ejecucion de una instruccion puede exigir llevar a cabo una operacion aritmetica o logica con los datos. 
+5) escribir datos: los resultados de una ejecucion pueden exigir escribir datos en la memoria o en el modulo de E/S.
+
+el procesador necesita almacenar algunos datos temporalmente, en otras palabras necesita una pequeña memoria interna, una unidad
+de control y la ALU lleva a cabo el verdadero procesamiento de datos, 
+
+la unidad de control: controla las transferencias de datos e instrucciones hacia dentro y fuera del procesador y el 
+funcionamiento de la ALU.
+
+Organizacion de los Registros.
+
+un computador emplea una jerarquia de memoria. En los niveles mas altos de la jerarquia, la memoria es mas rapida, mas pequeña y mas cara.
+
+-los registros del procesador son de dos tipos:
+
+registros visibles por el usuario: permiten al programador de lenguaje maquina minimizar las referencias a la memoria principal por medio de
+la optimizacion del uso de los registros.
+
+son aquellos que pueden ser referenciados por medio del lenguaje maquina que ejecuta el procesador 
+
+se clasifican en:
+
+a)uso general: asignados por el programador a diferentes funciones, cualquier registro de uso general puede contener el operando para cualquier codigo
+de operacion, con frecuencia existen restricciones, puede haber registros especificos para operaciones de coma flotante y operaciones con la pila. 
+
+b)datos: pueden usarse unicamente para contener datos y no se pueden emplear en el calculo de direccion.
+
+c)direcciones: Pueden ser de uso general o dedicados a un modo de direcionamiento particular pueden 
+
+citar los siguientes ejemplos: 
+
+Puntero de Segmento: en una maquina de direcionamiento segmentado.
+
+-Registros indices: se usan para direccionamientos indesados y pueden ser auto indesados.
+-Puntero de Pila: Si exite direcionamiento pila visible por el usuario normalmente hay un registro que apunta a la cabezera de esta.
+  
+d)codigos de condicion: Son bits fijados por el hardware del procesador como resultado de alguna operacion estos se agrupan en uno o mas registros
+y forman parte de un resgistro de control muchos procesadores incluyendo los de la arquitectura IA-64 y los procesadores MIPS no usan codigos de 
+condicion.
+
+registros de control y de estado: son utilizados por la unidad de control para controlar el funcionamiento del procesador y por programas privilegiados
+por el sistema operativo para controlar su ejecucion. Hay diversos registros del procesador que no son visibles por el usuario 
+
+son esenciales 4 registros:
+
+1) Contador de programa
+2) Registro de Instruccion
+3) Registro de direccion de memoria
+4) Registro intermedio de memoria
+
+No todos los procesadores tienen registros internos pero es necesario algun mecanismo de almacenamiento equivalente los registros que se acaban de 
+mencionar se usan para transferencia de datos entre el procesador y la memoria muchos diseños de procesadores incluyen un registro o un conjunto
+de registro conocidos a menudo como palabra de estado (PSW). 
+
+Entre los campos mas comunes se incluyen los siguientes:
+
+Signos,Cero,Acarreo,Igual,Desbordamiento,Interruciones Habilitadas/Inabilitadas,Supervisor.
+
+Ejemplos de Organizaciones de registros de microprocesadores: Examinamos 2 microprocesadores de 16 bits, el motorola MC68000 (STRI79) y el intel8086
+(MORS78) el motorola distrubuye sus registros de 32 bits en 8 de datos y 9 de direcciones tambien incluye un contador de programa de 32 bits y un
+registro de estado de 16 bits.
+
+-Ciclo de Instruccion: Describimos el ciclo de instruccion del procesador que incluye los siguentes: 
+
+Captacion: llevar la siguiente instruccion de la memoria al procesador.
+Ejeccucion: interpretar el codigo de operacion y llevar acabo la operacion indicada
+Interrucion: si las interruciones estan habilitadas y a ocurrido un interrucion guardar el estado del proceso y anterder la interrucion
+
+-Ciclo Indirecto: La principal linea de actividad consiste en alternar la captacion y ejeccucion de instrucciones.
+
+Flujo de Datos: La secuencia exacta de eventos que tiene lugar durante un ciclo de instruccion depende del diseño del procesador. 
+
+ciclo de captacion: se lee una instruccion de la memoria, el contador del programa contiene la direccion de la siguiente instruccion, 
+esta direccion se lleva a registro de direccion de memoria y la unidad de control solicita una lectura de memoria.
+
+El resultado se coloca en el bus de datos y se copia en el registro intermedio de memoria y despues se lleva al registro de instruccion mientras tanto
+se incrementa el contador del programa para la siguiente captacion una vez concluido este ciclo,la unidad de contro examina el contenido del registro
+de instruccion para determinar si contiene un campo que use direccionamiento indirecto. 
+Si es asi se lleva a cabo un ciclo indirecto, estos son sencillos y predecibles.
+
+ciclo de ejeccucion: adopta muchas formas ya que depende de cual de las diversas instrucciones maquinas esten en el registro de instruccion.
+
+Segmentacion de Instrucciones. 
+
+Estrategia de Segmentacion: La segmentacion de instrucciones es similar al uso de una cadena de montaje en una fabrica ejecuta varias etapas simulta-
+neamente este proceso es conocido como segmentacion de cause por que como una tuberia o cause en un extremo se acepta nuevas entradas antes de que 
+algunas entradas aceptadas con anterioridad aparescan como salidas en el otro extremo .
+
+La ejeccucion de instrucciones tienes varias etapas divide el ciclo hasta en diez tareas , para una aproximacion mas sencilla consideraremos la 
+subdivision en 2 etapas captar ejeccucion y ejecutar instruccion.
+
+La primera etapa capta una instruccion la almacena de un buffer, cuando la segunda etapa este libre la primera le pasara la instruccion almacenada
+mientras que la segunda ejecuta la instruccion, la primera etapa utiliza un ciclo de memoria no usado para almacenar la siguiente instruccion 
+
+si las etapas de captacion y ejecucion fueran de igual duracion el tiempo del ciclo se reduciria a la mitad la duplicacion de la velocidad de
+ejecucion es poco probable por: 
+ 
+El tiempo de ejecucion sera generalmente mas largo que el tiempo de captacion.
+En una instruccion de saldo condicional la siguiente instruccion a captar es desconocida.
+A pesar de estos factor que reducen el efectividad potencial del cause de dos etapas consideremos la siguiente descomposicion del procesamiento de 
+una instruccion.
+
+Captar instruccion 
+decodificar instruccion
+calcular operandos 
+captar operando
+ejecutar instruccion 
+escribir operando 
+
+con esta descomposicion
+
+las diversas etapas tendran casi igual duracion,si las 6 etapas no tienen la misma duracion habra cierta espera en algunas etapas como se discutio
+antes en el cause de 2 etapas,podria parecer que cuanto sea el mayor numero de etapas en el cause, mas rapida sera la velocidad de ejecucion se 
+observaron 2 factores que frustan este aparentemente sencillo patron de diseño de altas prestaciones:
+
+En cada etapa hay algun gasto extra de devido a la transferencia de datos de buffer a buffer y a la realizacion de varias funciones de preparacion y 
+distribucion.
+
+La cantidad de logica de control necesaria para manejar dependencia de memorias y registro aunmenta enormemente con el numero de etapas.
+
+La segmentacion de instrucciones es una poderosa tecnica para aunmentar las prestaciones pero requiere un diseño cuidadoso si se quiere obtener 
+resultados optimos con una complejida rasonable.
+
+Tratamiento de Saltos: Unos de los mayores problemas del diseño de un cause de instrucciones es asegurar un flujo estable de instruccion en las 
+etapas iniciales del cause el principal obstaculo es la instruccion de salto condicional 
+
+se han considera varias aproximaciones: 
+
+Flujos multiples un cause simple se ve penalizado por las instrucciones de salto por que debes escojer una de las dos instrucciones y puede hacer
+una eleccion equivocada esto tiene dos problemas:
+
+Causes multiples significan retardos de acceso a los registros y las memoria.
+Pueden entrar en el cause instrucciones de saltos adicionales antes de que se resuelva la decision del salto original.
+
+Precaptar el destino del Salto: Cuando se identifica un salto condicional se precapta la induccion del destino ademas de las siguientes a la de
+salto. Se guarda entonces esta instruccion si se produce el salto el destino ya habra sido precaptado. 
+
+Buffer de bucles: Es una memoria pequeña de gran velocidad  gestionada por la etapa de captacion de instruccion del cause que contiene las enes 
+instrucciones captadas recientemente el buffer tienes 3 utilidades:
+
+- El buffer contrenda algunas instrucciones que estan despues de la direccion de la instruccion actualsignifican que estaran disponibles las 
+instrucciones sin necesitar el tiempo de acceso habitual.
+- Si ocurre un salto a destino a solo unas pocas desiciones de la instruciones de salto el destino ya esta en el buffer.
+- Si el buffer es lo suficientemente grande para contener todas las instrucciones de un bucle,entonces esas instrucciones solo han de ser captadas 
+una vez, en las siguiente captaciones todas las instrucciones ya se encuentran en el buffer.
+
+ Prediccion de Saltos: Se pueden usar varias tecnicas entre las mas usuales estan:
+
+-Predecir que nunca se salta.
+-" " " " "  que siempre se salta.
+-" " " " "  segun el codigo de operacion.
+Conmutador Saltar/ No Saltar.
+
+Tablas de Historia de Saltos: Las primeras 3 soluciones son estatitas no dependen de la historia de la ejecucion hasta la instruccion de salto 
+condicional las ultimas 2 son dinamicas dependen de la historia de ejecuccion estas intentan mejorar la exactitud registrando historias de saldo de 
+un programa.
+
+Salto retardado: Se pueden mejorar las prestaciones de un cause reordenando las instrucciones automacticamente de manera que estas tengan un lugar
+despues de lo realmente deseado.
+
+
+
+
+
+
+
+
+
+
+
+El procesador pentium.
+
+Organizacion de los registros:Se dividen en los siguientes generales,de segmentos,indicadores,puntero de instrucciones,tambien registros dedicados
+a la unidad de coma flotantes:Numericos,de control,de estado,palabra de etiqueta.
+
+Registro de EFLAGS: Indica el estado del procesador y ayuda a controlar su funcionamiento. 
+
+Indicador de Trampa.
+
+Indicador de Habilitacion de Interruciones.
+
+" " " " de direccion
+
+Nivel de privilegio 
+
+Indicador de Reanudacion.
+
+Verificacion de Alineacion.
+
+Indicador de Indentificacion.
+
+Registro de Control: Se usa para controlar varios aspectos del funcionamiento del procesador los indicadores dson los siguientes:
+
+Habilitacion de Proteccion.
+
+Coprocesador presente.
+
+Emulacion.
+
+Tarea Conmutada.
+
+Tipos de Coprocesador.
+
+Error numerico.
+
+Proteccion de escritura.
+
+Mascara de alineacion.
+
+No escritura inmediata.
+
+Inabilitacion de Cachè.
+
+Paginacion.
+
+Registro MMX: Se utilizan campos de direccionamiento de registro de 3 bits de modo que son posibles 8 registros MMX tienen estas caracteristicas 
+fundamentales: los registros se acceden directamente.
+
+Cuando una instruccion MMX se ejecuta la palabra de etiqueta de coma flotante se marca como valida.
+
+La Instruccion EMMS deja los bits de etiqueta de coma flotante de tal modo que indica que todos los registros se encuentran vacios.
+
+Cuando se escribe un valor en un registro MMX se ponen todos a 1.
+
+Procesamiento de Interrupciones: Es un servicio que se proporciona para apoyar sistemas operativos para que una gran varia de causas de interruciones
+puedan cometerse y sea reanudado mas tarde se divide en:
+
+Interruciones y exseciones.
+
+Tablas de vectores de interrucion.
+
+Gestion de Interruciones.
+
+El procesador Power PC: 
+
+Organizacion de los registros la unidad de coma fija incluye lo siguiente:
+
+Generales,Registros de excesion,y los que son visibles por el usuario: generales,registros de estados y control de coma flotantes,registro de 
+condicion, registro de enlace, cuenta.
+
+Procesamiento de interruciones: Se clasifican de la siguiente manera:
+
+Registro de estado de la memoria.
+
+Gestion de Interruciones.
+
+
+
+
+
+  
+
+
+
+ 

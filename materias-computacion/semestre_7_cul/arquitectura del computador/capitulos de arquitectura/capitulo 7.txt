@@ -1,0 +1,433 @@
+Capitulo 7 Entrada/Salida
+
+DISPOSITIVOS EXTERNOS 
+
+las operaciones de E/S se realizan a travez de una amplia gama de dispositivos que proporcionan
+una forma de intercambiar datos entre el exterior y el computador.
+
+un enlace se utiliza para intercambiar señales de control, estado y datos.
+
+un dispositivo de E/S se denomina PERIFERICO
+
+los dispositivos externos se clasifican en 3:
+
+- interaccion con humanos: comunica el usuario con el computador(terminales de video, impresoras)
+
+- interaccion con maquinas: comunica elementos del equipo(discos magneticos, sistemas de sintas,
+  sensores y actuadores)
+
+- de comunicacion: comuica dispositivos remotos(puede ser interaccion con humanos un terminal, 
+  de interaccion con maquinas o incluso orto computador)
+
+Las señales de contol: determinan la funcion que debe realizar el dispositivo como..
+ENTRADA (INPUT)
+LECTURA (READ)
+SALIDA (OUTPUT)
+ESCRITURA (WRITE)
+
+las señales de estado: indican el estado del dispositivo
+LISTOS/NO LISTOS (READY/NOT-READY)
+
+La logica de control: controla su operacion en respuesta a las indicaciones del modulo de E/S.
+
+El trasnductor: convierte las señales electricas asociadas al dato a otra fosma de energia en 
+el caso de una salida o una entrada
+
+TECLADO/MONITOR
+
+es la forma mas comun de interaccion computador/usuario. proporciona una entrada a traves del
+teclado y una salida a traves de la pantalla
+
+la unidad basica de intercambio es el caracter. asociado con cada caracter hay un codigo
+llamado IRA(international reference alphabet)
+
+los caracteres son de 2 tipos imprimibles y de control
+
+los imprimibles sonalfabeticos numericos y especiales
+los de control se utilizan para controlar la visulaizacion de los caracteres
+
+CONTROLADOR DE DISCO (DISK DRIVE)
+
+contiene la electronica necesaria para intercambiar señales de datos, control y estado con un 
+modulo de E/S mas la electronica para cntrolar el mecanismode LESCTURA/ESCRITURA 
+del disco (es de cabeza fija)
+
+MODULO DE E/S
+
+cunciones de un modulo:
+
+- control y temporizacion
+- comunicacion con el preocesador 
+- comunicacion con los dispositivos
+- almacenamiento temporal de datos
+- deteccion de errores
+
+las funciones de E/S incluye ciertos requisitos de CONTROL Y TEMPORIZACION para la transferencia
+de datos... son los siguientes pasos:
+
+1) el procesador interroga al modudo de E/S para comprobar que el dispositivo esta conectado
+2) el modulo devuelve el estado del dispositivo
+3) si el dispositivo esta operando y preparado para transmitir se solicita la transferencia
+4) el modulo obtiene un dato
+5) los datos se transfieren desde el modulo al procesador
+
+la comunicacion con el precesador indica:
+
+- decodificacion de ordenes: el modulo da ordenes al procesador
+- datos: el precesador y el modulo intercambian datos
+- informacion de estado: conocer el estado del modulo de E/S
+- reconocimiento de direccion: cada dispositivo de E/S tiene una direccion. el modulo puede
+reconocer esta para cada uno de los perifericos que controla
+
+el modulo es capaz de COMUNICARSE CON EL DISPOSITIVO esto implica un intercambio de 
+ordenes, informacion de estado y datos.
+
+una tarean esencial para el modulo es el ALMACENAMIENTO TEMPORAL DE DATOS (data buffering)
+
+un modulo de E/S es a menudo responsable de la DETECCION DE ERRORES y de informar de estos
+errores al precesador
+
+ESTRUCTURA DE UN MODULO DE E/S
+
+permite que el procesador vea a una amplia gama de dispositivos de una forma simplificada
+
+un modulo de E/S es aquel que se encarga de la mayoria de lo sdetalles del procesamiento, 
+presentado al procesador una interfaz de alto nivel, se denomina generalmente CANAL DE E/S
+o PROCESADOR DE E/S 
+
+un modulo que sea simple y requiera un control detallado se denominara CONTROLADOR DE E/S o
+CONTROLADOR DEL DISPOSITIVO.
+
+E/S PROGRAMADA
+
+los datos se cambian entre el procesador y el modulo de E/S
+
+con la E/S mediante INTERRUPCIONES el procesador proporciona la orden de E/S, continua ejecutando
+instrucciones y es interrumpido por el modulo de E/S cuando este ha terminado su trabajo.
+
+tanto con la E/S programada como con las interrupciones el procesador es responsable de extraer 
+los datos de la memoria principal
+
+la alternativa se conoce como ACCESO DIRECTO A MEMORIA(DMA) en este caso el modulo de E/S 
+y la memoria principal intercambian datos sin necesidad del procesador
+
+RESUMEN DE LAS E/S PROGRAMADA
+
+con la E/S programada el modulo de E/S realizara la accion solicitada y despues activara 
+los bits apropiados. el modulo de E/S no realizara ninguna otra accion para avisar al procesador
+en definicion no interrumpe al procesador.
+
+ORDENES DE E/S
+
+al ejecutar una instruccion el precesador proporciona una direccion y una orden de E/S.
+hay cuatro tipos de ordenes:
+
+1) control: se utiliza para activar el periferico e indicarle que hacer
+2) test: se utiliza para conmprobar diversas condiciones de estado
+3) lectura: hace que el modulo de E/S capte un dato de un periferico y lo situe en un buffer
+4) escritura:  hace que el modulo de E/S capte un dato de bus y lo trasmita a un periferico
+
+INSTRUCCIONES DE E/S
+
+en la E/S programada hay una estrecha correspondencia entre las instrucciones de E/S que el 
+procesador capta de memoria y las ordenes de E/S que el procesador envia a un modulo de E/S 
+al ejecutar una instruccion
+
+se pueden hacer corresponder facilmente con las ordenes de E/S, la forma de direccion depende
+de la manera de direccionar los dispositivos externos
+
+cuando el procesador, la memoria principal y la E/S comparten un bus comun son posibles 2 modos
+de direccoionamiento: 
+
+-asignado en memoria(memory-mapped): existe un unico espacio de direcciones  para las 
+posiciones de memoria y lso dispositivos de E/S 
+-aislado: el espacio de direcciones de E/S esta aislado del de memoria 
+
+E/S MEDIANTE INTERRUPCIONES
+
+el problema con la E/S programada es que el procesadortiene que esperar un tiempo considerable
+a que el modulo de E/S en cuestion este preparado para resibir o transmitir los datos
+
+una alternativa es que el procesador tran enviar una orden de E/S al modulo continue
+realizando un trabajo util, luego el modulo de v inerrumpira al precesador para solicitar
+servicio cuando este preparado
+
+PROCESAMIENTO DE LA INTERRUPCION
+
+cuando se produce una interrupcion suceden una serie de eventos en el procesador tanto a nivel 
+de hadw como de soft
+
+eventos de hadware:
+
+1 el dispositivo manda un aseñal de interrupcion al procesador
+2 el procesador termina la ejecucion en curso antes de responder a la interrupcion
+3 el proc comprueba si hay interrupciones, determina que hay una, envia una señal. la señal 
+activa la interrupcion
+4 el procesador se prepara para transferir el control a la rutina de interrupcion
+5 el procesador carga el contador de programa con la posicion de inicio del programa de gestion
+de la interrupcion solicitada
+
+una vez que el contador se carga continua con lo siguiente
+
+6 se almacena en la pila del sistema el contador y el PSW del programa interrumpido
+7 se procesa la interrupcion
+8 cuando se termina la interrupcion los valores de los registros almacenados se recuperan
+de la pila se se vuelven almacenar en los registros
+9 recupera lso valores de PSW y del contador de programa desde la pila
+
+CUESTIONES DE DISEÑO
+
+en la implementacion de las E/S mediante interrupciones aprecen dos cuestiones
+
+primero. habran multiples modulos de E/S 
+y segundo. si se han produciodo varias interrupciones como decide el procesador la que debe
+atender
+
+en primer lugar hay 4 tipos de tecnicas que se utiizan comunmente:
+
+- multiples lineas de interrupcion: 
+- consulta software(software poll)
+- conexion en cadena (daisy cahin)
+- arbitraje de bus(vectorizada)
+
+ACCESO DIRECTO A MEMORIA
+
+-inconvenientes de la E/S programada y con interrupciones
+
+la E/S con interrupciones es mas eficiente que la programada
+
+ambas precentan 2 inconvenientes 
+
+- la velocidad de transferencia de E/S esta limitada por la velocidad del procesador
+- elprocesador debe dedicarse a la gestion de las transferencias de E/S
+
+utilizando una E/S programada puede tranferir a alta velocidad al precio de no hacer nada
+la E/S con interrupciones libera parte del procesador  pero erduce la velocidad de E/S
+
+cuando hay que tranferir una gran cantidad de datos se requiere una tecnica mas eficiente 
+el acceso directo a memoria (DMA)
+
+FUNCIONAMIENTO DEL DMA
+requiere un modulo adicional en el bus del sistema. el controlador del DMA es capaz de 
+imitar al procesador y resibir el control del sistema, para hacer esoo el DMA necesita forzar 
+al procesador a que suspenda temporalmente su funcionamiento a esto se le denomina 
+ROBO DE CICLO(CYCLE STEALING)
+
+cuando el procesador desea leer o escribir en via un aorden al modulo del DMA incluyendo lo 
+siguiente:
+
+- si se solicita unalectura o escritura
+- la direccion del dispositivo de E/S
+- la posicion inicial de memoria
+- el numero de palabras a leer o escribir
+
+el procesador solo interviene a comienzo y al final de la tranferencia
+
+CANALES Y POCESADORES DE E/S
+
+la evolucion del funcionamiento de las E/S
+
+1 la CPU controla directamente al periferico
+2 se añade n controlador o modulo de E/S
+3 igual a la 2 pero ahora se emplean interrupciones
+4 el modulo E/S ahor atiene acceso directo a la memoria atravez del DMA
+5 el modulo de E/S se mejora haciendo qu ese comporte como un procesador 
+6 el modulo de E/S tiene unamemoria local propia
+
+cada vez mas funciones de entrada y salida  se realizan sin la intervencion del CPU
+
+CARACTERISTICAS DE LOS CANALES DE E/S
+
+reprecenta una ampliacion del consepto del DMA, puede ejecutar instrucciones, lo que confiere
+un control directo sobre las operaciones 
+
+son comunes 2 tipo s de canales
+
+canal selector: controla varios dispositivos de velocidad elevada se dedica a tranferir datos
+canal multiplexor: puede manejar las E/S de varios dispositivos al mismo tiempo
+
+LA INTERFAZ EXTERNA: FIREWIRE E INFINIBAND
+
+tipos de interfaces: existen 2
+
+-paralelas: hay varias lineas conectadas al modulo de E/S y el periferico tranfiere varios
+bits simultaneamente 
+-en serie: hay solo una linea para transmitir datos y los bits deben transmitirce uno a uno
+
+el dalogo para una operacion de escritura es la siguiente:
+
+
+- el modulo de E/S envia una señal solcitando permiso para enviar datos
+- en periferico reconoce la solicitud
+- el modulo de E/S tranfiere los datos 
+- el periferico reconoce la recepcion de los datos
+
+una operacion de lectura se realiza de forma similar
+
+
+CONFIGURACION PUNTO A PUNTO Y MULTIPUNTO
+
+una interfaz punto a punto proporciona una linea especifica entre el modulo de E/S y el 
+dispositivo externo
+
+las interfaces multipunto son utilizadas para soportar dispositivos de almacenamiento 
+masivo (discos y cintas) y dispositivos multimedia (CD-ROM equipos devideo y audio)
+
+BUS SERIE FIREWIRE
+
+es un bus serie de altas prestaciones 
+
+precenta ciertas ventajas sobre el SCSI
+
+- es de muy alta velocidad
+- bajos costos
+- facil de implementa
+- se utiliza para transmitir imagenes de video
+- utiliza tranmicion en serie
+(las interfaces paralelas como las SCSI necesitan mas lineas  lo que significa cables mas anchos
+ mas caros y conectores mas anchos y mas caros conmas terminales que se pueden doblar o romper)
+
+confuguraciones de firewire
+
+soporta lo que se conoce como conexion rapida (hot plugging) que permite conectar y desconectar
+perifericos sin tener que reconfigurar el sistema
+
+una propiedad importante es que especifica un protocolo de 3 capas:
+
+- capa fisica:define los medios de transmision, las señales y caracteristicas y caracteristicas 
+electricas de cada no de ellos
+
+posee 2 tipos de arbitraje (se basa en estructura de arbol)
+
+-arbitraje equitativo:el bus se organiza en intervalos de equidad 
+-arbitraje urgente: se pueden configurar lo snodos para que tengan una prioridad urgente
+
+- capa enlace: describe la transmision de los datos en los paquetes
+
+se permiten 2 tipos de transmision:
+
+-asincronica: se trasmite un paquete con una cantidad visible de datos 
+-isocronica: se transmite una cantidad variable de datos mediante una secuencia de paquetes
+
+se describe una transaccion asincronica simple.el proceso de enviar un paquete se llama SUBACCION
+esta consta de 5 periodos de tiempo:
+
+1- secuencia de arbitraje
+2- transmision de paquetes
+3- intervalo de reconocimiento
+4- reconocimiento
+5- intervalo de subaccion
+
+- Capa de transaccion: describe un protocolo de solicitud-respuesta que oculta a las aplicaciones
+los detalles de las capas intferiores
+
+INFINIBAND
+
+se pretendia que sustituyera al bus PCI en servidoresal proporcionar mascapacidad , y mayores 
+posibilidades de expancion. escencialmente permite que los servidores los equipos de 
+almacenamiento remoto y otros dispositivos de red se pudieran conectar a traves de un sistema de 
+conmutadores y enlaces
+
+LA ARQUITECTURA DE INFINIBAND
+
+el PCI precente una arquitectura limiada con respecto al infiniband.
+con infiniband no es necesario  que el hardware de interfaz de E/S se encuentre dentro del 
+chasis del servidor
+
+a diferencia del PCI el diseño del canal de infiniband permite que los dispositivos de E/S 
+puedan situarce a una distancia del servidos hasta de 17m con cobre, 300m con fibra optica
+multimodal y hasta 10km con fibra obtica uninodal
+
+los elementos claves son los siguientes:
+
+-adaptador de canal de computador(host channel adapter HCA): conecta el servidor a un conmutador
+infiniband
+
+-adaptador de canal de dispositivo(target channel adapter TCA): se utiliza para conectar los 
+sistemas almacenamiento los encaminadores y otros dispositivosperifericos
+
+-conmutador infiniband: porporciona conexiones fisicas punto a punto a un conjunto de 
+dispositivos y conmuta el trafico entre enlaces
+
+-enlaces: conecta un conmutador y un adaptador de canal a 2 conmutadores
+
+-subred: consiste en 1 o mas conmutadores interconectados
+
+-encaminador: conecta las subredes infiniband o concta un conmutador a una red local
+
+FUNCIONAMIENTO DE INFINIBAND
+
+cada enlace fisico entre un conmutador y una interfaz puede contener 16 canale logicos 
+denominados LINEAS VIRTUALES. los datos se envia en forma de secuencia de paquetes 
+
+el conmutador infiniband asigna el trafico
+
+tambien en su arquitectura se utilizan 4 capas
+
+-fisica: define 3 velocidades de conexion(1x,4x,12x)
+-enlace: define la estructura basica de los paquetes
+-red: encamina los paquetes
+-transporte: proporciona un mecanismode fiabilidad para la tranferencia de punto a punto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

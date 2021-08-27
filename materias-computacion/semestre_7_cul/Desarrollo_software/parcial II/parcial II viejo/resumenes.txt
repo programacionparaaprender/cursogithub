@@ -1,0 +1,40 @@
+1.-Lenguaje Unificado de Modelado(UML)
+1.2. Los objetivos de uml son
+1.2.1. Visualizar
+1.2.2. Especificar
+1.2.3. Construir
+1.2.4 Documentar
+1.3. UML esta compuesto por tres bloques de construccion
+1.3.1. Elementos
+1.3.2. Relaciones 
+1.3.3. Diagramas
+1.4 Hay varios tipos de elementos uml
+1.4.1. Elementos estructurales
+1.4.2. Elementos de comportamiento
+1.4.3. Elementos de agrupacion
+1.4.4. Elementos de anotacion
+1.4.5. Elementos de asociacion
+1.4.6. Elementos de agregacion
+1.4.7 Elementos de composicion
+1.4.8. Elementos de generalizacion
+
+2. Clasificacion diagramas de uml
+2.2. Diagramas de estructura
+2.2.1.de clases  :son las clases del sistema
+2.2.2.de objetos :instancias de clases
+2.2.3.de paquetes: son carpetas
+2.2.4.de componentes:
+
+2.3. Diagramas de comportamiento
+2.3.1.de estado (los automatas)
+2.3.2.de casos de uso
+interaccion de entidades con casos de uso
+a traves del sistema
+2.3.3.de actividad (diagrama de flujo)
+muestra las actividades de computacion implicadas
+
+2.4. Diagramas de interaccion
+2.4.1.de comunicacion (como mezcla de secuencia y estado)
+se numeran los mensajes para saber cual ocurre primero que otro
+2.2.2.de secuencia (interaccion entre objetos)
+por una linea vertical se sabe cuales ocurren primero

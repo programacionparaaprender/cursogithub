@@ -1,0 +1,170 @@
+1 Definicion de Diagrama de Objetos
+MOO Metodologia Orientada a Objetos
+POO Programacion Orientada a Objetos
+OMT Tecnicas de Modelado a Objetos
+
+2 Fases de OMT
+2.1 Analisis : El analista del sistema construye el modelo del 
+dominio
+2.2 Diseño de Sistemas : El Diseñador del Sistema construye el 
+modelo del sistema
+2.3 Diseño de Objetos : El Diseñador de Objetos construye el 
+modelo de objetos pero le agrega detalles de implementacion
+2.4 Implementacion: Con los modelos antes utilizados se empieza a
+construir la aplicacion con sus relaciones y objetos y se traducen
+a una implementacion concreta
+
+3 Modelos de OMT
+3.1 Modelo de objetos : Se construye la estructura estatica de 
+objetos, se representa mediante diagrama de objetos
+3.2 Modelo dinamico   : Se definen como funcionaran los 
+temporizadores y la secuencia en que se van a mostrar los mensajes
+se representa con diagrama de estados
+
+3.3 Modelo funcional  : Se definen los cambios que van a 
+realizarse en las variables. Se representa mediante diagrama de
+flujo de datos
+
+4 Ventajas de Metodologia Orientada a Objetos
+4.1 Reutilizacion : Las clases son diseñadas para poder ser 
+reutilizadas por otras clases
+4.2 Estabilidad   : Las clases se vuelven estables al ser 
+reutilizadas por otras clases al comprobarse que no tienen fallas
+4.3 Calidad       : El software al estar compuesto por clases
+estables es un software de calidad
+4.4 Integridad    : La orientación a objetos nos permite definir
+metodos y atributos que sean publicos, privados, para poder tener
+una mayor seguridad.
+
+5. Lenguaje Unificado de Modelado (UML)
+Es un lenguaje grafico para describir la estructura estatica,
+comportamiento e interacción del sistema, con un conjunto de
+diagramas que al unirlos nos proporsionaran vistas del sistema
+
+6. Para UML se considera que el modelo de proceso de software sea
+6.1 Basado en casos de uso      : Que sea el artefacto basico 
+para definir el comportamiento del sistema
+6.2 Centrado en la arquitectura : Que sea el artefacto basico
+para conceptuar.
+6.3 Iterativo                   : Que en el desarrollo alla un 
+flujo constante de ejecutables
+6.4 Incremental                 : Que en el desarrollo alla un
+conjunto de incrementos y cada incremento cumple con un nuevo
+requerimiento hasta que se cumplen todos los requerimientos.
+
+7. Ciclo de vida UML
+7.1 Iniciacion o Concepcion : Se procede a desarrollan las ideas
+para entregar el sistema final.    
+7.2 Elaboracion             : Se desarrollan los casos de uso
+7.3 Construccion            : Se procede a construir el sistema
+7.4 Transicion              : Se realizan correcciones de errores
+
+8. Modelo de la Arquitectura:
+8.1 Se especifica la organizacion del sistema
+8.2 Se especifica el comportamiento de las colaboraciones
+8.3 Se especifica la composicion de los elementos estructurales
+8.4 Se seleccionan los elementos de estructurales
+8.5 Se especifica el estilo de la arquitectura que guiara la 
+organizacion del sistema
+
+9. Las vistas para describir mejor el sistema son:
+9.1 La vista de casos de uso:
+Digramas para describir la estructura estatica: 
+Diagrama de casos de uso
+Diagramas para describir la estructura dinamica:
+Diagramas de interaccion
+Diagramas de estado y actividades
+
+9.2 La vista de diseño:
+Diagramas para describir la estructura estatica:
+Diagrama de clases y objetos
+Diagramas para describir la estructura dinamica:
+Diagramas de interaccion
+Diagramas de estado y actividades
+
+9.3 La vista de interaccion:
+Igual que el diagrama de diseño, haciendo enfasis en las clases
+activas
+
+9.4 La vista de implementacion:
+Diagramas para describir la estructura estatica del sistema
+Diagramas de componentes
+Diagrama para describir la estructura dinamica del sistema
+Diagramas de interaccion
+Diagramas de estado, actividades
+9.5 La vista de despliegue:
+Diagramas para describir la estructura estatica del sistema
+Diagramas de despliegue
+Diagramas para describir la estructura dinamica
+Diagramas de interaccion
+Diagramas de estado, actividad
+
+10. Elementos de UML
+
+11. Elementos estructurales
+11.1 Clases
+11.2 Componentes
+11.3 Colaboraciones
+11.4 Interfaces
+11.5 Nodos
+11.6 Casos de uso
+11.7 Artefactos
+11.8 Clases activas
+
+12. Elementos de comportamiento
+12.1 Mensajes
+12.2 Estados
+12.3 Actividades
+
+13. Elementos de agrupacion
+13.1 Paquetes
+
+14. Elementos de Anotacion
+14.1 Notas
+
+15. Elementos de Notacion
+son todos estructurales, agrupacion, comportamiento, nota
+
+16. Diagramas de casos de uso
+16.1. Casos de uso
+16.2. Actor
+16.3. Escenario
+16.4. Relacion
+16.5. Dependencia
+16.6. Extends
+16.7. Limite de sistema
+16.8. Include
+
+17. Diagrama de Secuencia
+17.1 Objeto
+17.2 Linea de vida
+17.3 Mensaje
+17.4 Actor externo
+
+18. Diagrama de estado
+18.1 Estado
+18.2 Accion
+18.3 Condicion de guarda
+18.4 Evento disparador
+
+19. Diagrama de Actividades
+19.1. Actividad
+19.2. Calles y flujo de objetos
+19.3. Bifurcacion
+19.4. Condicion de guarda
+19.5. Unificacion
+19.6. Union
+19.7. Division
+
+20. Diagrama de componentes
+20.1 Componentes
+20.2 Artefactos 
+20.3 
+20.4
+20.5
+20.6
+20.7
+
+
+
+

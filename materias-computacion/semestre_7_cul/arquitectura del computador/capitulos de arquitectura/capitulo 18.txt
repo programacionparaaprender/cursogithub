@@ -1,0 +1,219 @@
+
+capitulo 18
+
+SMP (multiprocesadores simetricos)
+NUMA (acceso no uniforme a memoria)
+
+ORGANIZACIONES CON VARIOS PROCESADORES
+
+  - TIPOS DE SISTEMAS DE PARALELOS
+      categorias o clses de computadores:
+
+	- SISD (una secuencia de instrucciones y una secuencia de datos): un unico 
+	  procesador  interpreta una unica seciencia de instrucciones.
+
+	- SIMD (una secuencia de instrucciones y multiples secuencia de datos):
+	  un unica instruccion maquina controla paso a paso la ejecucion controlada
+	  y sincronizada de un cierto numero de elementos de proceso
+
+	- MISD (multiples secuencias de instrucciones y una secuencia de datos):
+	  se tranmite una seciencia de datos a un conjunto de procesadores.
+
+	- MIMD (multiples secuencia de instrucciones y multiples secuencia de datos):
+	  con un conjuto de procesadores ejecuta simultaneamente secuencias de 
+	  instrucciones diferentes con conjunto de datos diferentes.
+
+  - ORGANIZACIONES PARALELAS (ver imagen 18.1 y 18.2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+MULTIPROGRAMADORES SIMETRICOS
+	se refiere a la arqutectura del computador y al comportamiento del sistema 
+	operativo 
+
+   Caracteristicas:
+	1) hay 2 o mas procesadores similares de capacidades comparables
+	2) comparten la memoria principal y la E/S
+	3) todos los procesadores comparten los dispositivos de E/S
+	4) todos los procesadores pueden desempeñar las mismas funciones
+	5) el sitesma esta controlado por un S.O integrado
+
+   Ventajas potenciales:
+	- prestaciones: si puede organizarce de forma que parte del mismo puedan 
+	  realizarce en paralelo
+
+	- disponibilidad: un fallo en un procesador no hara que el computador se 
+	  detenga.
+
+	- crecimiento incremental: se pueden aumentar las prestaciones añadiendo
+	  mas procesadores.
+
+	- escalado: se pueden ofrecer productos con precios y prestaciones diferentes
+	  en funcion al numero de procesadores que configuran el sistema.  
+
+  - ORGANIZACION
+	en algunas configuraciones, cada procesador puede tener tambien su propia
+	memoria principal privada y sus canales de E/S ademas de los recursos compartidos
+	
+
+  - BUS DE TIEMPO COMPARTIDO
+	para facilitar las transferencias de DMA con los procesadores de E/S se 
+	proporcionan los elementos para el:
+
+	- direccionamiento: debe ser posible distinguir los modulos del bus para 
+	  determinar la fuente de destino de los datos
+	
+	- arbitraje: cualquier modulos de E/S puede funcionar temporalmente como un 
+	  maestro
+	
+	- tiempo compartido: cuando un modulo esta controlando un bus los otros modulos 
+	  no tienen acceso al mismo y es necesario suspender su operacion hasta que 
+	  disponga del bus
+
+     la organizacion de los bus presenta varias caracteristicas atractivas	
+
+	- simplicidad: es la organizacion mas simple para organizar el multiprocesador
+
+	- flexibilidad: es sencillo expandir el sistema conectando mas procesadores al bus
+	
+	- fiabilidad: el bus es un medio pasivo y el fallo en los dispositivos no provoca
+	  el fallo de todo el sistema.
+
+    la principal desventaja de la organizacion de los buses son las prestaciones
+
+  - CONCIDERACONES DE DISEÑO DE UN SISTEMA OPERATIVO DE MULTIPROCESADOR
+      entre los puntos clave del siseño estan:
+
+	- procesos concurrentes simultaneos: deben ser reentrantes y poder 
+	  ejecutar simultaneamente el mismo codigo
+	
+	- planificacion: asigna los procesos preparados a los porcesadores
+
+	- sincornizacion: aegura la exclucion mutua y la ordenacion de eventos
+
+	- gestion de memoria: debe comprender todos los aspectos propios de los computadores
+	  monoprocesadores 
+
+	- fiabilidad y tolerancia a fallos: se ebe reconocer la perdida de un procesador
+	  y reestructurar las tablas de gestion.
+
+  - UN SMP COMO GRAN COMPUTADOR
+     los componentes claves  de la configuracion son los siguientes:
+
+	- chip con 2 nucleos de procesamiento (dual-core)
+	- cache L2
+	- elemento del control de sistema (SCE)
+	- control de almacenamiento principal (MSC)
+	- modulos de memoria
+	- adaptador de bus de memoria (MBA)
+  
+COHERENCIA DE CACHE Y EL PROTOCOLO MESI
+	- postescritura (write back): solo se hace en la cache.
+
+	- escritura directa (write through): se realizan en memoria principal y a la vez 
+	  en la cache
+
+  - SOLUCIONES DE SOFTWARE
+	intentan evitar la necesidad de circuiteria y logica hardeare adicional dejando 
+	que el compilador y el S.O se encarguen del problema.
+
+  - SOLUCIONES DE HARDWARE
+	se denominan protocolos de coherencia de cache. estas soluciones permiten 
+	reconoces dinamicamente el momento de la ejecucion las situaciones de 
+	inconsistencaias proncipales.
+
+	- protocolos de directorio: recogen y mantiene  a informacion acerca de donde 
+	 reciden las copias de las loneas. contiene informacion de estado global en 
+	relacion conlos contenidos de las diferentes caches locales.
+
+  - PROTOCOLOS DE SONDEO (SNOOPY PROTOCOLS)
+	distribuyen la responsabilidad de mantener la coherencia de la cache entre todos 
+	los controladores de cache de mmultiprocesador.
+	
+	se adaptan bien a los multiprocesadores basados en bus puesto que forma una forma
+	sencilla de para la difucion y sondeo.
+	
+	- enfoques basicos del protocolode sondeo
+		- invalidar-si-escritura: puede haber multiples procesadores que leen
+		pero un solo procesador que escribe en un momento dado
+
+		- actualizar-si-escritura o difundir-escritura: pueden haber varios 
+		procesadores que leen
+
+  - EL PROTOCOLO MESI
+      la cache de datos incluye dos bits de estado en la marca, puesto que cada linea
+      puede estar en uno de estos cuatro estados:
+	
+	- modificado: la linea de cache ha sido modificada
+	
+	- exclusivo: la linea de cache tiene el mosmo contenido que la memoria principal
+	y no esta precsente en ninguna cache
+
+	- compartido: la linea caches tiene el msmo contenido que en memoria principal
+	y puede estar presente en otra cache.
+
+	- no-valido: la linea de cache no contiene datos validos
+
+     fallo de lectura
+        cuando se produce un fallo de lectura en la cache local
+	
+     acierto de lectura
+	cuando se produce un acierto en una lectura dentro de una linea de cache local
+
+     fallo de escritura
+  	el procesador comienza una leectura para acceder a la linea de moemoria principal
+	que ocntiene la direccion que no esta en la cache
+
+     acierto de escritura
+ 	depende el estado de la linea:
+
+	- compartido
+	- exclusivo
+	- modificado
+
+    consistencia de caches L1-L2
+	se utiliza para extender el protocolo MESI a las cache L1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

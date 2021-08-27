@@ -1,0 +1,364 @@
+CAPITULO 6
+
+DISCOS MAGNETICOS
+
+un disco magnetico e sun plato circular construido con un material no magnetico.
+los sustratos de cristal tienen ciertas ventajas:
+
+- mejora en la uniformidad de la superficie magnetica
+- reduccion de los efectos en la superficie y ayuda a reducir errores de lectura/escritra
+- capacidad para soportar gabaciones
+- mejor rigidez
+- mayor capacidad para resistir golpes y daños
+
+MECANISMOS DE LECCTURA Y ESCRITURA MAGNETICA
+
+los datos se graban y despues se recuperan del disco a traves de una bobina, llamada CABEZA 
+en muchso sistemas hay 2 cabezas una de lectura y una de escritura
+
+el mecanismo de escritura se basa en el hecho de que un flujo electrico atavezando una bobina
+crea un campo magnetico
+
+el mecanismo tradicional de lectura se basa en el hecho de que un campo magnetico en 
+movimiento respectoa una bobina, induce una corriente electrica en la bobina
+
+los discos duros de hoy usan un mecanismo diferente para la lectura, siendo necesario una cabeza
+separada posicionada, por conveniencia, cerca de la cabeza de escritura.
+
+ORGANIZACION Y FORMATO DE DATOS
+
+la cabeza es un dispositivo pequeño, capaz de leer o escribir en una zona del plato que rota 
+bajo ella. esto da lugar a que los datos se organicen en n cojunto de anillos concentricos en
+el plato, llamados PISTAS
+
+las pistas adyacentesestan ceparadas por BANDAS VACIAS esto previene o minimiza los errores
+los datos se transfieren al disco  en sectores
+para evitar inpociciones de presicion ilogicas del sistema los sectores se separan con 
+intrapistas vacias
+
+la informacion se puede escanear a la misma velocidad rotando el dico a una velocidad fija 
+conocida como VELOCIDAD ANGULAR CONSTANTE (CAV)
+
+la ventaja de usar CAV es que los bloques individuales de datos se pueden direccionar directamente
+con la pista y sector
+
+la desventaja de  CAV es que la cantidad de datos que se puede almacenar en las pistas mas externas
+es solo la misma que de las pistas internas
+
+para aumentarla capacidad de los discos duros modernos se utiliza una tecnica conocida como
+GABACION EN VARIAS ZONAS en la que la superficie se divide en varias zonas concentricas
+(usualmete 16)
+
+CARACTERISTICAS FISICAS
+
+primero las cabezas pueden ser fijas o moviles
+
+en un disco de cabeza fija: hay una cabeza de lectura/escritura por pista
+en un disco de cabeza movil: hay solo una cabeza de lectura/escritura que se extiende a traves de 
+todas las pistas
+
+un disco no extraible: esta permanentemente montado en la unidad de disco
+un disco extraible: puede ser quitado y sustituido por otro disco
+
+
+la ventaja de este ultimo es que es posible una cantidad de datos ilimitada con un numero 
+limitado de unidades de disco
+
+los disquetes y los ZIP son ejem de discos extraibles
+
+las cabezas de los WINCHESTER estan montadas en unidades hermeticamente cerradas, que 
+estan casi libres de contaminacion
+(es un tipo de cd rom que trabaja de manera aerodinamica)
+
+PARAMETROS PARA MEDIR LAS PRESTACIONES DE UN DISCO
+
+los detalles de las operaciones de E/S de un disco dependel del tipo de computador, sistema ope,
+naturaleza de los canales de E/S, y del hadware controlador del disco.
+
+el tiempo que tarda la cabeza en posicionarse en la pista se nonoce como TIEMPO DE BUSQUEDA
+el tiempo que tarda el sector en alcanzar la cabeza se llama RETARDO ROTACIONAL
+la suma del tiempo de busqueda, si lo hay, y retardo rotacional  se denomina TIEMPO DE ACCESO
+una vez posicionada la cabeza, se lleva a cabo la operacion de lectura o escritura, desplazandose
+el sector bajo la cabeza, esta operacion conlleca un TIEMPO DE TRANSFERENCIA DE DATOS
+
+en algunos computadores grandes se usa una tecnica conocida como deteccion de posicion  rotacional
+(RPS) funciona cuando se lleva a cabo una orden de busqueda
+
+-tiempo de busqueda: es el tiempo necesario para dezplazar el brazo del disco hasta la pista 
+requerida. el tiempo de busqueda esta formado por 2 componetes clave:
+tiempo inicial de comienzo y tiempo necesario para atravesar las pistas que tienen qu ecruzarse
+na vez que el brazo acceso este a la velocidad adecuada
+
+-retardo rotacional: los dicos, que no sean disquetes  sotan a una velocidad de 3600 rpm, mientras
+que los disquetes rotan normalmente entre 300 y 600 rpm
+
+-tiempo de tranferencia: es el tiempo de tranferencia hacio a desde el disco depende de la 
+velocidad de rotacion del disco
+
+RAID
+
+son esquemas estandarizados para el diseño de bases de datos para discos multiples
+el esquema RAID consta de seis niveles independientes, desde 0 hasta 5, estos niveles no 
+implican una relacion jararquica sino que designan metodos diferentesque poseen 3 caracteristicas
+comunes:
+
+1- RAID es un conjunto de  unidades fisicas de disco vistas por el sistema operativo cmo una unica
+unidad logica
+2- los datos se distribuyen a traves de las unidades fisicas del conjunto de unidades
+3- la capacidad de los discos se usa para almacenar infor de paridad q garantice la recuperacion
+de los DATCS en caso de fallos
+
+los detalles de las caracteristicas 2 y 3 cambian segun los distintos niveles RAID
+
+el RAID 0 no soporta la 3 caracteristica
+
+la estrategia RAID remplaza una unidad de disco de gran capacidad por unidades multiples  de menor
+capacidad y distribuye los datos de modo que se puedan habilitar accesos simultaneos  a los datos
+de varias unidades mejorando las prestaciones de E/S 
+
+la unica contribucion del RAID es hacer incapie en la necesidad de redundancia
+
+niveles del RAID (los niveles 2 y 4 no se ofrecen comercialmente)
+
+-NIVEL 0 DE RAID
+no es un verdadero mienbro de la familia RAID xq no incluye redundancia para mejorar las 
+prestaciones
+
+para el RAID 0 los datos de usuario y sistema estan distribuidos a lo largo de todos los discos
+del conjunto
+
+para RAID 0 como todos los niveles RAID va mas lejos que una sencilla distribucion de datos a 
+traves del conjunto de discos:
+
+los datos son organizados en formas de tiras de datos a traves de los discos disponibles
+
+RAID 0 para alta capacidad de transferencia de datos: pueden ser mas claramente direccionados
+en RAID 0 donde para lograr una velocidad de transferencia de datos alta, se deben cumplir 2 
+requisitos 1)debe existir una capacidad de transferencia alta y 2)la palicacion debe hacer 
+peticones de E/S que se distribuyan aficientemente sobre el conjunto de discos
+
+RAID 0 para altas frecuencias de peticion de E/S: para una peticion individual de E/S de una 
+pequeña cantidad de datos, el tiempo de E/S esta deminado po el el movimiento de las cabezas de 
+discos y el movimiento del disco
+
+-NIVEL 1 DE RAID
+RAID 1 se diferencia de los niveles 2 al 6 en como se consigue la redundancia.
+en RAID 1 la redundancia se logra con el sencillo recurso de duplicar todos los datos
+se hace una distribucion de datos como en RAID 0, pero en este caso cada franja logica se poryecta
+en 2 discos fisicos separados
+
+aspectos positivos:
+
+-una peticion de lecctura puede ser senvida por cualquiera de los discos que contiene los datos
+pedidos
+
+-una pericion de escritura requiere que las 2 tiras correspondientes se actualicen y esto se puede 
+hacer en paralelo
+
+-la recuperacion tras un fallo es sencilla
+
+la principal desventaja es el coste
+
+la RAID 1 puede conseguir altas velocidades de peticion en E/S si la mayor parte de las peticiones 
+son de lectura en este caso las peticiones de RAID 1 son el doble que las del RAID 0
+
+-NIVEL 2 DE RAID
+los niveles 2 y 3 de RAID usan una tecnica de acceso paralelo. en un conjunto de acceso paralelo
+todos los discos miembros paorticipan en la ejecucion de cada peticion de E/S
+
+se usa la descomposicion de datos en tiras. en el caso de RAID 2 y 3 las toras son muy pequeñas
+con RAID 2 el codigo de correccion de errores se calcula a partir de los bits de cada disco
+y normalmente se usa el codigo HAMMING
+
+anunque RAID 2 requiere menos discos que RAID 1 sigue siendo bastante caro
+
+RAID 2 deberia ser solamente una seleccion efectiva en un entorno en el que halla muchos errores
+de disco
+
+-NIVEL 3 DE RAID
+el RAID 3 se organiza de manera similar al RAID 2 
+la diferencia es q el RAID 3 requiere solo un disco redundante
+utiliza acceso paralelo con datos distribuidos en pequeñas tiras
+en vez de un codigo de correccon de errores se calcula un sencillo bit de paridad para el conjunto
+de bits individuales en la misma posicion de todos los discos de datos
+
+redundancia:
+en caso de un fallo en una unidad se accede a la unidad de paridad y se reconstruyen los datos
+dende el resto de los dispositivos.
+una vez que se sustituye la unidad que ha fallado los datos se restauran en la nueva unidad y 
+se reanuda la operacion
+
+prestaciones:
+puesto que los datos se dividen en tiras muy pequeñas RAID 3 puede conseguir velocidades de 
+transferencia de datos muy altas
+
+-NIVEL 4 DE RAID
+los nuveles 4 al 6de RAID usan una tecnica de acceso independiente, cada discooepra 
+independientemente,  de forma que peticiones de E/S separadas se atienden en paralelo
+
+se udan tiras de datos
+
+en el caso de RAID 4 al 6 las tiras son relativamente grandes
+
+con RAID 4 se calcula una tira de paridad bit a bit a partir de las correspondientes tiras de cada
+disco de datos, y los bits de paridad se almacenan en la correspondiente tira del disco de paridad
+
+RAID 4 lleva consigo una penalizacion en la escritura cuando se realiza una peticion de escritura
+de E/S pequeña
+
+en cualquier caso, cada operacion de escritura implica al disco de paridad, que por consiguiente
+se convertira en un cullo de botella
+
+-NIVEL 5 DE RAID
+esta organizado de manerasimilar a RAID 4  la diferencia es que RAID 5 distribuye las tiras de 
+paridad a lo largo de todos los discos 
+
+la distribucion de las tiras de paridad a lo largo de todas la unidades evita el potencial cuello 
+de botella de E/S encontrado en RAID 4
+
+-NIVEL 6 DE RAID
+se introdujo en un articulo de los investigadores de BERKELEY
+
+el el esquema del nivel 6 de RAID se hacen los calculos de paridad distintos que se almacenan en
+bloques separados en distintos discos
+
+la ventaja de RAID 6 es que proporciona una disponibilidad de los datos extremadamente alta
+tendrian que fallar 3 discos en el intervalo MTTE(tiempo medio de reparacion) para no poder 
+disponer de los datos
+
+por otra parte RAID 6 incurre en una penalizacion de escritura ya que cada escritura afecta 
+a dos bloques de paridad
+
+
+MEMORIA OPTICA (ver tabla 6.5)
+
+CD-ROM: tanto el CD de audio como en CD-ROM comparten una tecnologia similar. la principal
+DIFERENCIA es que los lectores de CD-ROM son mas robustos y tienen dispositivos de correccion 
+de errores para asegurar que los datos se transfieran correctamente al disco del computador
+
+la informacios del CD o CD-ROM se recupera con un laser de baja potencia situado en un lector
+o unidad de disco optico
+
+las areas entre hoyos se llaman VALLES. un VALLE es una superficie lisa, que refleja con mayor 
+intensidad  
+
+para conseguir mayor capacidad los CD y CD-ROM no se organizan en pistas concentricas
+en su lugar el disco contiene una unica pista en espiral, que comienza en el centro y se 
+extiende hacia el borde del disco
+
+los hoyos son leidos por un laser a VELOCIDAD LINEAL CONSTANTE (CLV)
+
+la capacidad de una pista y retardo rotacional es mayor cercano al centro
+
+la capacidad de un CD-ROM es de 650MB
+
+los datos de un CD-ROM se organizan en una secuenca de bloques
+
+el formatoi tipico de un bloque consta de los siguientes campos:
+
+- sincronico: el campo de sincronizacion identifica el pricipio de un bloque
+- cabecera: contiene la direccion del bloque y el byte de modo
+- datos: datos del usuario
+- auxiliar: datos del usuario adicionales
+
+los CD-ROM son apropiados para la distribucion de grandes cantidades de datos a un gran 
+numero de usuarios
+
+ventajas:
+
+- se puede replicar en grnades cantidades de forma barata
+- el disco optico es extraible
+
+desventajas:
+
+- es solo lectura no se puede actualizar 
+- el tiempo de acceso es mayor al de una unidad de disco magnetico, tanto como medio seg
+
+CD grabable:
+son CD de una escritura y varias lecturas
+
+el cliente puede escribir una vez ademas de leer el disco
+
+en un CD-R, el medio incluye una capa de tinte, este se utiliza para cambiar la 
+reflectividad u se activa con un laser de alta intensidad
+
+el disco optico CD-R resulta atractivo como almacen de documentos y ficheros
+
+CD regrabable:
+se puede escribir y rescribir como un disco magnetico
+el dico cambia de fase utiliza un material que precenta 2 tipos de reflexion un estado 
+amorfo y otro cristalino
+
+la principal desventaja del cambio de fase de los discos opticos es q el material 
+finalmente  y de forma permanente  pierde sus propiedades
+
+los CD-RW tienen ventajas sobre los CD-ROM y los CD-R
+
+una ventaja clave de los discos opticos es que las tolerancias de los parametros de
+construccion en los discos opticos es mucho mas severa que para los discos magneticos
+de gran capacidad
+
+DISCO DIGITAL VERSATIL (DVD)
+
+sustituira al CD-ROM en los PC y servidores
+
+el DVD lleva el video a la edad digital proporciona peliculas con calidad de imagen 
+impresionate y se puede acceder a ellos aleatoriamente como en los CD de audio se puede
+grabar un gran volumen de datos
+
+la mayor capacidad de DVD se debe a 3 diferencias con respecto al CD
+
+1) los bits se empaquetan mas juntos
+2) utiliza una segunda capa de hoyos y valles sobre la primera capa
+3) puede tener 2 superficies mientras que un CD los datos pregrabados se graban en solo 
+una superficie
+
+CINTA MAGNETICA
+
+me dio ladilla copiarlo jajajaja e suna paja leetelo habla de los VHS y casetes 
+y mariqueras asi con cinta de vaina de esa jajaja
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

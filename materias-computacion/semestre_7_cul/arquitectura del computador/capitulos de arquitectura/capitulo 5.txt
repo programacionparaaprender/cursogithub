@@ -1,0 +1,217 @@
+CAPITULO 5
+
+
+MEMORIA  INTERNA
+
+ORGANIZACION
+
+El elemento basico de una  memoria semi conductora es la celda de  memoria.
+
+•	Presentan dos estados estables, el 1 y el 0 en binario
+•	Puede  escribirse en ellas para fijar su estado
+•	Pueden leerse para detectar su estado
+
+
+DRAM Y SRAM
+
+Son de acceso aleatorio, es decir  las  palabras  individuales de  la memoria son accedidas 
+directamente   mediante logica de direccionamiento cableada interna.
+otra  caracteristica distintiva es una RAM es que  es  volatil, si se  interrumpe la  alimentacion 
+se pierden datos. Las  RAM pueden utilizarse solo como  almacenamiento  tempporal.  
+Las dos  formas  tradicionales del RAM son la DRAM y la SRAM.
+
+RAM DINAMICA: Esta hecha con celdas que almacenan los datos como cargas electricas en condensadores
+requieren refrescos periodicos para mantener memorizados los datos. El termino dinamica hace 
+referencia  a esta tendencia a que la carga  almacenada se se pierda, incluso manteniendola siempre
+alimentada.
+
+RAM ESTATICA: es un dispositivo digital basado en los mismos elementos que se usan en el procesador
+los valores binarios se almacenan usando flip-flops
+se emplesan para abrir o cerrar un conmutador
+
+SRAM frente a DRAM: tanto las RAM estaticas como las dinamicas sol volatiles
+una celda de memoria RAM es mas simple que una estatica (mas pequeña)
+las DRAM dinamicas son mas densas y mas economicas
+una DRAM requieren una circuitreria para usar el refresco
+las DRAM tienden a ser preferidas para memorias grandes 
+las SRAM son algo mas rapidas que las dinamicas
+las SRAM se utilizan para memorias cache
+las DRAM se utilizan para memoria principal 
+
+TIPOS DE ROM (memoria solo-lectura)
+
+contiene un patron permanente de datos que no puede alterarse 
+es no volatil
+es posible leer de una ROM
+no se pueden escribir nuevos datos en ella
+algo importante de ellas es la microprogramacion
+
+aplicaciones potenciales:
+
+subrutinas de bibliotecas para funciones de uso frecuente
+programas del sistema
+tablas de funciones
+
+la ventaja de una ROM es que el programa o los datos estarian permanentemente en memoria proncipal
+y nunca seria necesarios cargarlos desde un dispositivo de memoria secundaria
+
+una ROM se construye como cualquier otro chip de circuito integrado. 
+
+esto presenta 2 problemas:
+
+cosotos relativamente grande
+no se permite un fallo
+
+ROM programable (PROM): son no volatiles
+pueden grabarse solo una vez
+el proceso de escritura se lleva a cabo electricamente  y puede realizarlo el cliente con 
+posterioridad a la fabricacion del chip original
+proporciona flexibilidad y comodidad
+
+otra variante de memoria son las de sobre-todo-lectura(read-mostly): son utiles para aplicaciones
+en la que las operaciones de lectura son mas frecuentes que las de escritura
+
+formas mas comunes de memorias READ-MOSTLY
+
+- EPROM (memoria de solo-lectura programable y borrable opticamente):se lee y escribe 
+electricamente como la PROM. sin embargo antes de la operacion de escritura, todas las celdas de 
+almacenamiento deben primero borrarse a la vez, pueeden modificarse multiples veces, es mas 
+constosa que una PROM, tiene como ventaja la posibilidad de actualizar multiples veces su conenido
+
+- EEPROM (memoria de solo-lectura programable y borrable electricamente): se puede escribir en 
+cualquier momento si borrar su contenido anterior, convina la ventaja de se no volatil con la 
+flexibilidad de ser actualizable, son mas costosas que la EPROM y tambien menos densas
+
+- memoria FLASH: se encuentran en en coste y funcionalidad entre las EPROM y las EEPROM,
+utilizan tecnologia de borrado electrico, es posible borrar solo bloques concretos de memoria en 
+lugar de todo el chip, no permiten borrar a nivel de byte
+
+LOGICA DEL CHIP
+
+las memorias semiconductoras vienen en chips encapsulados
+
+en toda la gerarquiade memoria vimos q existen compromisis de velocidad, capacidad y coste. para 
+memorias semiconductoras uno de los aspectos fundamentales de diseño es el numero de bits de datos
+que pueden ser leido/escritos a la vez
+
+EMCAPSULADO D ELOS CHIPS
+
+los circuitos integrados se montan en capsulas con pastillas o terminales que los conectan con el 
+mundo exterior
+
+el chip encapsulado tiene 32 terminales y estos se transfieren las siguientes señales:
+
+- la direccion de la palabra a la que se accede
+- el dato a leer
+- la linea de alimentacion de chip
+- una tension de programcion
+
+ORGANIZACION EN MODULOS (ver imagen 5.5, 5.6)
+
+CORRECCION DE ERRORES
+
+una memoria semiconductora esta sujeta a errores. estos pueden clasificarce en
+
+- fallos permanetes (HARD): corresponde a un defecto fisico
+- errores transitorios u ocacionables (SOFT): es un evento aleatorio no destructivo q altera el 
+contenido de una o mas celdas de almacenamiento, sin dañar a la memoria
+
+cuando se va a leer una palabra previamente almacenada, se utiliza el codigo para detectar errores
+este compara los bits de datos con los que hay en la memoria y esto produce 1 de 3 resultados
+posibles:
+
+- no se detectan errores
+- se detecta un error y es posible corregirlo
+- se detecta un error y no es posible corregirlo
+
+los codigos que operan de esta manera se denominan CODIGOS CORRECTORES DE ERRORES
+el mas sencillo es el codigo de HAMMING que se ilustra con diagramas de VENN (ver imagen 5.8)
+
+ORGANIZACION AVANZADA DE MEMORIAS DRAM
+
+el bloque basico de construccion de la memoria principal sigue siendo el chip de DRAM
+el chip DRAM tradicional esta limitado tanto por su arquitectura interna como por su interfaz con
+el bus de memoria del procesador
+
+una forma de abordar el problema de las prestaciones de la memoria prncipal DRAM ha sido insertar
+uno o mas niveles de cache SRAM de alta velocidad entre la memoria principal DRAM y el procesador
+ 
+verciones mejoradas de la arquitectura basica DRAM, algunos esquemas que dominan actualmente
+el mercado 
+
+- SDRAM (DRAM sincronica): es una de las mas ampliamente utilizadas, intercambia datos con el 
+procesador de forma sincronizada con una señal de reloj externa, sin imporne estados de espera,
+emplean un modo de rafagas para eliminar los tiempos de establecimiento de direccion y de precarga
+de las lineas de fila y de columna posteriores al primer acceso.
+tiene una arquitectura interna de banco multiple que facilita el paralelismo en el propio chip
+
+DIFERENCIA ENTRE LA DRAM y SDRAM: el registro de modo y la logica de control aosicada
+vercion mejorada de la SDRAM: DDR-SDRAM (doble velocidad de datos)
+
+- DDR-DRAM 
+- RDRAM
+- CDRAM tambien han sido motivo de atencion
+
+DRAM RAMBUS
+
+- la RDRAM ha sido adoptada por la intel para sus procesadores pentium e itanium
+- es la principal competidora de la SDRAM 
+- tiene encapsulados verticales con todos los terminales en un lateral
+- el bus especial de las RDRAM entrega direcciones e informacion de control utilizando un protocolo
+asincronico orientado a bloques
+- las RDRAM obtienen las peticiones de memoria a traves de un bus de alta velocidad
+
+DDR SDRAM
+esta limitada poe el echo de que puede enviar datos al procesador solo una vez por el ciclo de 
+reloj del bus
+
+DRAM CACHES (CDRAM)
+integra un apequeña cache SRAM (de 16 Kb) en un chip normal de DRAM
+las SRAM de la CDRAM pueden usarse de 2 formas.
+
+1) puede utilizarce como una verdadera cache
+2) las CDRAM pueden usarse tambien como buffer para soportar el acceso serie a un bloque de datos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+lo pude importar sin problemas :S
+lo importe por phpmyadmin con collation utf8_spanish_ci

@@ -1,0 +1,89 @@
+Trabajo expo 1
+Diagrama de Objetos
+UML definición y historia
+Modelo de la arquitectura
+Ciclo de vida
+diferentes vistas de la arquitectura
+
+Trabajo expo 2
+1.	Bloque Básico del UML	
+2.	Elementos del UML	
+3.	Elementos de Comportamiento	
+3.1.	Interacción	
+3.2.	Máquina de Estados	
+3.3.	Actividad	
+4.	Elementos de Agrupación	
+4.1.	Paquete	9
+5.	Notación del lenguaje de modelado unificado (UML)	
+6.	UML ofrece una notación y semántica estándar	
+7.	Elementos Notacionales	
+8.	Elementos comunes entre diagramas.	
+9.	Dependencias	
+10.	Diagrama de Estructura estática	
+10.1.	Clase	
+10.2.	Objetos	
+10.3.	Asociaciones	
+a)	Asociación binaria	
+b)	Sentido	
+c)	Multiplicidad	
+d)	Roles	
+e)	Composición	
+10.4.	Generalización	
+10.5.	Clase paramétrica	
+10.6.	Paquete	
+10.7.	Dependencia	
+10.8.	Agregación	
+a)	Agregación por contenido físico o por valor	
+b)	Agregación conceptual o por referencia	
+10.9.	Elementos Derivados	
+11.	Diagrama de caso de uso	
+11.1.	Actor	
+11.2.	Relaciones en un diagrama de caso de uso	
+11.3.	Caso de uso	
+11.4.	Límite de Sistema:	
+12.	Diagrama de secuencia	
+12.1.	Línea de vida de un objeto	
+12.2.	Activación	
+12.3.	Mensaje	
+13.	Diagrama de Colaboración	
+13.1.	Objeto	
+13.2.	Enlaces	
+13.3.	Flujo de mensajes	
+13.4.	Objeto compuesto	
+14.	Diagrama de Estados	
+14.1.	Estado	
+14.2.	Eventos	
+14.3.	Envío de mensajes	
+14.4.	Transición simple	
+14.5.	Transición interna	
+14.6.	Diagrama de Actividades	
+14.7.	Estado de acción	
+14.8.	Transiciones	
+14.9.	Decisiones	
+15.	Diagrama de Implementación	
+16.	Diagrama de Componentes	
+17.	Diagrama de Ejecución	
+17.1.	Nodos	
+17.2.	Componentes	
+
+Expo  o.o
+Diagrama de estructura compuesta
+Diagrama de casos de uso                  listo
+Diagramas de secuencia                    listo
+
+Expo grupo desconocido 
+Diagrama de clases                        listo
+Diagrama de objetos
+Diagrama de componentes                   listo
+
+Expo 5
+Diagrama de actividades                   listo
+Diagrama de colaboración                  listo
+Diagrama de comunicación		  en proceso
+Diagrama de Estado                        listo
+
+Expo 6
+Diagrama de despliegue
+Diagrama de paquetes
+Diagrama de tiempo
+Diagrama de Visión Global de Interacciones 

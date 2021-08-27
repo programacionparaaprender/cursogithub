@@ -1,0 +1,145 @@
+﻿Ingenieria de Software
+1.1 Conceptos de Ingenieria del Software
+Disciplina que comprende todos los aspectos del Software desde
+el diseño, codificación, mantenimiento
+
+1.1.1 Clasificación
+Métodos
+Procedimientos:La unión de los métodos con las herramientas
+Herramientas: Soporte automatico y semiautomatico para los 
+Métodos: Planificación, estimación y analisis de los 
+requerimientos, diseño.
+
+1.2 Clasificación
+1.2.1 Software de Gestión
+1.2.2 Software de Ciencia e Ingenieria
+1.2.3 Software de Inteligencia Artificial
+1.2.4 Software Empotrado
+1.2.5 Software de Tiempo Real
+1.2.6 Software de Sistemas
+1.2.7 Software de Computadores Personales
+
+1.3 Mitos de la Ingenieria del Software
+
+1.3.1 Mitos del Administrador
+1.3.1.1 Creer que existe un manual de estandares
+Realidad: No existe cada aplicación es diferente a las demás
+1.3.1.2 Creer que contratar mas personal permitira terminar el
+trabajo más rapido
+Realidad:No por que los desarrolladores tendran que emplear
+tiempo para explicarles a los nuevos desarrolladores
+1.3.1.3 Creer que contratar a otra empresa para que desarrolle 
+el trabajo solucionara el problema
+Realidad: No por que si la empresa no es capaz de realizar el
+trabajo, al subcontratar otra empresa no sabra exigirle lo que
+realmente necesita en el trabajo
+
+1.3.2 Mitos del Cliente
+1.3.2.1 Creer que con un simple enunciado el desarrollador ya 
+podra desarrollar el programa 
+Realidad: No para realizar una buena aplicación tendran que 
+renirse varias veces para mostrar el programa y mejorarlo
+1.3.2.2 Creer que los cambios en los requerimientos se pueden ajustar 
+facilmente al software
+Realidad:No cambios en el inicio del software tendran un bajo
+costo, cambios al final del desarrollo del software tendran un 
+alto costo
+
+1.3.3 Mitos del Desarrollador
+1.3.3.1 Creer que al terminar el programa ya esta listo el 
+trabajo 
+Realidad: Falta la etapa del mantenimiento
+1.3.3.2 Creer que solo se puede corregir el programa al momento
+de ejecutar al programa
+Realidad: Se puede corregir un programa antes de llegar a la 
+etapa de la documentación
+1.3.3.3 Creer que es un proyecto exitoso es un programa 
+funcionando
+Realidad: Falta la etapa de documentación
+
+Etapas de la Ingenieria del Software
+
+
+
+
+
+
+
+
+Ingenieria de Software
+
+1.1 Conceptos de Ingenieria del Software
+
+1.1.1 Caracteristicas de la Ingenieria del software
+Procedimientos
+Metodos
+Herramientas
+
+
+1.2 Clasificacion
+
+1.2.1 Software de Sistemas 
+
+1.2.2 Software de Tiempo Real
+
+1.2.3 Software de Gestion
+
+1.2.4 Software de Ingenieria y Cientifico
+
+1.2.5 Software Empotrado
+
+1.2.6 Software de Computadores Personales
+
+1.2.7 Software de Inteligencia Artificial
+
+
+
+1.3 Mitos de la Ingenieria del Software
+
+1.3.1 Mitos de la administracion
+
+a)M:Libro de Estandar      R:Cada Aplicacion tiene diferentes requisitos
+b)M:Contratar mas personal R:Los viejos deberan invertir tiempo en explicar
+a los nuevos
+c)M:Contratar otra empresa R:Si una empresa no puede contratar otra la hara
+entrar en conflictos
+1.3.2 Mitos del cliente 
+
+
+1.3.3 Mitos del desarrollador
+
+
+
+1.4 Etapas de la Ingenieria del Software
+
+1.4.1 Etapa de la Ingenieria y el Analisis del Sistema
+
+1.4.2 Etapa del Analisis de Requisitos
+
+1.4.3 Etapa del Diseño
+
+1.4.4 Etapa de la codificacion
+
+1.4.5 Etapa de la prueba
+
+1.4.6 Etapa de la documentacion
+
+1.4.7 Etapa del mantenimiento
+
+
+
+1.5 Arquitectura del Software
+
+1.5.1 Modelo de cascada
+
+1.5.2 Modelo de procesos incrementales
+
+1.5.2.1 Modelo incremental
+
+1.5.2.2 Modelo DRA
+
+1.5.3 Modelo de proceso evolutivo
+
+1.5.3.1 Modelo de construccion de prototipos
+
+1.5.3.2 Modelo en Espiral
