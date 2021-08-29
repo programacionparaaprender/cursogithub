@@ -33,3 +33,7 @@ http://sap.optimieren.de/hana/hana/html/sql_function_ifnull.html
 
 ### count
 https://answers.sap.com/questions/12334075/count-giving-wrong-results.html
+
+
+### Query de series en entradas de mercancia
+https://foros.consultoria-sap.com/t/query-de-series-en-entradas-de-mercancia/48055/2
