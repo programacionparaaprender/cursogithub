@@ -1,7 +1,8 @@
 # SAPDevelopers
 
 
-
+### obtener usuario que se logeo
+https://blogs.sap.com/2010/05/11/how-to-track-who-is-the-current-user-logged-into-sap-business-one/
 
 
 https://www.tutorialspoint.com/sap_hana/sql_stored_procedures.htm
@@ -24,8 +25,11 @@ https://ipinterna:50000/b1s/v1/CustomerEquipmentCards
 
 ### libros
 http://www.sba.pe/wp-content/uploads/2019/05/CURSO-SDK-DEF.pdf
+https://books.google.com.pe/books?id=n4N_w0fBKJMC&pg=PT272&lpg=PT272&dq=Task.CreateNew+sap+b1&source=bl&ots=j9JuEohNgB&sig=ACfU3U3VWyKZSITcGyNQGibQBCM-qBStXw&hl=es&sa=X&ved=2ahUKEwimr-HWptzyAhUySjABHbG0ASUQ6AF6BAgfEAM#v=onepage&q=Task.CreateNew%20sap%20b1&f=false
+
 
 ### universidades
 http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/
 http://schemas.xmlsoap.org/ws/2004/09/policy/
 http://www.cvosoft.com/sistemas_sap_abap/manuales-carreras-cvosoft/ebooks-sap-free.php
+
