@@ -39,7 +39,7 @@ Solution File                                     sln                           
 Protocol Buffer File                              proto                                      Web/gRPC
 
 ## crear proyectos con dotnet
-
+dotnet new sln
 dotnet add sln
 
 dotnet new webapp -o WebPage -f netcoreapp3.1
