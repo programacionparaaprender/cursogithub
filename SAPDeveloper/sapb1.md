@@ -1,4 +1,9 @@
 
+### et_validate
+infinito se soluciona con evento lost focus
+https://answers.sap.com/questions/2650997/etvalidate-infinite-loop.html
+
+
 ### instalar sap b1 9.3 pl03 y sql server 2012
 https://www.youtube.com/watch?v=uc26g7Tv2p4
 
