@@ -14,6 +14,8 @@ https://blogs.sap.com/2017/04/27/list-of-object-types/
 
 https://www.tutorialspoint.com/Create-View-SQL-in-SAP-HANA-database
 
+### procedimientos
+https://answers.sap.com/questions/240088/connpreparecall-is-not-a-function---xsjs-error.html
 
 ### sap business one sdk
 C:\Program Files (x86)\SAP\SAP Business One SDK\Help

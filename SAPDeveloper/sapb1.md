@@ -7,6 +7,8 @@ https://answers.sap.com/questions/2650997/etvalidate-infinite-loop.html
 ### instalar sap b1 9.3 pl03 y sql server 2012
 https://www.youtube.com/watch?v=uc26g7Tv2p4
 
+### crear tablas de usuario
+https://www.pioneerb1.com/wp-content/uploads/2012/06/How-to-Create-User-Defined-Fields-and-Tables.pdf
 
 ### ubicación de generador de instalación addons
 

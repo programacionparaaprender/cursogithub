@@ -2,6 +2,10 @@
 
 # ejemplos
 
+
+### entity framework
+https://www.yogihosting.com/entity-framework-create-edmx-file/
+
 ### merge
 https://www.sqlservertutorial.net/sql-server-basics/sql-server-merge/
 https://www.dotnetcr.com/merge-en-sql-server-insert-delete-update/
