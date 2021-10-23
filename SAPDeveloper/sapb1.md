@@ -10,8 +10,11 @@ https://www.youtube.com/watch?v=uc26g7Tv2p4
 ### crear tablas de usuario
 https://www.pioneerb1.com/wp-content/uploads/2012/06/How-to-Create-User-Defined-Fields-and-Tables.pdf
 
-### ubicación de generador de instalación addons
+### ubicación del creador de instaladores de addons
 
+
+### ubicación de generador de instalación addons
+https://ip:40000/ExtensionManager
 
 
 ### ubicación de addons
@@ -20,4 +23,10 @@ C:\Program Files\sap\SAP Business One\AddOns\
 
 ### cambiar el idioma
 https://www.sypsoft360.com/post/como-cambiar-el-idioma-sap-b1
+
+### añadir periodos contables
+https://itop.academy/blog/item/configuracion-de-los-periodos-contables-en-sap-business-one.html
+
+### crear delivery
+https://answers.sap.com/questions/375530/create-a-delivery-via-di-api-from-a-sales-order.html
 

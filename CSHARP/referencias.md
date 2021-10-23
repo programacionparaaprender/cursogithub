@@ -1,4 +1,25 @@
+# ejemplos
 
+
+### convertir tabla en lista
+https://www.c-sharpcorner.com/UploadFile/ee01e6/different-way-to-convert-datatable-to-list/
+
+### permitir que acepten el valor null estructuras nativas
+Nullable<int>
+int?
+
+### asp.net mvc Actions
+https://stackoverflow.com/questions/6278694/url-action-parameters
+
+### asp.net mvc configuración de tablas
+https://docs.microsoft.com/es-es/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application
+
+
+### asp.net mvc mostrar datos en tablas
+https://www.c-sharpcorner.com/UploadFile/f82e9a/data-displaying-in-table-format-in-diffrent-ways-in-mvc/
+
+### servicios
+http://csharpesp.blogspot.com/2011/02/arrancar-y-detener-servicios-de-windows.html
 
 ### establecer cultura formato de números
 https://docs.microsoft.com/es-es/dotnet/api/system.globalization.numberformatinfo?view=net-5.0
