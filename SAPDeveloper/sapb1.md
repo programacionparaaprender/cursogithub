@@ -13,12 +13,18 @@ https://www.pioneerb1.com/wp-content/uploads/2012/06/How-to-Create-User-Defined-
 ### ubicación del creador de instaladores de addons
 
 
+### help sap
+C:\Program Files (x86)\SAP\SAP Business One SDK\Help
+
 ### ubicación de generador de instalación addons
 https://ip:40000/ExtensionManager
 
 
 ### ubicación de addons
 C:\Program Files\sap\SAP Business One\AddOns\
+
+### conectarse a sap b1 client sin tenerlo abierto
+https://foros.consultoria-sap.com/t/conexion-a-sbo-usando-di-api-y-c/31281
 
 
 ### cambiar el idioma
