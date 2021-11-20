@@ -19,3 +19,7 @@ https://social.msdn.microsoft.com/Forums/es-ES/8b6d814b-914a-47fd-8d08-44b0d5f0b
 
 ### web request
 https://stackoverflow.com/questions/5040294/how-to-add-query-string-to-httpwebrequest
+
+
+### certificados
+https://stackoverflow.com/questions/5998004/accept-self-signed-tls-ssl-certificate-in-vb-net

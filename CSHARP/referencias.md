@@ -1,6 +1,9 @@
 # ejemplos
 
 
+### enum para crear proyectos con valores constantes
+https://stackoverflow.com/questions/8588384/how-to-define-an-enum-with-string-value/53864021
+
 ### convertir tabla en lista
 https://www.c-sharpcorner.com/UploadFile/ee01e6/different-way-to-convert-datatable-to-list/
 

@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=uc26g7Tv2p4
 https://www.pioneerb1.com/wp-content/uploads/2012/06/How-to-Create-User-Defined-Fields-and-Tables.pdf
 
 ### ubicación del creador de instaladores de addons
-
+C:\Program Files (x86)\SAP\SAP Business One SDK\Tools\ExtensionPackage
 
 ### help sap
 C:\Program Files (x86)\SAP\SAP Business One SDK\Help
