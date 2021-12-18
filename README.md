@@ -89,8 +89,9 @@ git commit
 
 ### pruebas de capture
 
+
+<img src="img/azure2.png" alt="Size Limit logo by Anton Lovchikov" width="600" height="300">
 <img src="img/azure.png" alt="Size Limit logo by Anton Lovchikov" width="500" height="500">
-<img src="img/azure2.png" alt="Size Limit logo by Anton Lovchikov" width="500" height="500">
 <img src="img/docker.png" alt="Size Limit logo by Anton Lovchikov" width="200" height="50">
 
 
