@@ -91,6 +91,6 @@ git commit
 
 <img src="img/azure.png" alt="Size Limit logo by Anton Lovchikov" width="500" height="500">
 
-<img src="img/docker.png" alt="Size Limit logo by Anton Lovchikov" width="200" height="200">
+<img src="img/docker.png" alt="Size Limit logo by Anton Lovchikov" width="200" height="50">
 
 
