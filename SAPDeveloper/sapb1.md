@@ -1,4 +1,11 @@
 
+
+### Para reiniciar servicios en sap b1
+Ip:40000/ServiceLayerController/
+
+### documentación de tablas en sap b1
+http://www.saptables.net/?schema=BusinessOne9.0&table=OIGE
+
 ### et_validate
 infinito se soluciona con evento lost focus
 https://answers.sap.com/questions/2650997/etvalidate-infinite-loop.html

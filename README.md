@@ -1,10 +1,7 @@
-# cursogithub
-https://www.udemy.com/course/introduccion-a-git-y-github/learn/lecture/14464472?start=0#overview
-
-
 ## páginas
 www.aulafacil.com
 https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+
 
 ## obtener ultimo pull
 git log -p -2
@@ -42,7 +39,7 @@ git clone https://github.com/luis13711/cursogithub.git
 
 ## Clonar un repositorio privado 
 
-git clone https://username:password@github.com/luis13711/cursogithub.git
+git clone https://username:password@github.com/nombredeusuario/cursogithub.git
 
 ## Agregar glabalmente usuario
 
@@ -75,11 +72,25 @@ git push origin rama
 ## volver a un commit
 git checkout codigocommit
 
-## Extras
 
+## hacer merge con una rama cuando da conflictos
+git merge origin/master
+
+
+## visualizar todos los commit
+git remote -v
+
+## Extras
 git log
 
 git commit -m "" 
 git commit -a
 git commit 
+
+### pruebas de capture
+
+<img src="img/azure.png" alt="Size Limit logo by Anton Lovchikov" width="500" height="500">
+
+<img src="img/docker.png" alt="Size Limit logo by Anton Lovchikov" width="200" height="200">
+
 

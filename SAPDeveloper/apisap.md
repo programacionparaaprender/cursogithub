@@ -23,6 +23,26 @@ en el DocumentLines:[
     }
 ]
 
+
+### asignar tipo de cambio
+https://sap-samples.github.io/smb-summit-hackathon/b1sl.html
+
+POST https://localhost:50000/b1s/v1/SBOBobService_SetCurrencyRate
+{
+    "Currency": "EUR",
+    "Rate": "4.8"
+    "RateDate": "20161129"
+}
+
+
+### obtener el tipo de cambio en dolares de una fecha
+POST
+https://ip:50000/b1s/v1/SBOBobService_GetCurrencyRate
+{
+    "Currency": "US$",
+    "Date": "20211001"
+}
+
 ### crear un campo por medio de services layers
 crear un campo a traves de postman
 https://IP:50000/b1s/v1/UserFieldsMD

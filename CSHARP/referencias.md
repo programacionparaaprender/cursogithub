@@ -1,5 +1,13 @@
 # ejemplos
 
+### ejemplo de como utilizar hilos en c#
+https://docs.microsoft.com/es-es/dotnet/api/system.threading.thread.-ctor?view=netframework-4.0
+
+### enumerables
+https://www.c-sharpcorner.com/Blogs/empty-collections
+
+### calcular número de días entre dos fechas
+https://www.it-swarm-es.com/es/c%23/calcular-el-numero-de-dias-habiles-entre-dos-fechas/968892437/
 
 ### enum para crear proyectos con valores constantes
 https://stackoverflow.com/questions/8588384/how-to-define-an-enum-with-string-value/53864021
@@ -10,6 +18,15 @@ https://www.c-sharpcorner.com/UploadFile/ee01e6/different-way-to-convert-datatab
 ### permitir que acepten el valor null estructuras nativas
 Nullable<int>
 int?
+
+### hilos entre dos fechas
+https://docs.microsoft.com/es-es/dotnet/api/system.threading.thread?view=netframework-4.0
+
+### comparar dos fechas
+https://es.stackoverflow.com/questions/167887/comparar-dos-fechas-en-vb-net
+
+### definir número de decimales al realizar la conversión
+http://www.java2s.com/Code/VB/Data-Types/DecimalTryParse.htm
 
 ### asp.net mvc Actions
 https://stackoverflow.com/questions/6278694/url-action-parameters
