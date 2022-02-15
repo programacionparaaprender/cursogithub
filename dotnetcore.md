@@ -42,6 +42,8 @@ Protocol Buffer File                              proto                         
 dotnet new sln
 dotnet add sln
 
+dotnet new webapi -o PruebaCanvia -f netcoreapp3.1
+
 dotnet new webapp -o WebPage -f netcoreapp3.1
 dotnet new mvc -o WebMvc -f netcoreapp3.1
 
@@ -50,6 +52,7 @@ dotnet new winforms -o  winformsPrueba
 dotnet new worker -o workerPrueba
 dotnet new grpc -o grpcPrueba
 dotnet new react -o React
+dotnet new angular -o FBTarjeta -f netcoreapp3.1
 dotnet new reactredux -o ReactRedux -f netcoreapp3.1
 
 

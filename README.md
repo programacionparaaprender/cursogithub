@@ -21,6 +21,7 @@ echo "# cursogithub" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
+git commit --author="Luis Correa <correo@programacionparaaprender.com>" -m "first commit" 
 
 ## permite ver el nombre del commit
 git log
@@ -41,7 +42,7 @@ git clone https://github.com/luis13711/cursogithub.git
 
 git clone https://username:password@github.com/nombredeusuario/cursogithub.git
 
-## Agregar glabalmente usuario
+## Agregar globalmente usuario
 
 git config --global user.email "correo"
 git config --global user.name "nombreusuario"
@@ -56,10 +57,8 @@ git branch rama
 
 git checkout rama
 
-## Regresar cambio
-
-git chechout --index.html
-git diff index.html
+## que un archivo vuelva a su estado anterior
+git checkout -- index.html
 
 
 ## Al modificar el .gitignore
@@ -86,6 +85,13 @@ git log
 git commit -m "" 
 git commit -a
 git commit 
+
+
+
+
+### crear una bifurcación
+https://www.spanishnewsnow.com/como-bifurcar-un-repositorio-de-github/
+
 
 ### pruebas de capture
 
