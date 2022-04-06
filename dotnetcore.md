@@ -40,7 +40,7 @@ Protocol Buffer File                              proto                         
 
 ## crear proyectos con dotnet
 dotnet new sln
-dotnet add sln
+dotnet sln add .\FBTarjeta\FBTarjeta.csproj
 
 dotnet new webapi -o PruebaCanvia -f netcoreapp3.1
 

@@ -15,3 +15,6 @@ https://www.dotnetcr.com/merge-en-sql-server-insert-delete-update/
 
 ### fechas
 https://es.stackoverflow.com/questions/83752/como-calcular-los-d%C3%ADas-entre-dos-fechas-sin-tomar-en-cuenta-las-fechas-duplicad
+
+### ejemplos github
+https://github.com/microsoft/sql-server-samples/blob/master/samples/tutorials/c%23/Windows/SqlServerSample/Program.cs
