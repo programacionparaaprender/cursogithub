@@ -4,6 +4,12 @@
 https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.00/en-US/469e20f56d6110148618da80690c499b.html
 
 
+### services layers de ejemplo
+https://sap.highwaytwo.com/Service%20Layer%20API%20Reference.html
+https://b1marketplace.com:50000/Service%20Layer%20API%20Reference.html
+
+
+
 ### repositorios
 github.com/customer-stories/sap
 
