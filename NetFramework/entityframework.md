@@ -12,3 +12,9 @@ https://docs.microsoft.com/es-es/ef/core/modeling/indexes?tabs=data-annotations
 
 ### cadena de conexión para sql server
 https://www.connectionstrings.com/sqlconnection/
+
+### linq Select Distinct
+https://stackoverflow.com/questions/19406242/select-distinct-using-linq
+
+### set time out
+https://stackoverflow.com/questions/6232633/entity-framework-timeouts
