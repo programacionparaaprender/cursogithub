@@ -23,5 +23,13 @@ https://www.osboxes.org/ubuntu/#ubuntu20-04-vbox
 https://lubuntu.me/downloads/
 ´´´
 
+## comandos a ejecutar
+´´´
+sudo apt-get install openssh-server
+sudo apt-get install net-tools
+ip a
+sudo systemctl status ssh #hace que no funcionen las redes luego de ejecutarlo y cancelarlo
+´´´
+
 ### curso
 https://www.udemy.com/course/la-guia-de-jenkins-de-cero-a-experto/
