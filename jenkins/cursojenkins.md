@@ -1,5 +1,8 @@
 
 
+### configuraciones de seguridad
+http://192.168.1.36:8080/configureSecurity/
+
 ### equipo donde se instalo jenkins
 http://localhost:2530/computer/
 
