@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podtest2
+  labels:
+    app: front
+    env: dev
+spec:
+  containers:
+  - name: cont1
+    image: nginx:alpine
+    command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podtest3
+  labels:
+    app: backend
+    env: dev
+spec:
+  containers:
+  - name: cont1
+    image: nginx:alpine
+    command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
+  

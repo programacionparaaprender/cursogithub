@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-test
+  labels:
+    app: rs-test
+spec:
+  # modify replicas according to your case
+  replicas: 5
+  selector:
+    matchLabels:
+      app: pod-label
+  template:
+    metadata:
+      labels:
+        app: pod-label
+    spec:
+      containers:
+      - name: cont1
+        image: nginx:alpine
+        command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
+      - name: cont2
+        image: nginx:alpine
+        command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
