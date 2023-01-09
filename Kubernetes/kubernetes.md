@@ -28,6 +28,13 @@ kubectl apply -f rs.yaml
 kubectl delete -f rs.yaml
 kubectl get rs
 kubectl get replicaset
+kubectl get rs rs-test -o yaml
+kubectl get pod rs-test-s924d -o yaml
+kubectl get rs rs-test -o yaml
+
+## añadir labels a los pods
+kubectl label pods podtest app=awesome
+kubectl get pods -l app=awesome
 
 # si no funciona el de arriba
 kubectl run podtest --image=nginx:alpine
@@ -69,5 +76,7 @@ kubectl delete -f labels.yaml
 kubectl get pods -l app=backend
 kubectl get pods -l app=front
 kubectl get pods -l env=dev
+
+
 
 
