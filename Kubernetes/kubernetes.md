@@ -11,6 +11,7 @@ kubectl version --client
 ### deployment en kubernetes
 https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 
+
 ### instalar minikube
 choco install minikube
 
@@ -89,5 +90,35 @@ docker pull python:3.7-alpine
   kubectl rollout status deployment deployment-test
 kubectl get rs --show-labels
 kubectl describe deployments.apps deployment-test
+kubectl rollout history deployment deployment-test
+kubectl apply -f dep.yaml
+kubectl get rs
+kubectl apply -f dep.yaml --record
+kubectl rollout history deployment deployment-test --revision=2
+kubectl rollout undo deployment deployment-test --to-revision=2
+kubectl describe deployments.apps deployment-test
+
+### kubernetes services
+https://kubernetes.io/docs/concepts/services-networking/service/
+kubectl apply -f svc.yaml
+kubectl delete -f svc.yaml
+kubectl get service
+kubectl get svc
+kubectl get svc -l app=front
+kubectl describe svc my-service
+kubectl get pods -l app=front -o wide
+kubectl get endpoints
+kubectl run podtest2 --image=nginx:alpine
+kubectl describe endpoints my-service
+kubectl get pods -l app=front
+kubectl label pods podtest2 app=front
+
+###
+https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/
+
+
+### Ingress controller azure
+https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
+
 
 
