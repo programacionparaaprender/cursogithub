@@ -17,5 +17,8 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: python:3.7-alpine
-        command: ['sh', '-c', 'echo "cont1" > index.html && python -m http.server 8082']
+        image: nginx:alpine
+        command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
+      - name: cont2
+        image: nginx:alpine
+        command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']

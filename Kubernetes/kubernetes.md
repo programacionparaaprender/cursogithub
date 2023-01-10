@@ -8,6 +8,9 @@ https://kubernetes.io/docs/concepts/workloads/pods/
 choco install kubernetes-cli
 kubectl version --client
 
+### deployment en kubernetes
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
 ### instalar minikube
 choco install minikube
 
@@ -76,7 +79,15 @@ kubectl delete -f labels.yaml
 kubectl get pods -l app=backend
 kubectl get pods -l app=front
 kubectl get pods -l env=dev
-
-
+docker pull python:3.7-alpine
+ kubectl apply -f rs.yaml
+  kubectl delete -f rs.yaml
+ kubectl get rs
+ kubectl get pods
+  kubectl apply -f dep.yaml
+  kubectl delete -f dep.yaml
+  kubectl rollout status deployment deployment-test
+kubectl get rs --show-labels
+kubectl describe deployments.apps deployment-test
 
 
