@@ -4,6 +4,27 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/#install-nonstand
 https://minikube.sigs.k8s.io/docs/start/
 https://kubernetes.io/docs/concepts/workloads/pods/
 
+
+### ejemplos de dockerfile
+https://github.com/culturadevops/dockerfiles_hub/blob/master/golang/forweb/Dockerfile
+
+
+### api go dentro de imagen kubernetes
+https://dev.to/moficodes/build-your-first-rest-api-with-go-2gcj
+docker pull golang
+docker run -t -i golang /bin/bash
+cat > hola-mundo.go <<END
+### CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS          PORTS     NAMES
+### 27d30ecf1687   golang    "bash"    29 seconds ago   Up 28 seconds             golang
+
+docker rm -fv 92220a08ad9b915abec81f839ea9fef8ea98c0b12d4ae7eb99cceef940788cf2
+docker run --rm -dti -v $PWD/:/go --net host --name golang golang bash
+docker ps -l
+docker exec -ti 92220a08ad9b915abec81f839ea9fef8ea98c0b12d4ae7eb99cceef940788cf2 bash
+ls
+cat main.go
+go run main.go
+
 ### instalar kubernetes cli
 choco install kubernetes-cli
 kubectl version --client
@@ -19,7 +40,7 @@ choco install minikube
 minikube start
 minikube start --vm-driver=virtualbox
 
-### minikube iniciar virtualbox primero
+### minikube iniciar docker primero
 minikube start
 kubectl get pods
 kubectl run --generator=run-pod/v1 podtest --image=nginx:alpine
@@ -40,12 +61,28 @@ kubectl get rs rs-test -o yaml
 kubectl label pods podtest app=awesome
 kubectl get pods -l app=awesome
 
-# si no funciona el de arriba
+# pods
 kubectl run podtest --image=nginx:alpine
 
 kubectl run pod-name --image image_name:tag
 #Example
 kubectl run php-pod --image php:8-apache
+kubectl run --rm -ti --generator=run-pod/v1 podtest3 --image=nginx:alpine -- sh
+kubectl run --rm -ti podtest3 --image=nginx:alpine -- sh
+kubectl label pods podtest3 app=front
+kubectl get pods -l app=front -o wide
+
+
+
+
+### instalar curl si no existe dentro del pod
+kubectl run --rm -ti podtest3 --image=nginx:alpine -- sh
+curl
+apk add -U curl
+curl my-service
+
+
+### pods 2
 
 kubectl config get-contexts
 kubectl get pod podtest
@@ -98,8 +135,8 @@ kubectl rollout history deployment deployment-test --revision=2
 kubectl rollout undo deployment deployment-test --to-revision=2
 kubectl describe deployments.apps deployment-test
 
-### kubernetes services
-https://kubernetes.io/docs/concepts/services-networking/service/
+### kubernetes services los endpoints se deben agregar de forma manual
+https://kubernetes.io/es/docs/concepts/services-networking/service/
 kubectl apply -f svc.yaml
 kubectl delete -f svc.yaml
 kubectl get service
@@ -112,10 +149,16 @@ kubectl run podtest2 --image=nginx:alpine
 kubectl describe endpoints my-service
 kubectl get pods -l app=front
 kubectl label pods podtest2 app=front
-
-###
+kubectl apply -f endpoint.yaml
+kubectl delete -f endpoint.yaml
+### endpoints
 https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/
 
+
+### node ports
+kubectl apply -f nodeport.yaml
+kubectl delete -f nodeport.yaml
+kubectl get pods -l app=backend
 
 ### Ingress controller azure
 https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
