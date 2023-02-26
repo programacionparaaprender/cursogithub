@@ -87,7 +87,14 @@ git commit -a
 git commit 
 
 
+### cambios realizados
+git diff
 
+### eliminar una rama local
+git branch -D rama
+
+### eliminar rama en la nube
+git push origin --delete rama
 
 ### crear una bifurcación
 https://www.spanishnewsnow.com/como-bifurcar-un-repositorio-de-github/
