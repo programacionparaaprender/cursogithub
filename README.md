@@ -100,6 +100,10 @@ git push origin --delete rama
 https://www.spanishnewsnow.com/como-bifurcar-un-repositorio-de-github/
 
 
+### agregar un tag
+git rm -r --cached .
+git tag v1.0.0
+
 ### pruebas de capture
 
 <img src="img/docker3.png" alt="Size Limit logo by Anton Lovchikov" width="500" height="200">
