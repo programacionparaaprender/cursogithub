@@ -103,6 +103,7 @@ https://www.spanishnewsnow.com/como-bifurcar-un-repositorio-de-github/
 ### agregar un tag
 git rm -r --cached .
 git tag v1.0.0
+git push origin master --tags
 
 ### pruebas de capture
 
