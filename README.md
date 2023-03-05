@@ -105,6 +105,10 @@ git rm -r --cached .
 git tag v1.0.0
 git push origin master --tags
 
+### habilitar scripts
+https://stackoverflow.com/questions/69605313/vs-code-terminal-activate-ps1-cannot-be-loaded-because-running-scripts-is-disa
+
+
 ### pruebas de capture
 
 <img src="img/docker3.png" alt="Size Limit logo by Anton Lovchikov" width="500" height="200">
