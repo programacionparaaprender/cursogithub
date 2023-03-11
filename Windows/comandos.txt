@@ -1,0 +1,3 @@
+copy con nombre.txt
+Hola mundo
+Ctrl+z Enter para guardar
