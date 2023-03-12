@@ -1,3 +1,7 @@
 copy con nombre.txt
 Hola mundo
 Ctrl+z Enter para guardar
+
+notepad nombre.txt:oculto.txt
+C:\>type c:\netpass.exe > c:\nombre.txt:ejecutable.exe
+Rootkit
