@@ -3,8 +3,8 @@ https://udemy.com/course/npm-librerias-node-con-js-typescript-angular-y-otras-he
 
 
 ### paquetes a instalar en forma global
-npm install -g mocha
-npm install -g typescript
+```npm install -g mocha```
+```npm install -g typescript```
 
 ### npm 
 https://docs.npmjs.com/cli/v8/commands/npm-version
@@ -25,31 +25,52 @@ npm install programacionparaaprender/introduccion-node-js
 npm install programacionparaaprender/introduccion-node-js#v1.0.0
 
 ### cambiar la versión
-npm version 1.0.3
+```npm version 1.0.3```
 
 ###
-npm init
+```npm init```
 
 ###
-npm version patch
+```npm version patch```
 
 ###
-npm publish
+```npm publish```
 
 ###
-npm login
+```npm login```
 
 ### añadir usuario
-npm adduser
+```npm adduser```
 
 ### publicar proyecto npm
-npm publish
+```npm publish```
 
 ### usuario logeado
-npm whoami
+```npm whoami```
 
 ### paquete creado
 https://www.npmjs.com/package/proyecto-1a-matematicas-programacion
 npm install programacionparaaprender/proyecto-1a-matematicas-programacion
 
+### npm-config
+https://docs.npmjs.com/cli/v9/commands/npm-config
+
+###
+https://docs.npmjs.com/creating-a-package-json-file#setting-config-options-for-the-init-command
+
+### iniciar proyecto
+```npm init -y```
+
+### 
+```npm set init-author-email "example-user@example.com"```
+```npm set init-author-name "example_user"```
+```npm set init-license "MIT"```
+```npm config list```
+
+### typescript
+```npm install -g typescript```
+https://www.typescriptlang.org/#download-links
+
+###
+```tsc --init```
 
