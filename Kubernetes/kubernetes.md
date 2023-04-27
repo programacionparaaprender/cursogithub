@@ -164,4 +164,21 @@ kubectl get pods -l app=backend
 https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
 
 
+### comandos aks azure
+```
+kubectl rollout restart deployment microservicio-n1 -n empresa1
+kubectl get pods -n empresa1
+kubectl scale -n empresa1 deployment microservicio-n1 --replicas=0
+kubectl scale -n empresa1 deployment microservicio-n1 --replicas=1
+kubectl get deployment microservicio-n1 -n empresa1
+kubectl get deployment microservicio-n1 -n empresa1 -o yaml
+kubectl delete pod microservicio-n1-5b855b5c56-jkh9t -n empresa1
+kubectl describe pod microservicio-n1-5b855b5c56-g9xt5 -n empresa1
+kubectl top pod microservicio-n1-77b9655967-lv5j4 -n empresa1
+kubectl exec -it microservicio-n1-77b9655967-lv5j4 -n empresa1 sh
+kubectl logs microservicio-n1-77b9655967-lv5j4 -n empresa1 -f
+kubectl edit deployment microservicio-n1 -n empresa1
+```
+
+
 
