@@ -21,4 +21,7 @@ mvn compile
 mvn package
 mvn pmd:cpd
 mvn site
+mvn azure-functions:run
+mvn spotbugs:run
+mvn spotbugs:gui
 ```
