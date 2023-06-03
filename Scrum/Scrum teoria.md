@@ -1,9 +1,13 @@
+# cursos
+>- https://udemy.com/course/agile-scrum-intensivo/learn/lecture/20239248#overview
+>- https://udemy.com/course/scrumcrisrua/learn/lecture/30446220?start=0#overview
+
 
 # equipo scrum
 Product Owner, Equipo de Desarrollo y Scrum Master
 
 # equipo scrum también
-Product Owner, Tecnical Lead, Equipo de Desarrollo y Scrum Master
+Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 
 # tareas a realizar por sprint
 >- Sprint planning
@@ -11,11 +15,23 @@ Product Owner, Tecnical Lead, Equipo de Desarrollo y Scrum Master
 >- Spring Review
 >- Sprint Retro
 
+# Sprint - Evento
+>- Todo el trabajo necesario para lograr el Objetivo del Producto, incluido la Sprint Planing, Daily Scrum, Sprint Review y Sprint Retrospective, ocurre dentro de los Sprints.
+>- Un Sprint comienza inmediatamente después de concluir el anterior.
+>- Longitud: Un mes o menos.
+
 # Sprint planing
-máx 8 horas(Sprint 1 mes)
+>- Se planifica lo que será realizado en el Sprint
+>- ¿Por qué es valioso este Sprint?
+>- ¿Qué se puede hacer en este Sprint?
+>- ¿Cómo se realizará el trabajo elegido?
+>- máx 8 horas(Sprint 1 mes)
 
 # daily
-máx 15 minutos
+>- El propósito de la Daily Scrum es inspeccionar el progreso hacia el Objetivo del Sprint y adaptar el Sprint Backlog según sea necesario.
+>- Están presentes los Developers.
+>- Es un evento diario de 15 minutos.
+>- máx 15 minutos.
 
 # que se dice en el daily
 >- ¿Que hice para aydar al equipo de desarrollo a lograr el objetivo del sprint?
@@ -23,12 +39,19 @@ máx 15 minutos
 >- ¿Detecto algún impedimento que evite que el equipo de desarrollo o yo logremos el objetivo del sprint?
 
 # Sprint review
-Inspeccionar el Incremento y adaptar el Product backlog, máx. 4 horas(Sprint 1 mes).
+>- El proposito de la Sprint Review es inspeccionar el resultado del Sprint y determinar futuras adaptaciones. El Scrum Team presenta los resultados de su trabajo a los interesados clave y se discute el progreso hacia el Objetivo del Producto.
+>- Inspeccionar el Incremento y adaptar el Product backlog, máx. 4 horas(Sprint 1 mes).
 
 # Sprint Retrospective
-Equipo Scrum se inspecciona a si mismo y crea un plan de mejoras, máx. 3 horas(Spring 1 mes).
+>- Propósito: Planificar formas de aumentar la calidad y la efectividad.
+>- El Scrum Team inspecciona cómo estuvo el último Sprint con respecto a las personas, las interacciones, los procesos, las herramientas y su definición de terminado.
+>- Equipo Scrum se inspecciona a si mismo y crea un plan de mejoras, máx. 3 horas(Spring 1 mes).
 
 # Product Backlog
+>- Lista priorizada de todo lo que se conoce que es necesario del producto
+>- El Product Owner es el responsable, en contenido, disponibilidad y orden.
+>- Nunca esta completo.
+>- Compromiso: Objetivo del Producto
 >- es una lista ordenada de todo lo conocido que podria ser necesario en el producto
 >- Única fuente de requisitos
 >- Está vivo
@@ -36,3 +59,123 @@ Equipo Scrum se inspecciona a si mismo y crea un plan de mejoras, máx. 3 horas(
 >- Puede incluir criterios de aceptación
 >- 1 producto 1 PB 1 PO
 
+# artefactos
+>- Pila de Producto o Produc Backlog (PB)
+>- Pila de Sprint o Sprint Backlog (SB)
+>- Incremento o Increment
+
+# roles
+>- Developers
+>- Product Owner
+>- Scrum Master
+>- También se puede tener un Lider Tecnico
+
+# Eventos
+>- El Sprint
+>- Sprint Planning
+>- Daily Scrum
+>- Sprint Review
+>- Sprint Retrospective
+
+# Historias de Usuario - Product Backlog Item
+>- Card
+>- Conversation
+>- Confirmation
+
+# Modelo INVEST
+>- Independent
+>- Negotiable
+>- Valuable
+>- Estimable
+>- Small
+>- Testable
+
+# Sprint Backlog
+>- Objetivo del Sprint
+>- El conjunto de elementos del Product Backlog seleccionados para el Sprint(qué)
+>- Un plan de acción para entregar el increment (cómo)
+>- Por hacer
+>- Haciendo
+>- ¡Hecho!
+
+# Increment
+>- Un increment es un peldaño concreto hacia el objetivo del producto. Cada increment se suma a todos los Increments anteriores y se verifica minuciosamente, lo que garantiza que todos los increments funcionen juntos. Para proporcionar valor, el increment debe ser utilizable.
+
+# cuatro valores ágiles
+>- Software funcionando
+>- Colaboración con el cliente
+>- Valorar a las personas y sus interacciones
+>- Respuesta ante el cambio seguir un plan
+
+# D.O.D - Definition Of Done (Definición de Terminado)
+>- Por hacer
+>- Haciendo
+>- Pruebas
+>- Producción
+
+
+# tres pilares del empirismo
+>- Transparencia
+>- Inspección 
+>- Adaptación
+
+# principios ágiles
+>- 1
+>- 2
+>- 3
+>- 4
+>- 5
+>- 6
+>- 7
+>- 8
+>- 9
+>- 10
+>- 11
+>- 12
+
+# Developers funciones
+>- Realizan el trabajo de entregar un incremento de producto "Terminado" que potencialmente se pueda poner en producción al final de cada Sprint.
+
+## Caracteristicas de developers
+>- Autoorganizados
+>- Multidisciplinares
+
+## Responsabilidades de developers
+>- Crear un plan para el Sprint, el Sprint backlog.
+>- Inculcar calidad al adherirse a una definición de terminado.
+>- Adaptar su plan cada día hacia el Objetivo del Sprint.
+>- Responsabilizarse mutuamente como profesionales.
+
+# Product Owner
+>- Maximiza el valor del producto resultante del trabajo del Equipo de Desarrollo
+
+## Responsabilidades del Product Owner
+>- Desarrollar y comunicar explicitamente el Objetivo del Producto.
+>- Crear y comunicar claramente los elementos del Product Backlog.
+>- Ordenar los elementos del Product Backlog.
+>- Asegurase de que el Product Backlog sea transparente, visible y se entienda.
+
+# SCRUM Master
+>- El SCRUM Master es responsable de establecer Scrum ayudando a todos a comprender su teoría y practica
+
+## El Scrum Master sirve al Scrum Team de varias maneras, que incluyen:
+>- Guiar a los miembros del equipo en ser autogestionados y multifuncionales
+>- Ayudar al Scrum Team, a enfocarse en crear increments de alto valor que cumplan con la definición de terminado
+>- Procurar la eliminación de impedimentos para el progreso del Scrum Team
+>- Asegurarse de que todos los eventos de Scrum se lleven a cabo y sean positivos, productivos y se mantengan dentro de los limites de tiempo recomendados en esta guia.
+
+# Los Scrum Teams
+>- Si los Scrum Teams se vuelven demasiado grandes, deberían considerar reorganizarse en múltiples Scrum Teams cohesivos, cada uno enfocado en el mismo producto. Por lo tanto, deben compartir el mismo Objetivo del Producto, el Product Backlog y el Product Owner.
+
+# Burndown Chart o gráfica de quemado Scrum
+>- Días del sprint
+>- Puntos de historia
+>- Comprometidos en el Sprint
+
+# Conocer beneficios de esta forma de trabajar
+# Los roles y responsabilidades
+# Saber que es Persona. Crear y analizar.
+# Conocer las 3C´s
+# Invest
+# Crear User Stories de Calidad
+# Dividir las User Stories
