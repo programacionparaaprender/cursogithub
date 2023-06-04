@@ -70,6 +70,19 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- Scrum Master
 >- También se puede tener un Lider Tecnico
 
+# Otros roles
+>- Business Team
+>- Technical Team
+
+## Business Team
+>- Encargados de escribir las historias
+>- Expertos en el negocio Stakeholders
+>- Gestionar el backlog
+
+## Technical Team
+>- Gestionar las historias
+>- Encargados de realizar la demo
+
 # Eventos
 >- El Sprint
 >- Sprint Planning
@@ -77,10 +90,13 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- Sprint Review
 >- Sprint Retrospective
 
-# Historias de Usuario - Product Backlog Item
+# Historias de Usuario - Product Backlog Item o User Story
 >- Card
 >- Conversation
 >- Confirmation
+>- La historia es escrita desde el punto de vista del usuario y hablar sobre cosas desde el punto de vista del usuario.
+>- Recuerdo que vamos a decir que hemos hecho progreso desde el punto de vista que hemos dado algo al usuario con la capacidad de hacer algo con el software que no era capaz de hacerlo antes.
+>- Una historia de usuario es una descripción corta y simple de una característica contada desde la perspectiva del usuario que desea la nueva capacidad.
 
 # Modelo INVEST
 >- Independent
@@ -135,6 +151,8 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 
 # Developers funciones
 >- Realizan el trabajo de entregar un incremento de producto "Terminado" que potencialmente se pueda poner en producción al final de cada Sprint.
+>- Las historias que no tienen nada que ver con el usuario, pero si con nuestro equipo de developers.
+>- As a developer, I want a, so.
 
 ## Caracteristicas de developers
 >- Autoorganizados
@@ -172,10 +190,92 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- Puntos de historia
 >- Comprometidos en el Sprint
 
+# Medida de Progreso en Software
+>- Si el software funcionando es nuestra medida de progreso, debemos asegurarnos de organizar y tratar nuestro trabajo de una manera que respalde dicho objetivo.
+
+# Boards
+>- TODO
+>- IN PROGRESS
+>- DONE
+
+# Persona
+>- Persona viene del latín "máscara".
+>- Persona -> La voz del usuario.
+>- Es una persona ficticia que representa a usuario real del sistema.
+>- Cada persona representa a un grupo entero de usuarios.
+
+# Crear persona
+>- About
+>- Necesidades
+>- Uso de dispositivos
+>- Le gusta
+>- Curriculum
+>- Frustraciones
+
+### About
+>- Marta es una persona de mediana edad, con estudios universitarios en ingenieria y le gusta tener sus temas financieros totalmente controlados.
+>- Además, le ha tocado vivir una crisis financiera cuando comenzo su carrera profesional.
+
+### Necesidades
+>- 1 Mejorar sus finanzas.
+>- 2 Realizar las tareas por el móvil
+>- 3 Recibir notificaciones de sus movimientos
+
+### Uso de dispositivos
+>- Ordenador: 90%
+>- Móvil: 10%
+>- Tablet: 0%
+
+### Le gusta
+>- Me gusta ahorrar y tener mis cuentas controladas en todo momento, no llevarme sorpresas a final de mes.
+
+### Curriculum
+>- Edad: 30
+>- Ocupación: Desarrollador
+>- Salario: 50000/año
+>- Ciudad: Madrid
+
+### Frustraciones
+>- Cansada de pagar comisiones
+>- Cancelar sus créditos
+>- Pisar una sucursal
+
+# ¿Por qué Persona?
+>- En nuestro sistema de software queremos ofrecer soluciones a un usuario real del sistema.
+>- Por lo tanto necesitamos quien va a utilizar nuestro sistema.
+>- Nuestra Persona nos dice exactamente a quien estamos ofreciendo el sistema.
+>- Nos aseguramos que cada nueva feature o función que vamos a desarrollar tiene a nuestro usuario en mente
+>- Nos ayuda a definir la estrategia y toma de decisiones
+>- Nos ofrecen usuarios reales para nuestro equipo de producto y crea empatía con el usuario.
+>- Si queremos diseñar algo que sea útil, deseable y de valor para nuestra audiencia objetivo necesitamos nuestra persona.
+
+# ¿Como crear Persona?
+>- Antes de crear una persona debemos realizar una investigación bastante grande, con el objetivo de asegurarnos de que nuestrar personas representan a nuestros usuarios con precisión.
+>- Gran cantidad de datos cualitativos como cuantitativos.
+>- Nos debemos centrar en los grupos de usuarios más importantes.
+>- No debes tener 100 personas. Si no un grupo reducido.
+
+### Cabecera
+>- Nombre
+>- Photo
+>- Quote
+
+### Profile
+>- Personal background
+>- Profesional background
+>- Equipo que usa
+
+### Goal
+>- Que espera nuestra Persona de la App
+
+# Investigación de Usuarios
+>- Investigamos cuales son nuestros usuarios objetivos e identificacmos exactamente que necesitarán de nuestro producto.
+>- Una persona generalmente se basa en esta investigación de usuario e incorpora las necesidades del publico objetivo.
+
 # Conocer beneficios de esta forma de trabajar
 # Los roles y responsabilidades
 # Saber que es Persona. Crear y analizar.
 # Conocer las 3C´s
-# Invest
+# Invest (definido arriba)
 # Crear User Stories de Calidad
 # Dividir las User Stories
