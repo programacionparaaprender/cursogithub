@@ -1,6 +1,13 @@
 ### cursos
 >- https://www.udemy.com/course/introduccion-a-sql-con-oracle-11g/learn/lecture/3002494#overview
 
+### conexion con oracle
+>- https://www.codejava.net/frameworks/spring-boot/connect-to-oracle-database-examples
+
+### oracle xe
+>- https://www.youtube.com/watch?v=MZ4rJNYLTlY
+>- https://www.oracle.com/database/technologies/appdev/xe/quickstart.html
+
 ### error de instalación error no se ha encontrado el archivo .ear
 >- https://jsequeiros.com/solucion-error-instalacion-oracle11g-falta-archivo-wfmlrsvcapp-ear.html
 
