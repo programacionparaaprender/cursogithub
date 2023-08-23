@@ -12,7 +12,7 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 # tareas a realizar por sprint
 >- Sprint planning
 >- Daily Stand ip
->- Spring Review
+>- Sprint Review
 >- Sprint Retro
 
 # Sprint - Evento
@@ -38,7 +38,7 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- ¿Que hare hoy para ayudar al equipo de desarrollo a lograr el objetivo del sprint?
 >- ¿Detecto algún impedimento que evite que el equipo de desarrollo o yo logremos el objetivo del sprint?
 
-# Sprint review
+# Sprint Review
 >- El proposito de la Sprint Review es inspeccionar el resultado del Sprint y determinar futuras adaptaciones. El Scrum Team presenta los resultados de su trabajo a los interesados clave y se discute el progreso hacia el Objetivo del Producto.
 >- Inspeccionar el Incremento y adaptar el Product backlog, máx. 4 horas(Sprint 1 mes).
 
