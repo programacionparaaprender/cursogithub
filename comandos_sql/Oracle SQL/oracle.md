@@ -17,3 +17,6 @@
 
 ### crear esquemas
 >- https://qastack.mx/programming/18403125/how-to-create-a-new-schema-new-user-in-oracle-database-11g
+>- SQL> create temporary tablespace johny_tabspace_temp
+>-  2  tempfile 'johny_tabspace_temp.dat'
+>-  3  size 5M autoextend on;
