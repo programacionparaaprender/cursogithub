@@ -12,7 +12,7 @@
 >- https://www.youtube.com/watch?v=JaxFkrz0jdY
 
 ### agregar a variables de entorno path 
->- C:\Program Files\PostgreSQL\16rc1
+>- C:\Program Files\PostgreSQL\11
 >- %POSTGRES_HOME%\bin
 >- %POSTGRES_HOME%\lib
 >- psql -U postgres postgres
