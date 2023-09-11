@@ -18,6 +18,10 @@ db.student.update(
 )
 
 db.getCollection('student').find({})
+db.getCollection('student').find({"name":/^Jhon/})
+db.getCollection('student').find({"email":/gmail/})
+db.getCollection('student').find({"subjects.subjectName":"Java"})
+db.getCollection('student').find({"department.departmentName":"Computer Science"})
 db.getCollection('student').find({"name":"Steve"})
 db.getCollection('student').find({"name":"Peter","mail" : "peter@gmail.com"})
 {
