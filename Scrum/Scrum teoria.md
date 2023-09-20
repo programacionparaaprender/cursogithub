@@ -130,18 +130,18 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- Producción
 
 
-# tres pilares del empirismo
+# tres pilares del empirismo o pilares de scrum
 >- Transparencia
 >- Inspección 
 >- Adaptación
 
-# principios ágiles
->- 1
->- 2
->- 3
->- 4
->- 5
->- 6
+# principios ágiles o principios de scrum
+>- 1 Proceso controlado empíricamente
+>- 2 Equipos auto-organizados
+>- 3 Basado en la colaboración
+>- 4 Priorización de la entrega de valor
+>- 5 Limitación del tiempo
+>- 6 Desarrollo del itinerario
 >- 7
 >- 8
 >- 9
@@ -209,3 +209,17 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 # Invest (definido arriba)
 # Crear User Stories de Calidad
 # Dividir las User Stories
+
+### principios agiles
+>- Satisfacción del cliente
+>- Adaptación al cambio
+>- Entregas frecuentes
+>- Trabajo en equipo
+>- Personas motivadas
+>- Comunicación directa
+>- Software funcionando
+>- Continuidad
+>- Excelencia técnica
+>- Simplicidad
+>- Equipos auto-organizados
+>- Mejora continua
