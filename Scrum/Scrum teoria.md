@@ -19,6 +19,7 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- Todo el trabajo necesario para lograr el Objetivo del Producto, incluido la Sprint Planing, Daily Scrum, Sprint Review y Sprint Retrospective, ocurre dentro de los Sprints.
 >- Un Sprint comienza inmediatamente después de concluir el anterior.
 >- Longitud: Un mes o menos.
+>- User story o Historias de usuario
 
 # Sprint planing
 >- Se planifica lo que será realizado en el Sprint
@@ -58,6 +59,10 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- Comúnmente incluye descripción, prioridad, valor y estimación
 >- Puede incluir criterios de aceptación
 >- 1 producto 1 PB 1 PO
+>- almacena features pendientes, los que estan arriba tienen más prioridad
+
+# Release
+>- almacena los features terminados
 
 # artefactos
 >- Pila de Producto o Produc Backlog (PB)
@@ -90,7 +95,9 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- Sprint Review
 >- Sprint Retrospective
 
-# Historias de Usuario - Product Backlog Item o User Story
+# Historias de Usuario - Tareas - Product Backlog Item o User Story - Epicas
+>- Epicas son historias de usuario tan grandes que no se pueden sacar en una sola historia de usuario, las tenemos que dividir en varias historias de usuario
+>- las historias se pueden subdividir según su nivel de dificultad
 >- Card
 >- Conversation
 >- Confirmation
@@ -98,13 +105,26 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- Recuerdo que vamos a decir que hemos hecho progreso desde el punto de vista que hemos dado algo al usuario con la capacidad de hacer algo con el software que no era capaz de hacerlo antes.
 >- Una historia de usuario es una descripción corta y simple de una característica contada desde la perspectiva del usuario que desea la nueva capacidad.
 
-# Modelo INVEST
->- Independent
->- Negotiable
->- Valuable
->- Estimable
->- Small
->- Testable
+# Modelo INVEST - para historias de usuario invest
+>- Independent (Self-contained, no inherent dependency)
+>- Negotiable (Open for changes till included in iteration)
+>- Valuable to users or customer (Deliver value to stakeholders)
+>- Estimable (Able to estimate size)
+>- Small (Not too big to plan and prioritise)
+>- Testable (Detailed enough to include in testing)
+
+# Definition of Ready y Definition of Done (DoR DoD), normas de historias de usuario
+>- El Team member estara revisando si las historias de usuario estan adecuadas
+>- Termina cuando la historia de usuario complete todos esos parametros, se le asigna en la casilla.
+
+# User Story Mapping
+>- User tasks
+>- User
+>- Back bone
+>- activities
+>- narrative flow
+>- release slice
+>- details
 
 # Sprint Backlog
 >- Objetivo del Sprint
@@ -166,6 +186,8 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 
 # Product Owner
 >- Maximiza el valor del producto resultante del trabajo del Equipo de Desarrollo
+>- Por que se entregaron muy pocos porque no se realizaron y demás elementos
+
 
 ## Responsabilidades del Product Owner
 >- Desarrollar y comunicar explicitamente el Objetivo del Producto.
@@ -175,6 +197,11 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 
 # SCRUM Master
 >- El SCRUM Master es responsable de establecer Scrum ayudando a todos a comprender su teoría y practica
+>- Es la persona encargada de impartir el scrum en toda la empresa o en los grupos que a el se le han indicado
+
+# Team member
+>- Son todo el equipo de desarrollo
+>- Todas esas personas, esos profesionales encargados de realizar el proyecto, de entregar cada una de las funcionalidades que se están requiriendo en cada una de las iteraciones.
 
 ## El Scrum Master sirve al Scrum Team de varias maneras, que incluyen:
 >- Guiar a los miembros del equipo en ser autogestionados y multifuncionales
