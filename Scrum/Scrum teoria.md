@@ -126,6 +126,50 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- release slice
 >- details
 
+# User Story Mapping I
+>- 1. Catalogo Libros
+>- 1. 1. Busqueda por título
+>- 1. 2. Busqueda por autor
+>- 1. 3. Busqueda por IDSN
+>- 1. 4. Busqueda por editorial
+>- 1. 5. Detalle del libro
+
+>- 2. Compra
+>- 2. 1. Adicionar producto al carrito
+>- 2. 2. Resumen de pago
+>- 2. 3. Pago PSE
+>- 2. 4. Pago TC
+
+>- 3. Envío
+>- 3. 1. Login manual
+>- 3. 2. Login Facebook
+>- 3. 3. Login google
+>- 3. 4. información de entrega
+>- 3. 5. Geo-localización Entrega
+>- 3. 6. Método de envío
+
+1. Catalogo Libros
+1. 1. Busqueda por título
+1. 2. Busqueda por autor
+1. 3. Busqueda por IDSN
+1. 4. Busqueda por editorial
+1. 5. Detalle del libro
+
+2. Compra
+2. 1. Adicionar producto al carrito
+2. 2. Resumen de pago
+2. 3. Pago PSE
+2. 4. Pago TC
+
+3. Envío
+3. 1. Login manual
+3. 2. Login Facebook
+3. 3. Login google
+3. 4. información de entrega
+3. 5. Geo-localización Entrega
+3. 6. Método de envío
+
+
 # Sprint Backlog
 >- Objetivo del Sprint
 >- El conjunto de elementos del Product Backlog seleccionados para el Sprint(qué)
