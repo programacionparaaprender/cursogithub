@@ -1,7 +1,7 @@
 # cursos
 >- https://udemy.com/course/agile-scrum-intensivo/learn/lecture/20239248#overview
 >- https://udemy.com/course/scrumcrisrua/learn/lecture/30446220?start=0#overview
-
+>- https://www.udemy.com/course/scrum-elemental/learn/lecture/30900944#overview
 
 # equipo scrum
 Product Owner, Equipo de Desarrollo y Scrum Master
@@ -28,7 +28,7 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- ¿Cómo se realizará el trabajo elegido?
 >- máx 8 horas(Sprint 1 mes)
 
-# daily
+# daily - Sprint daliy -  Daily Meeting
 >- El propósito de la Daily Scrum es inspeccionar el progreso hacia el Objetivo del Sprint y adaptar el Sprint Backlog según sea necesario.
 >- Están presentes los Developers.
 >- Es un evento diario de 15 minutos.
@@ -42,6 +42,11 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 # Sprint Review
 >- El proposito de la Sprint Review es inspeccionar el resultado del Sprint y determinar futuras adaptaciones. El Scrum Team presenta los resultados de su trabajo a los interesados clave y se discute el progreso hacia el Objetivo del Producto.
 >- Inspeccionar el Incremento y adaptar el Product backlog, máx. 4 horas(Sprint 1 mes).
+
+# Grooming
+>- Reuniones semanales
+>- Historias de usuario cumplen con el metodo INVEST
+>- Para aclarar dudas(Sprint 1 semana)
 
 # Sprint Retrospective
 >- Propósito: Planificar formas de aumentar la calidad y la efectividad.
@@ -127,47 +132,27 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- details
 
 # User Story Mapping I
->- 1. Catalogo Libros
->- 1. 1. Busqueda por título
->- 1. 2. Busqueda por autor
->- 1. 3. Busqueda por IDSN
->- 1. 4. Busqueda por editorial
->- 1. 5. Detalle del libro
-
->- 2. Compra
->- 2. 1. Adicionar producto al carrito
->- 2. 2. Resumen de pago
->- 2. 3. Pago PSE
->- 2. 4. Pago TC
-
->- 3. Envío
->- 3. 1. Login manual
->- 3. 2. Login Facebook
->- 3. 3. Login google
->- 3. 4. información de entrega
->- 3. 5. Geo-localización Entrega
->- 3. 6. Método de envío
 
 1. Catalogo Libros
-1. 1. Busqueda por título
-1. 2. Busqueda por autor
-1. 3. Busqueda por IDSN
-1. 4. Busqueda por editorial
-1. 5. Detalle del libro
+>- Busqueda por título
+>- Busqueda por autor
+>- Busqueda por IDSN
+>- Busqueda por editorial
+>- Detalle del libro
 
 2. Compra
-2. 1. Adicionar producto al carrito
-2. 2. Resumen de pago
-2. 3. Pago PSE
-2. 4. Pago TC
+>- Adicionar producto al carrito
+>- Resumen de pago
+>- Pago PSE
+>- Pago TC
 
 3. Envío
-3. 1. Login manual
-3. 2. Login Facebook
-3. 3. Login google
-3. 4. información de entrega
-3. 5. Geo-localización Entrega
-3. 6. Método de envío
+>- Login manual
+>- Login Facebook
+>- Login google
+>- información de entrega
+>- Geo-localización Entrega
+>- Método de envío
 
 
 # Sprint Backlog
@@ -294,3 +279,25 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 >- Simplicidad
 >- Equipos auto-organizados
 >- Mejora continua
+
+### Técnica 5W's
+>- (Why) -- Por que lo vamos a construir ?(visión, estrategia)
+>- (When) -- Cuando lo vamos a construir ? (Roadmap) PO, SM, TM
+>- (What) -- Que vamos a construir ? (Product backlog inicial)
+>- (Who) -- Quienes lo vamos a construir ? (Roles y Responsabilidades, entrenamiento)
+>- (How) -- Como lo vamos a construir ? HW, SW, FW, Concepto de Done, Arquitectura de alto nivel, SCR (repos), ajustes metodología, plan de comunicación
+
+### estimaciones relativas PO y TM
+>- Requisitos de cada tarea
+>- se asignan valores numericos horas, días, semanas
+>- realizan nuevas estimaciones con puntuación similar
+
+### Poker game
+>- tiempo de descanso
+>- PO muestra los requerimientos a TM
+
+### estimación de puntos 
+>- T1(tarea 1) - 8h (horas)
+>- T2(tarea 2) - 8h (horas)
+>- 16h (horas) = 1P (punto)
+
