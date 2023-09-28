@@ -27,3 +27,6 @@
 >- SQL> create temporary tablespace johny_tabspace_temp
 >-  2  tempfile 'johny_tabspace_temp.dat'
 >-  3  size 5M autoextend on;
+
+### crear base de datos
+>- https://www.ediciones-eni.com/libro/oracle-12c-administracion-9782746095168/creacion-de-una-nueva-base-de-datos
