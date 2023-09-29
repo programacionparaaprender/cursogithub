@@ -120,3 +120,65 @@ https://stackoverflow.com/questions/69605313/vs-code-terminal-activate-ps1-canno
 <img src="img/docker.png" alt="Size Limit logo by Anton Lovchikov" width="200" height="50">
 
 
+
+### CLONAR UN REPOSITORIO
+>- git clone URL-REPOSITORIO
+
+### si quieres Clonar un repositorio e ir directo a una rama en especifico
+>- git clone -b RAMA URL-REPOSITORIO
+
+### CAMBIAR DE RAMA		
+#### ver todas las ramas q hay en el repositorio
+>- git branch -vva
+			
+#### cambiar de rama
+>- git checkout RAMA
+			
+#### CREAR UNA NUEVA RAMA
+>- git checkout -b NUEVA-RAMA 
+			
+### SUBIR TUS CAMBIOS A TU REPOSITORIO		
+#### ver que clases hicistes cambios
+>- git status
+			
+### agregar todas tus clases que hiciste cambios
+>- git add .
+			
+### si quieres agregar una sola clase que hiciste cambio
+>- git add CLASE-MODIFICADA
+				
+### comitear tus cambios
+>- git commit -m 'feat : new change'
+
+### subir tus cambios al repositorio
+>- git push origin TU-RAMA
+		
+### ACTUALIZAR TU RAMA
+>- git pull origin RAMA-DE-LA-CUAL-ACTUALIZARAS
+
+### UNIR COMITS
+### comando para definir cuantos comits uniras. ejemplo 5
+>- git reset --soft HEAD~5
+			
+### comando para definir cuantos comits uniras. ejemplo 2
+>- git reset --soft HEAD~2
+		
+### descripcion del commit 
+>- git commit -m 'feat :10543 implementacion de logica para descarga de archivos de reclamos CMS y guardado en base de datos'
+			
+### subir comit	
+>- git push --force origin NOMBRE-RAMA
+>- git push --force origin feature-topic
+
+### COMANDO PARA CERTIFICADO SSL
+>- git config --global http.sslVerify false
+
+### COMANDO UTILIZADO PARA CAMBIAR DE AUTOR AL MOMENTO DE SUBIR LOS CAMBIOS AL REPOSITORIO
+>- git config --global user.name ""
+>- git config --global user.email ""
+			
+### GENERAR WAR E  INDICAR QUE PROPERTIES USAR 
+>- mvn -P PROPERTIES-DESEADO clean install
+		
+
+
