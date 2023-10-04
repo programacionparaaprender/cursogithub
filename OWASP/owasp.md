@@ -1,4 +1,6 @@
 
+## cursos
+>- https://udemy.com/course/owasptop10api/learn/lecture/17989105#overview
 
 ### lista de OWASP top 10 API Riesgos de seguridad
 1. API1. Autorización insegura a nivel de objeto
@@ -31,4 +33,21 @@
 >- Ejemplo eliminar usuarios por error, crear orden de compra debe requerir aprobación
 
 #### API6. Asignación masiva
->- 
+>- Existe una fuerte disposición de que las aplicaciones se desarrollen enlazando los objetos JSON directamente a los modelos de datos. Esta nueva forma de desarrollo, implica que no siempre se tome en cuenta el filtrado de propiedades asignables utilizando listas blancas, logrando que puedan añadirse propiedades a las cuales pueden asignarse valores con fines maliciosos.
+>- Ejemplo colocar una validación para los parametros que se ingresen antes de guardarlos
+
+#### API7. Configuración de seguridad incorrecta
+>- Las configuraciones incorrectas de seguridad suelen ser el resultado de configuraciones predeterminadas, configuraciones inseguras o permisivas, open cloud storage, cabeceras HTTP mal configuradas, métodos HTTP innecesarios y mensajes de error detallados que contienen información confidencial.
+>- Configuraciones permisivas, que los header del response, muestren la información del servidor si es asp.net, se tenga una ip en lugar de una dns o dominio
+
+#### API8. Inyección
+>- Los efectos de inyección, como SQL, NoSQL, Inyección de comandos, etc., ocurren cuando se procesan comandos sin validar adecuadamente los valores de entrada. Un atacante podría ingresar valores de entrada maliciosos para engañar al procesador para que ejecute comandos no deseados o acceda a los datos sin la autorización adecuada.
+>- Ejemplo 1 colocar código sql malicioso en la api, select * from usuario;update ususario set name='otro' where idusuario=1;
+>- Ejemplo 2 colocar código malisioso en los comandos SqlCommand cmd = new SqlCommand("select * from producto where city='"+ p_productoid + "'"); esto permite inyección de sql también
+>- Correcto es SqlParamenter param = new SqlParameter();param.ParameterName = "@productoid";param.Value=p_productoid;
+>- inyección de comandos {"fecha":"abc.jpg && format c:"}
+>- código vulnerable string shell_exec("del " + $parameter)
+>- código seguro unlink($parameter); string shell_exec("del " + securefilter($parameter));
+
+#### API9 Gestión inadecuada de activos
+>- Las API
