@@ -16,8 +16,13 @@
 
 
 #### API1. Autorización insegura a nivel de objeto
+>- Las API's suelen procesar sus funcionalidades a traves del uso de identificadores de objetos. Cuando estos identificadores son predecibles y no se evalua adecuadamente la autorización, un atacante puede intentar ejecutar funcionalidades que afecte a objetos y datos de otros usuarios modificando los identificadores que envia el API.
+>- Ejemplo de error se muestren documentos sin autorización del usuario dueño
 
 #### API2. Autenticación insegura
+>- Es común que los mecanismos de autenticación estén afectados por las debilidades clásicas, pero a esto suma que el panorama actual de amenazas obliga a las organizaciones a no solo desarrollar código seguro sino también a implementar mecanismos de detección y bloqueo que reduzcan el éxito de ataques automáticos sobre los métodos de autenticación.
+>- Ataques de fuerza bruta o de diccionario.
+>- El atacante manda valores hasta logarar tener una contraseña correcta
 
 #### API3. Excesiva exposición de datos
 >- Los desarrolladores tienden a exponer demasiadas propiedades de los objetos sin tener en cuenta su sencibilidad individual u protección por regularizaciones.
@@ -50,4 +55,8 @@
 >- código seguro unlink($parameter); string shell_exec("del " + securefilter($parameter));
 
 #### API9 Gestión inadecuada de activos
->- Las API
+>- Las API's tienen que tener una mayor cantidad de endpoints que las aplicaciones web tradicionales y cambian mucho más frecuentemente que estas debido a los CI/CD, lo que provoca que el control y documentación se pierda debido al cambio constante y la cantidad de activos a manejar. Esta situción provoca que endpoints obsoletos no sean retirados y los endpoints de prueba puedan pasar a producción.
+>- Ejemplo endpoints de prueba no borrados que permiten por ejemplo el logeo sin restricciones
+
+#### API10. Monitoreo y registro insuficiente
+>- El registro y la supervisión insuficientes, junto con la integración ineficaz con los equipos de respuesta a incidentes, permite a los atacantes, establecer persistencia y saltar hacia otros sistemas para manipular, extraer o destruir datos. La mayoria de los estudios de incumplimiento demuestran que el tiempo para detectar un incumplimiento es superior a 200 días, generalmente detectado por partes externas en lugar de procesos internos o monitoreo.
