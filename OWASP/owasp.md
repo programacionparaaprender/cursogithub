@@ -1,8 +1,17 @@
-### página web
->- https://owasp.org/Top10/es/
-
 ## cursos
 >- https://udemy.com/course/owasptop10api/learn/lecture/17989105#overview
+>- https://www.udemy.com/course/owasp-top-10-2021-intro/learn/lecture/38988670#overview
+
+
+### OWASP
+>- Este proyecto abierto que tiene como finalidad minimizar las brechas de seguridad en aplicaciones web, ocasionadas por malas prácticas en el desarrollo del software como:
+>- Débil control de acceso.
+>- Criptografía insegura.
+>- Inyección de código.
+>- https://owasp.org/Top10/es/
+
+### OWASP y sus Beneficios
+>- Dentro de sus beneficios tenemos:
 
 ### lista de OWASP top 10 API Riesgos de seguridad
 1. API1. Autorización insegura a nivel de objeto
