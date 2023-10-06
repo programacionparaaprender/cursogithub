@@ -1,7 +1,6 @@
 ## cursos
 >- https://udemy.com/course/owasptop10api/learn/lecture/17989105#overview
 >- https://www.udemy.com/course/owasp-top-10-2021-intro/learn/lecture/38988670#overview
->- https://indra.udemy.com/course/modelado-de-amenazas/learn/lecture/20900186#overview
 
 ### WebGoat
 >- https://github.com/WebGoat/WebGoat/releases
@@ -34,56 +33,6 @@
 >- Inyección de código.
 >- https://owasp.org/Top10/es/
 
-### ¿Por que la seguridad del software es muy importante?
->- Es la superficie de ataque principal hacia un sistema
->- Controla el acceso a los datos y fuentes de información
->- Sus procesos y operaciones son esenciales para alcanzar los objetivos y metas de la empresa
-
-### Primeros 3 Conceptos Fundamentales: Triada CID
->- CF1: Confidencialidad.
->- CF2: Integridad.
->- CF3: Disponibilidad.
-
-### CF1 Confidencialidad
-1. Protección de acceso a la información.
-2. Protección sobre la divulgación no autorizada.
-
-#### Secretos / Discrción
->- Formula de productos
->- Contratos
->- Negociaciones de precios
->- Secretos de estado
->- Etc.
-
-1. 1. Propiedad Intelectual
->- Investigación de mercado
->- Desarrollo de herramientas
->- Nuevo contenido
->- Etc.
-
-1. 2. Planes de negocio
->- Marketing
->- Precios
->- Expansión
->- Etc.
-
-1. 3. Secretos Militares
->- Estrategias
->- Planes
->- Armamento
->- Proveedores
->- Etc.
-
-1. 4. Datos Personales administrados por Software
->- IIP Información de Identificación Personal
->- PDS Privacidad en Datos de Salud
->- DTP Datos de Tarjetas de Pago
-
-2. 1. Divulgación no autorizada: Canal Abierto
->- ¿ Intencional ?
->- Pobre resguardo de datos visibles en aplicación: Sin máscara, planos, etc.
->- Personal comparte información entre ellos y con agentes externos.
->- Datos confidenciales en reportes: recibos, facturas, tarjetas de pago.
 
 ### OWASP y sus Beneficios
 >- Dentro de sus beneficios tenemos:
