@@ -2,6 +2,14 @@
 >- https://udemy.com/course/owasptop10api/learn/lecture/17989105#overview
 >- https://www.udemy.com/course/owasp-top-10-2021-intro/learn/lecture/38988670#overview
 
+### WebGoat
+>- https://github.com/WebGoat/WebGoat/releases
+>- https://github.com/WebGoat/WebGoat
+>- https://hub.docker.com/r/webgoat/webgoat-7.1
+>- docker pull webgoat/webgoat-7.1
+>- docker pull webgoat/webgoat-7.1 
+>- docker run -p 8080:8080 -t webgoat/webgoat-7.1
+>- Aplicativo para pruebas de seguridad
 
 ### OWASP
 >- Este proyecto abierto que tiene como finalidad minimizar las brechas de seguridad en aplicaciones web, ocasionadas por malas prácticas en el desarrollo del software como:
@@ -25,7 +33,28 @@
 >- Los algoritmos de cifrado son dédiles o muchas veces obsoletos, las contraseñas usadas se pueden recuperar fácilmente por ataques de diccionario o con herramientas automatizadas.
 
 #### A03:2021 - Inyección
->- 
+>- Cuando una aplicación no tiene cuidado con los datos que envía el usuario a su servidor, esto se puede volver un problema cuando se inyectan comandos arbitrarios, aquí se busca tomar el control de las acciones del sistema web.
+
+#### A04:2021 - Diseño Inseguro
+>- No se aplica la seguridad desde el diseño, eso quiere decir que no esta involucrada la seguridad en los aspectos más importantes al momento de diseñar un sistema web, se dejan estas actividades al final del ciclo de vida del software.
+
+#### A05:2021 - Configuración de Seguridad Incorrecta
+>- Luchamos contra la configuración por defecto, muchas veces se olvidan de quitar usuarios y accesos de prueba, aquí no se aplica el debido cuidado a la hora de desplegar sistemas web.
+
+#### A06:2021 - Componentes Vulnerables y Desactualizados
+>- Los sistemas web muchas veces reutilizan software de terceros o la tecnología con la que implementan ciertas librerías ya ha quedado obsoleta, esto abre brechas de seguridad difíciles de controlar.
+
+#### A07:2021 - Fallas de Identificación y Autenticación
+>- El manejo de las sesiones de usuarios es insuficiente, se permite el uso de la fuerza bruta, no se implementa un factor múltiple de autenticación, se usa de forma inadecuada el uso de tokens.
+
+#### A08:2021 - Fallas en el Software y en la Integridad de los Datos
+>- La actualización de software realizan su proceso sin verificación de identidad y la integridad, en esta categoría se aborda el tema de CI/CD, el manejo de los pipelines así las redes de entrega de contenidos (CDN), así como el mal uso de las firmas digitales.
+
+#### A09:2021 - Fallas en el Registro y Monitoreo
+>- Las aplicaciones web muchas veces no crean registro de las actividades de usuario o el registro no contiene información relevante, es necesario un monitoreo continuo para garantizar la defensa en profundidad
+
+#### A10:2021 - Falsificación de Solicitudes del Lado del Servidor
+>- El aumento de los servicios en la nube hacen posible que una aplicación web obtenga recursos remotos sin validar, eso quiere decir que un atacante puede lograr que el servidor haga solicitudes a una URL falsificada y lograr controlar acciones que son asignadas al servidor web.
 
 ### lista de OWASP top 10 API Riesgos de seguridad
 1. API1. Autorización insegura a nivel de objeto
