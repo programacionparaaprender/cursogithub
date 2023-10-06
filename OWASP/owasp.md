@@ -12,6 +12,20 @@
 
 ### OWASP y sus Beneficios
 >- Dentro de sus beneficios tenemos:
+>- Busca prevenir que los programadores realicen fallas en su programación, reduciendo el impacto en sus vulnerabilidades.
+>- Es un marco de referencia y consulta a la hora de seguir líneas bases en programación segura.
+>- Aplicar estas buenas prácticas impacta de manera positiva en los gastos incurridos por arreglar vulnerabilidades.
+>- El proyecto se actualizar constantemente y muestra en el top por orden de importancia.
+
+#### A01:2021 - Pérdida de Control de Acceso
+>- Los usuarios pueden ejecutar acciones fuera del rango de lo permitido, las aplicaciones no realizan el debido cuidado al momento de controlar los servicios y recursos, se ejecutan acciones no controladas y se exponen todos los sistemas
+>- Ejemplo falta validar los perfiles de usuario
+
+#### A02:2021 - Fallas Criptográficas
+>- Los algoritmos de cifrado son dédiles o muchas veces obsoletos, las contraseñas usadas se pueden recuperar fácilmente por ataques de diccionario o con herramientas automatizadas.
+
+#### A03:2021 - Inyección
+>- 
 
 ### lista de OWASP top 10 API Riesgos de seguridad
 1. API1. Autorización insegura a nivel de objeto
