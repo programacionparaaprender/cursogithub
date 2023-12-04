@@ -404,3 +404,181 @@ Continuous Deployment
 >- No Email
 >- Elimina las que no son útiles
 >- Auto-curación
+
+### 16. Modelo de Madurez
+>- Cultura (Negro, Azul, Verde, Amarillo, Blanco)
+>- Procesos (Negro, Azul, Verde, Amarillo, Blanco)
+>- Tecnología (Negro, Azul, Verde, Amarillo, Blanco)
+
+1. Cultura:
+>- Habitos.
+
+2. Procesos:
+>- Codificar.
+>- Monitorear.
+>- Crear Infraestructura.
+
+3. Tecnología:
+>- Herramientas para el proyecto.
+
+#### Cinturon blanco (Ad hoc):
+##### Cultura
+>- Comunicación nula.
+>- Cultura de acusación.
+>- Equipos organizados por habilidades.
+
+##### procesos
+>- Procesos manuales.
+>- Requerimientos guiados por intuición.
+>- Conocimiento tribal.
+>- Monitoreo nulo.
+>- Comportamiento reactivo.
+
+##### tecnología:
+>- Automatización y herramientas nulas.
+>- Incosistentes entre ambientes.
+>- Versionamiento inexistente.
+
+#### Cinturon amarillo (Repetible)
+##### Cultura
+>- Comunicación inicial
+>- Apertura limitada del conocimiento
+
+##### Procesos
+>- Procesos escritos (documentación)
+>- Desarrollo guiado por SCRUM
+>- Reportes Tácticos
+
+##### Tecnología
+>- Adopción de herramientas
+>- Estandarización de Ambientes
+>- Tests automatizados por cada User Story
+>- Deployment a Producción dolorosos pero repetibles
+
+#### Cinturon verde (Definido)
+
+##### Cultura
+>- Comunicación fluida
+>- Toma de decisiones y responsabilidad de resultados compartidos
+
+##### Procesos
+>- Orquesración simple.
+>- Automatización suplanta a documentación.
+>- Monitoreo en tiempo real.
+
+##### Tecnología
+>- Compilación y testeo automatizados al 100%
+>- Deplotymentes automáticos a todos los Ambientes (excepto Producción)
+>- Creación automatizada de Ambientes
+
+#### Cinturon Azul (Deliverado)
+
+##### Cultura
+>- Decisiones basadas en métricas
+>- Colaboración continua
+>- Equipos organizados por Producto
+>- Andon Cord
+
+##### Procesos
+>- Orquestación compleja
+>- Entregas recurrentes en tiempos cortos
+>- Visibilidad y previsibilidad en las Operaciones
+
+##### Tecnología
+>- Deployments automáticos a Producción (Rollback posible).
+>- Monitoreo permite encontrar patrones.
+>- Auto - curación.
+
+#### Cinturon negro (Optimizado)
+
+##### Cultura
+>- Aprendizaje y Mejora continuas
+>- Constante transferencia de conocimiento
+>- Equipos multi-disciplinarios
+
+##### Procesos
+>- Rxperimentación constante
+>- Testeo y Entrega Continua
+
+##### Tecnología
+>- Cero perdida de servicio en Deployments
+>- Ingeniería del Caos
+>- Feedback inmediato
+
+##### ¿En qué cinturón se encuentra tu equipo?
+##### ¿Qué acciones puedes tomar en este momento para avanzar al siguiente nivel?
+
+### 17. Espera Turbulencia
+>- Miedo a la Automatización
+>- Miedo al cambio
+>- Apego a las Herramientas
+>- Cultura del Dedo
+
+### 18. Tácticas de Adopción
+Automatiza los tests
+1. Funcionalidad + Tests
+2. Prioriza un área a la vez
+<p>Tests Automatizados = </p>
+<p>
+<strong>F</strong>acilita el
+<strong>A</strong>prendizaje de
+<strong>L</strong>ecciones
+<strong>L</strong>ibre de 
+<strong>A</strong>ngustia
+<strong>¡Rápido!</strong>
+</p>
+3. Adopta una Herramienta
+>- Orquestador
+>- Scripts de automatización
+>- Andon Cord
+<p>
+"Si algo esta roto, no lo envíes a la siguiente persona."
+</p>
+
+3. Aprovecha los Agentes de Cambio
+>- Comparte el Sufrimiento
+>- Releases dolorosos
+>- Productos defectuosos
+>- Infraestructura frágil
+
+4. Se o No Ser...
+>- Escuafrón Kaizen CAMS.
+>- SRE = Software Reliability Engineer.
+>- Reduce los silos.
+>- Acepta el fallo.
+>- Implementa cambios graduables.
+>- Aprovecha herramientas y automatización.
+>- Mídelo todo.
+
+5. Crea un equipo ¡DevOps!
+>- Contrata consultores
+>- Dev + Ops 
+<p>Equipo SRE</p>
+<p>Empresa DevOps</p>
+
+### 20. Caso de Uso #1
+<p>A tomar en cuenta:</p>
+>- Nivel de madurez tecnológico
+>- Cultura del Equipo de Desarrollo
+>- Recursos económicos y de tiempo
+<p>Caso de Uso 1</p>
+<p>Fase 1: Aseguramiento de la Calidad</p>
+>- Bitbucket Pipelines -> Unit Tests
+<p>Fase 2: Continuous Delivery</p>
+<p>HostGator</p>
+<p>Testing - Producción</p>
+
+### 21. Caso de Uso 2
+<p>
+"...al evitar realizar actividades que consumen excesivo tiempo y esfuerzo, olvidamos que..."
+</p>
+>- Incrementamos la deuda técnica.
+>- La automatización está a nuestro favor.
+
+#### Limitaciones
+>- Velocidad en la ejecución de Tests
+
+#### Esfuerzo en Devs & QA
+>- Build -> Unit Tests -> Creación Ambiente UAT -> Deployment a Ambiente UAT -> Ejecución de UATs -> Deployment a Producción
+>- Emplea Jenkins
+
