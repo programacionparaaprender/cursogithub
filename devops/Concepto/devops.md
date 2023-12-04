@@ -221,3 +221,186 @@ Bill Gates
 ### Pruebas
 >- Revisión esporádica
 >- Revisión continua
+
+### Continuous Testing (CT)
+<p>¿Qué se requiere?</p>
+<p>1. Creación de Tests Automatizados</p>
+<p>2. Estratégia de CT</p>
+
+### Proporción de Tests
+<p>UAT</p>
+<p>Integración</p>
+<p>Unit Tests</p>
+
+### CT en acción (jmeter)
+<p>1. Ejecución de todos los Unit Tests</p>
+<p>2. Ejecución del Análisis estático de código</p>
+<p>3. Deployment a un ambiente de pruebas</p>
+<p>4. Ejecución del Smoke Test</p>
+
+### ¿Cómo crear el hábito de Continuous Testing?
+>- Test Driven Development
+
+1. Estrategias
+>- Escribir un test que falle
+>- Pasar el test
+>- Refactor
+
+2. Prueba
+>- Test Validar: Sumar(2, 1) = 3
+>- Code Sumar(a, b){Return (a+b);}
+>- Result Success
+
+### Continuous Delivery
+1. Plataformas
+>- Data Centers
+>- Microsoft Azure
+>- Amazon web services
+>- Google Cloud Platform
+
+2. Ambientes
+>- Desarrollo
+>- Pre-Producción
+>- Producción
+
+3. Recomendaciones
+>- Utiliza herramientas (jenkins, go, chef, puppet labs, ansible).
+>- Versiona las Pipelines.
+>- CD Pipelines/scripts deben recibir parámetros según el ambiente.
+>- Upgrade de Bases de Datos es parte del Pipeline
+>- Encadena Tests luego de los deployments
+>- Histórico de Deployments + Rastreo de Builds
+
+4. Evita estas situaciones
+>- CD != CD + Calidad 
+<p>
+Cont. Delivery + Cont. Testing es lo correcto
+</p>
+>- Poca frecuencia de Releases
+<p>
+Cadencia: 2 semanas a 2 meses
+</p>
+<p>
+Técnicas: Feature Toggles y Dark Launch
+</p>
+>- Releases de Viernes por la noche
+<p>
+Continuous Deployment
+</p>
+>- Continuous Delivery vs Continuous Deployment
+<p>Cont. Integration</p>
+<p>Build -> Deployment to development -> Integration Tests -> Deployment to PreProduction -> UAT Security Tests Manual -> Deployment to Production</p>
+<p>Cont. Delivery</p>
+<p>Build -> Deployment to development -> Integration Tests -> Deployment to PreProduction -> UAT Security Tests Auto -> Deployment to Production</p>
+<p>Cont. Deployment</p>
+
+### 13. Infraestructura como Código (IaC)
+>- Creación manual de Servidores
+>- Desvío de Configuración
+>- Copo de Nieve
+>- Infraestructura Jenga
+>- "Infraestructura como Código (IaC)
+...es la utilización tecnologías de la Era Cloud para construir y administrar infraestructura dinámica. ...trata a la infraestructura, a las herramientas y servicios que manejan la infraestructura misma, como a software."
+>- Kief Morris (Infrastructure-as-Code, O'Reilly, 2016)
+
+1. Los Principios de IaC
+>- Reproducibilidad
+>- Consistencia
+>- Repetibilidad
+>- Desechabilidad
+>- Continuidad de Servicios
+>- Versionamiento total
+2. Ciclo de Vida de un Servidor
+>- Creación de Template -> Creación de Servidor -> Actualización -> Eliminación
+>- Creación de Template -> Creación de Servidor -> Actualización -> Reemplazo -> Actualización
+3. Infraestructura Inmutable
+"... creación de nueva infraestructura reflejando los cambios deseados de configuración en lugar de realizar dichos cambios en la configuración de infraestructura existente."
+>- Kief Morris (Infraestructure-as-Code, O'Reilly, 2016)
+
+4. IaC para todos
+>- Google Cloud Platform
+>- Amazon Web Services
+>- Digital Ocean
+>- Alibaba Cloud
+>- Rackspace
+>- Microsoft Azure
+>- Data Centers
+
+5. IaC para todos
+>- Para la nube (Terraform, CloudFormation)
+>- Para la nube y DataCenter locales: (CHEF, puppet,ANSIBLE, SALTSTACK
+>- Para el desarrollo (Vagrant)
+6. IaC en CI/CD
+>- terraform apply
+>- Build -> Unit Tests -> Provisión UAT Environment -> Execute UAT -> Delete UAT Environment -> 
+
+### 14. Operaciones 
+>- Llamadas a las 3am
+>- Trabajar en fines de semana
+>- Restar tiempo a la familia
+>- Constante estrés
+
+1. Ops
+<p>
+"[Ops]...es un término general para ingenieros de sistemas, administradores de sistemas, personal de operaciones, ingenieros de Release, Administradores de Bases de Datos, ingenieros de red, profesionales de seguridad y varias otras subdisciplinas y títulos laborales."
+</p>
+<p>Ernest Mueller, "What is DevOps?"</p>
+<p>The Agile Admin, 2010</p>
+
+2. Ops y el cambio
+<p>
+"La especie que sobrevive no es la más fuerte, ni tampoco la más inteligente, sino aquella que responde más rápidamente al cambio."
+</p>
+<p>Charles Darwin</p>
+
+3. ¿Donde empezar?
+>- Elimina los privilegios para realizar cambios
+>- Crea ventanas de mantenimiento
+>- Al resolver problemas, analiza los cambios recientes.
+>- Crea un CAB (Change Advisory Board)
+>- Utiliza un Sistema de Administración de Cambios
+
+4. Requerimientos No Funcionales
+>- Aprovisionamiento y configuración
+>- Configuración de balanceadores de carga
+>- Escalamiento horizontal y vertical de recursos
+
+### 15. Monitoreo
+<p><strong>2da vía:</strong></p> Incrementa los flujos de feedback
+
+1. Tipos de monitoreo
+>- libro Practical Monitoring  Mike Julian
+>- Negocio
+>- Aplicaciones
+>- Servidores
+>- Red (ancho de banda, rendimiento, latencia)
+
+2. Instrumentación
+<p>
+"La habilidad de monitorear o medir el nivel de perfonmance de tu producto, de diagnosticar errores y de escribir información de rastreo" - M. Julian
+</p>
+
+3. Instrumentación en acción
+>- Agregación de logs (splunk>, graylog)
+>- Health Endpoints(Prometheus, DATADOG, influxdata, grafana, kibana)
+
+4. ¿Que monitorear?
+<p>
+"Si se mueve, se monitorea. Caso contrario, se monitorea de todas maneras, por si decide moverse." - Ingenieros de Etsy
+</p>
+<p>
+"Lo que puedes medir, puedes manejar." - Peter Drucker
+</p>
+
+5. ¿Por dónde empezar?
+>- Users <-> Load Balancer <-> Web & App Servers <-> Databases
+>- Users
+>- Load Balancer
+>- Web & App Servers
+>- Databases
+>- Empezar por los Usuarios
+
+6. Alertas - Recomendaciones
+>- No Email
+>- Elimina las que no son útiles
+>- Auto-curación
