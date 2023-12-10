@@ -212,3 +212,53 @@
 >- docker pull postgres:alpine3.17
 >- docker run -e POSTGRES_PASSWORD=password postgres:alpine3.17
 >- docker ps
+>- docker ps -a
+
+### 28. Logs y Docker start
+>- docker ps -a
+>- docker start contenedor_id
+>- docker stop contenedor_id
+>- docker logs contenedor_id
+
+### 29. Docker Exec
+>- docker exec -it contenedor_id sh
+
+### 30. Docker stop y ejecución de contenedores en background
+>- docker ps
+>- docker run -d -e POSTGRES_PASSWORD=password postgres
+>- docker stop sweet_satoshi
+>- docker ps
+
+### 31. Dockerfile
+<p><strong>Dockerfile</strong></p>
+
+>- Un Dockerfile es un archivo o documento de texto simple que incluye una serie de instrucciones que se necesitan ejecutar de manera consecutiva para cumplir con los procesos necesarios para la creación de una nueva imagen.
+>- A este conjunto de instrucciones se le conoce como línea de comandos y serán los encargados de indicar los pasos a seguir para el ensamblaje de una imagen en Docker, es decir, los elementos necesarios para el desarrollo de un contenedor en Docker.
+>- De manera que las imágenes en Dockerfile se crean a partir de un comando en específico denominado docker build, que se encargará de ofrecer las herramientas para que el sistema siga las instrucciones que el usuario haya indicado en la línea de comandos.
+<p><strong>Dockerfile</strong></p>
+
+>- Dentro de las características de un Dockerfile se encuentra su ejecución, que se lleva a cabo siguiendo ciertos pasos de facil aplicación, iniciando con la indicación de las instrucciones que el usuario considere necesario para la creación de la imagen. Después de esto, se debe ejecutar el comando docker build, que hará que el Dockerfile esté disponible para su uso y crear contenedores. Esto implica que esta herramienta funciona bajo el esquema Dockerfile > Docker image -> Docker Container.
+>- Además de esto, un Dockerfile se caracteriza por definir las instrucciones para crear una nueva imagen, pero siempre inicia con una imagen base que ya existe en el sistema. De manera que la imagen creada surge partir de esta bse, pero cuenta con una serie de diferencias y propiedades distintas que distingue una de la otra.
+
+### 32. Funcionamiento de Dockerfile
+>- Funcionamiento de Dockerfile
+>- En lo que respecta al funcionamiento de un archivo de texto Dockerfile, es posible agregar que cada una de las instrucciones incluidas en esta herramienta para crear una imagen se ubica en una línea distinta y se ejecutan una tras otra, es decir, de forma consecutiva como si se tratara de un script por lotes.
+>- De modo que la creación de una imagen de Docker depende de las instrucciones del Dockerfile. Estas, a su vez, se inician una vez se ejecute el comando docker build dentro de la plataforma de contenedores.
+>- Para el funcionamiento de Dockerfile se debe tener en cuenta también el llamado contexto docker build context, es decir, la herramienta que se encarga de indicar cuáles son los archivos, directorios y ficheros a los que tiene acceso la opción de docker build. Por tanto, los datos e información pertenecientes al directorio fuente se transfieren al docker daemon una vez se ejecute el comando docker build. Esto significa que, para la serie de pasos incluidas en un Dockerfile, podrán tener acceso a la información relacionada con los archivos del build context.
+>- En los casos donde el usuario no necesite utilizar la totalidad de archivos incluidos en el directorio fuente local en el build context, puede acudir a la herramienta de .dockerignore, que se encargará de excluir los elementos que no requiera la imagen final.
+
+### 33. Opciones de Dockerfile
+>- Dentro de las opciones más relevantes para un Dockerfile se encuentran herramientas encargadas de labores, como el establecimiento de la imagen base, el cambio de usuario o los elementos preestablecidos para el arranque de un contenedor en Docker, entre otros.
+>- Algunas de estas opciones son:
+>- FROM: es una opción de Dockerfile que debe presentarse como la primera instrucción. Cumple con la función de establecer la imagen sobre la que los pasos e imágenes siguientes se desarrollan en el sistema. La imagen mínima que da origen al resto de imágenes en Docker es llamada scratch.
+>- ENV: hace referencia a la opción que indica las variables de entorno que se necesitan en el proceso de construcción de una imagen en Docker y permite la ejecución de los contenedores y sus labores en el sistema.
+>- USER: esta herramienta se utiliza en los archivos de instrucciones de Dockerfile con el objetivo de cambiar el usuario y su pertenencia a un grupo determinado. Una vez se ejecute esta opción, se aplicará a la totalidad de instrucciones siguientes.
+>- RUN: es una de las opciones de mayor importancia y popularidad en Dockerfile. Cumple la labor de ejecutar una instrucción incluida en la línea de comandos de la imagen durante su proceso de construcción. Dockerfile RUN puede escribirse en formato SHELL o bajo la opción de escritura EXEC.
+>- ADD: este elemento se encarga de las tareas relacionados con la copia de ficheros, directorios y archivos de una imagen en Dockerfile. Se debe tener en cuenta que el uso de la instrucción ADD implica la creación de una nueva capa de imagen, por lo que debes ser cuidadoso al implementar esta opción.
+>- EXPOSE: es la opción que tiene como labor la definición de las asignaciones referentes a los puertos para los contenedores de la plataforma que se encuentren en su etapa de ejecución.
+
+### 35. Preparar proyecto NodeJS
+
+
+
+
