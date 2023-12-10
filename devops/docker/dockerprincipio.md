@@ -259,6 +259,48 @@
 
 ### 35. Preparar proyecto NodeJS
 
+### 36. Ejemplo de Dockerfile para imagen Node
+>- mkdir node-docker
+>- cd node-docker
+>- npm init -y
+>- npm install ronin-server ronin-mocks
+>- docker build --tag node-docker .
+>- docker tag node-docker:latest node-docker:v1.0.0
+#### eliminar
+>- docker rmi node-docker:v1.0.0
+### 37. Publicar puertos
+>- docker run --publish 8000:8000 node-docker
+>- docker stop node-docker
+>- docker stop 44aaf40a0015
+>- docker run -dp 8000:8000 node-docker
+>- docker restart 089b5da79a8a
+>- docker stop 089b5da79a8a
+
+### 38. ¿Que son los ficheros YAML?
+
+>- YAML es un acrónimo que significa Ain't Markup Language (YAML no es un lenguaje de marcas).
+>- Se trata de un estándar de serialización de datos amigable para todos los lenguajes de programación.
+>- Más info yaml.org
+
+### 39. Docker Compose
+
+>- Docker Compose es una herramienta que nos permitirá definir y ejecutar aplicaciones Docker empleando varios contenedores.
+>- Con Compose haremos uso de un fichero de texto con la extensión YAML en el que realizaremos la configuración de los servicios (imágenes), redes y volúmes para persistencia de datos que requieran nuestras aplicaciones.
+
+### 40. Comunicación entre contenedores
+>- docker volume create mongodb
+>- docker volume create mongodb_config
+>- docker network create mongodb
+>- 23a594c3128937537fc4d19270910cc8e052297d35cef4478a0b17966b8ef91d
+>- docker network rm mongodb
+>- docker run -it --rm -d -v mongodb:/data/db -v mongodb_config:/data/configdb -p 27017:27017 --network mongodb --name mongodb mongo
+>- b1437f64a1ace7e685d4e946c2d8eb589d5b454bfab192c59f54f6371248abdf
+>- npm install ronin-database
+>- docker build --tag node-docker .
+>- docker run -it --rm -d --network mongodb --name rest-server -p 8000:8000 -e CONNECTIONSTRING=mongodb://mongodb:27017/notes node-docker
+>- df288c61b17904a24ab5a1953aa05597dcc8d4fa7d16bacab68be8bfce59bbaa
+>- docker ps
+>- http://localhost:8000/test
 
 
 

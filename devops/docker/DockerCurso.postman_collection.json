@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "5b6fa224-7cbc-4ed5-bced-4fc92c416187",
+		"name": "DockerCurso",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7693010"
+	},
+	"item": [
+		{
+			"name": "POST - MONGO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"this is a note\", \"text\": \"this is a note that I wanted to take while I was working on writing a blog post.\", \"owner\": \"peter\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
