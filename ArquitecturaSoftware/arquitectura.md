@@ -84,6 +84,7 @@
 >- !Una arquitectura convencional no significa que no sea necesario preocuparse por escribir código de buena calidad¡
 >- Se debe escribir buen código para que, en caso de que el sistema crezca, nos podamos adaptar, cambiar de arquitectura etc.
 
+
 <p><strong>Arquitectura centrada en los datos</strong></p>
 >- Se piensa primero en los datos que se necesitan almacenar.
 >- Se recopilan requisitos para tener claras las reglas de negocio.
@@ -97,11 +98,53 @@
 >- Se modelan todas las entidades y reglas especificas del dominio.
 >- A partir de ahí, se implementan los casos de uso que queremos resolver.
 
+
 #### Tiempo de desarrollo
+>- Centrada en el dominio <-> Centrada en los datos
 >- EL dominio es invariable, no depende del problema.
 >- Los casos de uso son mucho más inestables, tienden a cambiar con el tiempo.
 >- Separando los casos de uso y las reglas del dominio conseguimos independizar dos partes con inestabilidades muy diferentes.
 >- Esto hace que nuestro sistema sea mucho más flexible.
 
-#### 5. Lenguaje Ubicuo
->- 
+##### Centrada en el dominio
+>- EL dominio es invariable, no depende del problema.
+>- Los casos de uso son mucho más inestables, tienden a cambiar con el tiempo.
+>- Separando los casos de uso y las reglas del dominio conseguimos independizar dos partes con inestabilidades muy diferentes.
+>- Esto hace que nuestro sistema sea mucho más flexible.
+
+##### Centrada en los datos
+
+
+### 5. Lenguaje Ubicuo
+
+<p><strong>Qué es el lenguaje ubicuo</strong></p>
+
+>- Vocabulario común que describe el dominio del problema Verbos, nombres, adjetivos etc.
+>- Es compartido por todos los interesados del proyecto. PMs, programadores, expertos de dominio, clientes etc.
+>- Se debe usar siempre para evitar malentendidos.
+>- Evitamos usar sinónimos del mundo real que podrían significar otra cosa en nuestro dominio
+>- El objetivo es utilizar un lenguaje común, independientemente del rol desempeñado.
+
+#### Características de lenguaje ubicuo
+>- Se crea a partir de sesiones de brainstorming y análisis del dominio.
+>- Se documenta y debe ser claro y lo menos ambiguo posible.
+>- Es parte de un proceso iterativo.
+>- El lenguaje ubicuo evoluciona según vamos aprendiendo más sobre el dominio
+>- Ubicuo: "Que está presente a un mismo tiempo en todas partes."
+>- Se debe usar en conversaciones, emails, historias de usuario y código.
+
+#### Ejemplo
+>- "Como monitor del gimnasio, quiero que los usuarios con tarifa completa se puedan registrar y asistir a clases particulares."
+>- Monitor
+>- Gimnasio
+>- Usuario
+>- Tarifa
+>- Registrar 
+>- Asistir
+>- Clase particular
+
+### Contextos Acotados
+>- Gym
+>- Address
+>- Class
+>- Facility
