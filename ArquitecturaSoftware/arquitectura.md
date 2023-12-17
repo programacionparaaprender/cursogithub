@@ -117,7 +117,7 @@
 
 ### 5. Lenguaje Ubicuo
 
-<p><strong>Qué es el lenguaje ubicuo</strong></p>
+<p><strong>¿Qué es el lenguaje ubicuo?</strong></p>
 
 >- Vocabulario común que describe el dominio del problema Verbos, nombres, adjetivos etc.
 >- Es compartido por todos los interesados del proyecto. PMs, programadores, expertos de dominio, clientes etc.
@@ -143,8 +143,138 @@
 >- Asistir
 >- Clase particular
 
-### Contextos Acotados
+### 6. Contextos Acotados
+>- contexts_acotados3.png
+>- Equipo Información del gimnasio
+>- Equipo Información de pago
+>- Equipo Información de reservas
 >- Gym
 >- Address
 >- Class
 >- Facility
+
+#### Definición
+>- Nueva forma de organizar el modelo y la lógica de negocio guiado por el dominio.
+>- Un cotexto acotado es aquel que tiene un sentido especial en el dominio.
+>- Cada uno tiene su lenguaje ubicuo propio.
+>- Las entidades fuera del contexto pueden tener características ligeramente diferentes.
+>- Tener definida la misma entidad en diferentes contextos no implica una duplicidad de código, si no una aclaración del mismo.
+>- Compartiendo modelo entre contextos, se tiende a acumular detalles e información de todos ellos, poniendo en riesgo la integridad del modelo.
+
+### 7. Mapeo de Contextos
+<p><strong>Dependencias entre distintos contextos</strong></p>
+
+>- A pesar de que es positivo separar nuestro modelo en contextos acotados, la lógica de un sistema software complejo implica interacción entre los distintos contextos.
+>- Los contextos no son completamente independientes.
+>- Debemos tener clara la interacción y dependencias entre los mismos.
+
+#### Tipos de relaciones
+>- Conformista (Conformist). No existe ninguna capacidad de negociación.
+>- Cliente / Proveedor (Customer / Supplier). Dependencia con cierto grado de negociación. Necesidades en el cliente pueden implicar cambios en el proveedor.
+>- Socio (Partnership). Ambos contextos colaboran por una meta en común, por lo que ambos lados de la relación tienen poder para influenciar al otro.
+>- Núcleo compartido (Shared Kernel). Dos o más contextos comparten un mismo modelo. Todos necesitan estar de acuerdo para realizar cambios. Difícil de mantener.
+
+#### Tipos de relaciones 2
+>- Capa anticorrupción (Anticorruption Layer). Interfaz que utiliza Downstream para interactura con Upstream, sin importar los cambios realizados en el último.
+>- Open Host Service / Published Language. Relaciones de tipo conformista en las que se provee de documentación al Downstream context. Además se proporcionan versiones y compatibilidades entre ellas.
+
+### 8. Capas del Domain Driven Design
+
+#### Capa de presentación
+>- En el pasado, se construía la vista desde el servidor, por eso se consideraba parte de la presentación.
+>- Ahora es muy común tener la vista separada. React, Angular, Vue etc.
+>- API de entrada a nuestro sistema que da soporte a la interfaz de usuario.
+>- Es la fachada e interactúa con los servicios de aplicación para iniciar los casos de uso.
+>- @Controller en Spring
+
+
+#### Capa de aplicación
+>- Encargada de orquestar todos los casos de uso necesarios para el funcionamiento de nuestro sistema.
+>- Interactúa con el dominio para ejecutar su lógica especificada.
+>- Interactúa con la infraestructura para la persistencia, framework, logging etc.
+>- Responde a la presentación con los datos formateados correctamente.
+>- @Service en Spring
+
+#### Dominio
+>- Datos y lógica central de nuestro sistema, diseñada bajo los principios de DDD.
+>- Debe estar lo más aislado posible del exterior. Se comunica con infraestructura si necesita algún aspecto como logging.
+>- Se compone de entidades de dominio y servicios de dominio.
+>- Entidades de dominio
+>- Datos.
+>- Lógica.
+>- No son entidades de persistencia (@Entity en Spring).
+>- Servicios de dominio
+>- Lógica de dominio que no se pueda asignar a una entidad de dominio específica.
+>- Siguen los principios del DDD.
+>- @Service en Spring
+
+#### Capa de infraestructura
+>- Persistencia.
+>- Objetos de ORMs (@entity etc).
+>- Detalles del Framework
+>- Clases de configuración
+>- Arranque de la aplicación
+>- Otros aspectos de infraestructura
+>- Logging
+
+#### Dependencias
+>- Las flechas indican el flujo de la información, no la dependencia.
+>- Es importante conseguir la IoC usando técnicas como la inyección de dependencias.
+
+#### Dependencias 2
+>- Es importante que el dominio sea lo más estable de nuestro sistema.
+>- Nunca debemos modificar nuestro dominio para adaptarlo al exterior, como por ejemplo BBDD.
+>- En ese caso, lo apropiado es adaptar la capa de infraestructura.
+
+### 9. Modelo de Dominio
+>- Entidades
+>- Clases con datos y comportamiento
+>- Value Objects
+>- Clases con simplemente datos.
+>- Sirven para representar de manera más clara los atributos de las entidades.
+>- Deben ser inmutables
+>- Aggregates
+>- Grupos de entidades y Value Objects
+>- Separan conceptos diferentes de nuestro dominio.
+>- Como norma general, la comunicación entre distintos aggregates se debe hacer a través de la raíz de los mismos. Una raíz no puede acceder a otro elemento no raíz de un aggregate diferente.
+
+### 10. Modelo de BBDD vs Modelo de Dominio
+
+#### Modelo de persistencia
+>- Modelo ligado totalmente a nuestro modelo de bases de datos.
+>- Está orientado a que nos sea más fácil realizar las operaciones en base de datos.
+>- Consultas
+>- Inserciones
+>- Modificaciones
+>- Eliminaciones
+>- Sólo contiene información, no comportamiento.
+>- Se puede usar una herramienta de mapeo objecto-relacional.
+>- Hibernate
+>- Entity Framework
+
+#### Modelo de dominio
+>- Orientado a modelar el dominio del problema
+>- Datos
+>- Compontamiento
+>- Es un modelo que se puede persistir.
+>- Mapeo entre modelo de dominio y de persistencia.
+>- No tiene ningún conocimiento sobre la BBDD.
+
+### 11. Servicios de Dominio
+>- Ejecutan lógica que no tiene cabida en ninguna de las entidades.
+>- Suele ser para coordinar dos o más tipos de aggregates, pero no tiene por qué.
+>- Son parte del dominio, no se crean de forma arbitraria.
+>- Se identifican en las sesiones de brainstorming
+>- Son parte del lenguaje ubicuo.
+>- Acciones como save, delete, upsert no tienen cabida en los servicios de dominio.
+
+#### Servicios de dominio
+>- Estimación de la esperanza de vida para una persona.
+>- Implementarlo en la entidad País.
+>- No tiene sentido que el País calcule ese dato para una persona.
+>- Implementarlo en la entidad Persona.
+>- Podría tener sentido, pero violaríamos el SRP en esa entidad.
+>- La mejor opción es implementar esa lógica en un servicio de dominio, que coordine ambos aggregates.
+
+### 12. Resumen Domain Driven Design
+>- 
