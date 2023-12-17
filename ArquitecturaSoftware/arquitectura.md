@@ -277,4 +277,74 @@
 >- La mejor opción es implementar esa lógica en un servicio de dominio, que coordine ambos aggregates.
 
 ### 12. Resumen Domain Driven Design
->- 
+<p><strong>La importancia del dominio</strong></p>
+
+>- El DDD se centra en la importancia de entender bien el dominio de nuestro problema para crear buen software.
+>- En contraste al enfoque tradicional, centrado en los datos que tratamos.
+>- Para identificar los elementos del dominio se utiliza
+>- Lenguaje ubicuo, brainstorming.
+>- Identificación de los contextos acotados.
+>- Mapeo de contextos.
+>- Todo esto se hace con el fin de separar la lógica de aplicación (casos de uso) de la lógica de dominio.
+>- Los casos de uso varían mucho más frecuentemente.
+
+#### Modelar el dominio
+1. Entidades.
+>- Elementos del dominio con entidad propia.
+>- Comportamiento + datos.
+
+2. Value Objects.
+>- Elementos que almacenan solo datos.
+>- Creados para representar de forma más clara los atributos de las entidades.
+
+3. Aggregates.
+>- Conjunto de entidades y value objects con un sentido común.
+
+4. Domain Services.
+>- Elementos del dominio con lógica que no tiene cabida en ninguna de las entidades.
+
+### 13. Pros y Contras Domain Driven Design
+
+#### Aspectos positivos
+>- Lenguaje común compartido por todos los integrantes del proyecto. Perfiles técnicos y no técnicos.
+>- Al tener lógica de aplicación y dominio separadas, el coste de realizar modificaciones suele ser menor, ya que el dominio cambia con poca frecuencia.
+>- El código del dominio es autoexplicativo.
+>- Mayor velocidad de desarrollo a medio y largo plazo. Mucho más mantenible.
+
+#### Aspectos negativos
+>- Mucho más lento al principio de un proyecto.
+>- Requiere tener expertos en el dominio del problema.
+>- Cambio de mentalidad de los desarrolladores para enfocarse en la funcionalidad más que en los datos.
+>- Los frameworks actuales nos "empujan" a un modelo anémico y a pensar centrándonos en los datos.
+
+#### Cuándo usar
+>- Proyectos complejos con un largo tiempo de vida esperado.
+>- Incertidumbre en los casos de uso. Previsión de cambios en el futuro.
+>- Problemas con una lógica de dominio presente.
+>- Si lo único que necesitas es un CRUD, no tiene sentido.
+>- Disponibilidad de un equipo comprometido en analizar detalladamente el dominio.
+
+#### Introducción a CQRS
+##### Comandos y consultas
+1. Comandos.
+>- Acciones que realizan una modificación en el estado del sistema y que no devuelven información.
+>- Ejemplo: Iniciar un partido de tenis.
+ 2. Consultas.
+ >- Acciones que no alteran el estado del sistema, tan sólo devuelven datos.
+ >- Ejemplo: Obtener los últimos diez partidos de tenis.
+
+ ### 15. CQRS Avanzado
+ ¿Qué sucede si necesitamos eficiencia en las lecturas pero no queremos sacrificar tiempo en las escrituras?
+
+#### Métodos de sincronización
+1. Consistencia inmediata.
+>- Método síncrono.
+2. Consistencia eventual.
+>- Sincronización asíncrona.
+3. Consistencia programada.
+>- Sincronización a ciertas horas del día.
+4. Consistencia bajo demanda.
+>- Se realiza la sincronización cuando se determine necesaria.
+
+### 16. Ejemplo Practico CQRL
+
