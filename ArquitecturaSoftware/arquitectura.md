@@ -324,7 +324,9 @@
 >- Si lo único que necesitas es un CRUD, no tiene sentido.
 >- Disponibilidad de un equipo comprometido en analizar detalladamente el dominio.
 
-#### Introducción a CQRS
+## Sección 3: Command Query Responsibility Segregation (CQRS)
+
+### 14. Introducción a CQRS
 ##### Comandos y consultas
 1. Comandos.
 >- Acciones que realizan una modificación en el estado del sistema y que no devuelven información.
@@ -347,4 +349,154 @@
 >- Se realiza la sincronización cuando se determine necesaria.
 
 ### 16. Ejemplo Practico CQRL
+
+
+### 17. Mejorando las Escrituras
+>- Dependencia directa con el mecanismo de sincronización.
+>- Complejidad para insertar el modelo de escritura en la BBDD de lectura.
+>- Sistemas que almacenan el estado como una secuencia de eventos.
+
+#### Beneficios event sourcing + cqrs
+1. Independencia del sistema de sincronización.
+>- No es necesario realizar una llamada directa para activarlo.
+>- Command Stack genera eventos y el sistema de sincronización los consume.
+
+2. Las traducciones de eventos son más sencillas.
+>- Traducir una entidad completa es más complejo que traducir un evento.
+>- Podemos elegir desde dónde sincronizar.
+
+### 18. Pros y Contras de CQRS
+
+#### Aspectos positivos
+1. Tratamiento independiente de las lecturas y las escrituras.
+>- Posibilidad de tener dos modelos distintos.
+>- Uso de bases de datos adecuadas para cada situación.
+>- Escalado independiente en función de las necesidades de lectura / escritura.
+>- Normalización y desnormalización independientes.
+
+2. Posibilidad de tener dos equipos independientes.
+>- Un equipo para el stack de comandos.
+>- Otro equipo para el stack de consultas.
+
+#### Aspectos negativos
+1. Gran complejidad
+>- Mantenimiento de dos stacks distintos para escritura y lectura.
+>- Mantenimiento de múltiples bases de datos.
+2. Sincronización
+>- Mantener la consistencia de los datos es un problema añadido.
+
+3. Duplicidad / redundancia de código
+
+#### Cuándo usar
+>- Sistemas dónde la escalabilidad es muy importante o crítica.
+>- Volumen de datos y transacciones elevados.
+>- Proyectos con problemas de rendimiento.
+>- No es necesaria una consistencia inmediata de la información.
+>- Distinto tratamiento para las escrituras y lecturas.
+>- Equipos grandes
+
+## Eventos
+
+### 19. Introducción a los Eventos
+#### ¿Que es un evento?
+>- Un evento es algo que ha sucedido en el pasado, por lo tanto, son entidades inmutables.
+>- Forma básica de interacción en el mundo real. Menos usado en el software, dónde es más frecuente el estado.
+>- Es una forma de representar la información a más bajo nivel. Ofrecen más información que el simple estado final de una entidad.
+>- No nos perdemos nada de lo que sucede en nuestro sistema.
+
+#### ¿Donde aplicar eventos?
+1. Event Sourcing
+>- Persistencia de eventos, en lugar del estado actual.
+>- Se ejecutan los eventos para obtener el estado en cierto momento.
+>- Se puede combinar con CQRS.
+
+2. Event Driven Programming
+>- Eventos de aplicación.
+>- Una entidad los produce y los lanza, otra los recibe y procesa.
+>- Procesamiento asíncrono.
+
+3. Event Driven Architecture
+
+### 20. Introducción al Event Sourcing
+
+#### ¿Que es event sourcing?
+>- Técnica que se basa en almacenar todos los cambios producidos en el sistema en un almacén de datos, en lugar de almacenar el estado actual.
+
+#### Captura del momento de una acción
+>- Problema muy común.
+>- Login / logout, tiempo de sesión, acción específica realizada en tu sistema etc.
+
+#### Constancia del momento de una acción
+1. Problema muy común.
+>- Login / logout, tiempo de sesión, acción específica realizada en tu sistema etc.
+2. Soluciones específicas
+>- Herramientas de logging.
+>- New Relic.
+>- Google Analytics.
+
+#### No es algo nuevo ni innovador
+>- Las bases de datos relacionales ya almacenan todas las acciones realizadas sobre cada entidad de la misma forma. Estas acciones son las transacciones.
+
+### 21. Event Sourcing al Detalle
+
+#### Propiedades de los eventos
+>- Son acciones que han sucedido en el pasado.
+>- Los eventos deben ser entidades inmutables.
+>- Nunca deben ser eliminados o modificados, tan solo insertados.
+>- Para desechar una acción realizada por un evento pasado debemos lanzar otro evento que revierta los cambios.
+>- Permiten conocer el estado del sistema en un punto en concreto del pasado. Ejecutar los eventos hasta el punto deseado.
+
+#### campos de un evento
+>- ID
+>- TIMESTAMP
+>- Detalles del evento
+
+#### Operaciones event sourcing
+>- add
+>- update
+>- delete: El borrado es lógico, nunca físico.
+
+#### DDD y Event Sourcing
+>- Los eventos no se limitan a las operaciones de un CRUD.
+>- Create
+>- Update
+>- Delete
+>- Si se usa DDD, los eventos son expresiones del lenguaje ubicuo.
+>- Eventos del partido de tenis.
+>- Start
+>- Finish
+>- Point
+>- Warn
+
+#### Proyección de datos a partir de eventos
+1. Consulta de eventos, filtrado por ID de reserva y ordenados por timestamp
+2. Creamos una nueva instancia de la entidad.
+3. Aplicamos los eventos en orden.
+4. Devolvemos la entidad que representa el estado actual.
+
+#### Problemas de eficiencia
+1. En entidades con muchos eventos, podría ser lento ejecutarlos todos. Ejemplo del carrito de una web de compras.
+2. Uso de snapshots. 
+>- Representación del estado de la entidad en un momento concreto del pasado.
+>- Para obtener el estado actual ejecutamos los eventos a partir de la última snapshot.
+1. Gestionar snapshots implica procesamiento y espacio. 
+>- Usar en situaciones dónde la ganancia sea sustancial.
+>- Eficiencia necesaria 
+
+### 22. Event Sourcing y CQRS
+1. CQRS
+>- La gran ventaja es la independencia de las lecturas y las escrituras, pudiendo optimizar ambas.
+>- El gran problema es la necesidad de sincronizar ambos almacenes de datos
+
+2. Event Sourcing
+>- La gran ventaja es la trazabilidad del estado del sistema.
+>- EL gran problema es obtener el estado actual.
+
+3. Usando ambas técnicas, tenemos lo bueno de ambas y mitigamos lo malo.
+>- Dos almacenes de datos con optimización independientemente.
+>- Trazabilidad del estado del sistema en el tiempo.
+>- Escrituras más rápidas, ya que no hay updates ni deletes físicos.
+>- Sincronización más sencilla e independiente de las escrituras.
+
+### 23. Ejemplo Práctico de Event Sourcing
 
