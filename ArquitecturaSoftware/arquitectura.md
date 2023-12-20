@@ -503,3 +503,94 @@
 
 ### 23. Ejemplo Práctico de Event Sourcing
 
+### 24. Pros y Contras Event Sourcing
+#### Aspectos positivos
+1. Trazabilidad del estado del sistema en el tiempo.
+>- Recuperación del estado en días pasados.
+>- Estadisticas y análisis
+
+2. Nos proporciona un log de las acciones de los usuarios.
+>- No hay necesidad de usar librerías externas ni implementar logging propio.
+
+3. Es más eficiente especialmente que guardar un log con la entidad completa
+4. Con CQRS podemos aprovechar los beneficios de ambos, mitigando los puntos débiles.
+5. Al no tener UPDATES ni DELETES físicos, es más eficiente en las escrituras.
+
+#### Aspectos negativos
+1. Eficiencia en las consultas
+>- Se puede mitigar el problema con snapshots o eliminarlo usando CQRS.
+2. Eficiencia espacial
+>- Necesita mucho más espacio que para representar simplemente el estado.
+3. Dificultad para debuggear.
+>- No hay forma sencilla de hacer consultas directas para conocer el estado actual.
+4. Técnica mucho menos usada.
+>- Será menos intuituva para los programadores.
+>- Necesita un tiempo de adaptación.
+5. Tratamiento de dominios amplios.
+>- Pocos eventos son fáciles de tratar, pero se puede complicar con dominios grandes.
+
+### Cuándo usar
+>- Situaciones dónde consideremos usar CQRS
+>- Cuando necesitemos conocer el estado del sistema en un instante del pasado.
+>- Necesidad de un log con todas las acciones realizadas por los usuarios.
+>- Cuando la eficiencia de las consultas no sea algo crítico.
+
+### 25. Event Driven Programming
+>- Paradigma de programación en el que el flujo del programa viene determinado por eventos.
+>- Una entidad publica un evento.
+>- Otra entidad lo consume.
+>- Permíte procesamiento asíncrono, pero también es posible hacerlo síncrono.
+
+#### Eventos de aplicación
+>- Todo evento lanzado en el contexto de una aplicación por una entidad para ser procesada por otra u otras.
+>- Input del usuario.
+>- Clicks.
+>- Input de teclado.
+>- Condición que se da en el sistema en un momento concreto.
+>- Evento lanzado con el resultado de un procesamiento.
+>- Cualquier otra interacción posible.
+
+#### Eventos de aplicación
+>- TransferService y AlertService se configuran para escuchar el evento TransferCreated
+>- AccountController publica el evento TransferCreated cuando le llega una transferencia.
+>- El Event Publisher busca las entidades suscritas a ese evento y se lo emite.
+>- TransferService realiza la transferencia.
+>- AlertService comprueba que el importe es alto y emite una alerta.
+
+### 26. Ejemplo práctico de Event Driven Programming
+ 
+### 27. Pros y Contras Event Driven Programming
+
+#### Aspectos positivos
+>- Desacople entre partes publicadoras y consumidoras del evento
+>- Flexibilidad, es muy sencillo añadir o eliminar consumidores sin modificar el productor.
+>- Proceso asíncrono sencillo, sin la necesidad de gestionar hilos.
+>- Al estar las partes más desacopladas, puede ser más sencillo de testear.
+
+#### Aspectos negativos
+>- Es más complicado seguir el flujo.
+>- Tarea de debug más dificil.
+>- Añade la complejidad del Event Publisher.
+>- Mitigado usando frameworks como .NET o Spring.
+
+#### Cuándo usar
+>- Cuando en el futuro probablemente necesitemos más entidades que procesen el mismo evento.
+>- Necesidad de operaciones asíncronas.
+>- Cuando la parte productora no necesite el resultado de la parte que escucha y procesa el evento.
+
+### 28. Event Driven Architecture
+1. ¿Que es la Event Driven Architecture?
+>- Patrón de arquitectura software en el que el flujo de información entre los distintos subsistemas viene determinado por eventos.
+>- Un componente o subsistema publica un evento.
+>- Otro lo consume.
+>- Muy utilizado en microservicios.
+
+2. Comunicación a través de mensajes
+>- Un servicio se subscribe a los eventos que quiere escuchar.
+>- El otro servicio publica los eventos.
+>- El event manager redirige los eventos a los consumidores.
+>- Desacople total entre los dos servicios.
+>- Procesamiento asíncrono.
+
+### 29. Introducción a los Microservicios
+>- 
