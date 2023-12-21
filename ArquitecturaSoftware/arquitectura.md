@@ -593,4 +593,55 @@
 >- Procesamiento asíncrono.
 
 ### 29. Introducción a los Microservicios
->- 
+#### ¿Qué son los microservicios?
+>- La arquitectura de microservicios proporciona una serie de prácticas, organización de trabajo y de equipos para construir software complejo de forma más eficiente, rápida y a gran escala.
+>- ¡No tiene que ver con la tecnología! La arquitectura de microservicios es agnóstica de la tecnología que se usa para implementar la solución.
+
+#### Ciclo de vida
+1. Análisis de requisitos. -> Diseño. -> Implementación. -> Pruebas. -> Despliegue y mantenimiento. -> Análisis de requisitos.
+>- Análisis de requisitos.
+>- Diseño.
+>- Implementación.
+>- Pruebas.
+>- Despliegue y mantenimiento.
+>- Análisis de requisitos.
+
+#### Solución monolítica
+1. Un único componente para todo el sistema.
+>- Repositorio de código único.
+>- Base de datos única
+>- Despliegue único de todo el sistema.
+>- La tecnología se mantiene desde el inicio al fin.
+
+2. Según va creciendo el sistem, aumentan los tiempos en mantenimiento.
+>- Más complicado integrar nuevas funcionalidades al código ya existente.
+>- Aparición de más bugs.
+>- Mantenimiento más costoso y complicado en general.
+
+3. Dividimos el sistema en contextos cerrados.
+>- Creamos un microservicio para cada contexto.
+
+4. Micro en microservicios se refiere al alcance de las funcionalidades.
+>- No hay estándar para lo grandes que deben ser. Deben hacer una cosa bien.
+
+5. Cada microservicio vivirpa de forma independiente a los demás.
+>- Equipo propio.
+>- Repositorio de código propio.
+>- Base de datos propia.
+>- Cada uno elige las tecnologías más apropiadas para su caso.
+>- Deben ser desplegables de forma independiente.
+
+#### Comunicación entre microservicios
+1. Importante la buena comunicación entre equipos dependientes.
+>- Dejar claras las necesidades de tu equipo.
+>- Poner sobre el papel las restricciones, en caso de existir.
+
+2. Métodos de comunicación
+>- API Rest
+>- Sistema de mensajes. Event Driven Architecture
+
+### 30. Elementos de los Microservicios
+
+#### Antipatrón compartir base de datos entre microservicios
+
+#### Nunca compartir base de datos
