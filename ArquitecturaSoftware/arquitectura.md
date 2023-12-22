@@ -645,3 +645,79 @@
 #### Antipatrón compartir base de datos entre microservicios
 
 #### Nunca compartir base de datos
+1. Los microservicios dejan de ser independientes.
+>- No se pueden desarrollar de forma independiente.
+>- No se pueden desplegar de forma independiente
+>- No se pueden escalar independientemente
+
+2. Encapsulación de los datos inexistente
+>- Un microservicio podría modificar la información que no le corresponde.
+>- Con BBDD independientes forzamos a realizar la operación a través del microservicio dueño de esos datos.
+
+#### Sincronización de los datos
+1. Bajo demanda
+>- Un servicio solicita a otro la información sobre sus entidades cuando le sea necesario. Ej. Pedido solicita la dirección al Usuario al completar el pedido.
+>- De nuevo, se pierde la independencia entre los microservicios.
+2. Utilizando sistema de mensajes
+>- Un microservicio publica un evento cuando sus datos han sido modificados.
+>- El resto de microservicios a los que le interese el evento lo consume y actualiza la información. Ej. Usuario lanza un evento cuando la dirección se actualiza.
+
+#### Comunicación entre microservicios
+1. API Rest.
+>- Simple, pero servicios acoplados.
+>- Ambos tienen que estar disponibles para que la comunicación funcione.
+>- Suele ser síncrono por defecto.
+
+2. Sistema de mensajes
+>- Kafca, RabbitMQ, ActiveMQ etc.
+>- Desacople total entre los dos servicios.
+>- Procesamiento asíncrono.
+>- Si un sistema no está disponible, el mensaje permanecerá en la cola hasta que vuelva a estar disponible, momento en el cual será consumido.
+
+#### Interfaz de usuario
+>- La organización de la interfaz de usuario es un tema complejo utilizando microservicios. Hay tres formas principales de hacerlo.
+
+1. Interfaz gráfica común.
+>- Interactúa con una capa que integra todos los microservicios.
+
+2. Interfaz gráfica que enlaza a los micrositios.
+>- Cada microservicio implementa su conjunto de páginas, en caso de tener.
+
+3. Utilización de fragmentos incorporados en una interfaz general.
+>- Fragmentos de múltiples microservicios pueden componer una única página.
+
+### 31. Servicios Distribuidos y Despliegue
+
+#### Escalabilidad y disponibilidad
+1. Escalando nuestro sistema conseguimoos mayor disponibilidad.
+2. Escalabilidad vertical
+>- Necesidad de mayor potencia en un nodo.
+>- Tareas pesadas, que necesitan mucha memoria etc.
+3. Escalabilidad horizontal
+>- Mayor capacidad de procesamiento paralelo. Procesamos más peticiones en el mismo tiempo.
+>- Eliminamos puntos únicos de fallo.
+
+#### Punto único de fallo
+>- Pieza que si falla por cualquier motivo el sistema entero deja de funcionar.
+>- Intentar que los puntos únicos de fallo sean los menores posibles.
+>- Los que existan, que sean muy robustos.
+
+#### Servicios distribuidos - interacción http
+1. Despliegue en múltiples máquinas, las cuales pueden ser dinámicas.
+>- ¿Donde reside el servicio que quiero llamar?
+2. Múltiples instancias del mismo servicio.
+>- ¿A cual de ellos realizo la petición?
+
+#### Múltiples máquinas - interacción por mensajes
+1. No existe este problema.
+2. Los microservicios no necesitan saber nada de los demás.
+>- Se subscriben a los eventos que les interesean.
+>- Publican los eventos necesarios.
+3. El servicio de mensajes también es un punto único de fallo.
+
+#### Múltiples instancias - interacción por mensajes
+>- Tampoco existe este problema.
+>- El mensaje será procesado por la primera instancia del servicio que se encuentre libre.
+>- Si una instancia está sobrecargada, no va a consumir eventos.
+
+### 32. Seguridad y Monitorización en los Microservicios
