@@ -721,3 +721,303 @@
 >- Si una instancia está sobrecargada, no va a consumir eventos.
 
 ### 32. Seguridad y Monitorización en los Microservicios
+
+#### Autenticación
+
+#### Monitorización
+1. Logging
+>- Loggear de forma clara la información deseada.
+>- Distintos niveles (debug, info, warn, error).
+
+2. Plataformas de monitorización centralizada.
+>- New Relic.
+
+### 33. Ejemplo Práctico Microservicios
+>- sh start.sh
+>- docker images
+>- docker ps
+>- ya levantados todos luego de ejecutar start.sh
+>- docker run cc5e585fb2e3
+>- docker run ea58c5898689
+>- docker run 39a56c2f2f8e
+
+### 34. Pros y Contras de los Microservicios
+
+#### Aspectos positivos
+1. División del sistem en subsistemas más manejables.
+>- El código será más fácil de mantener.
+
+2. Independencia real entre equipos. Cada uno es dueño de su microservicio.
+3. Posibilidad de realizar escalado y optimización independiente.
+>- Menor coste, empezamos con menos recursos y escalamos cuando sea necesario.
+4. Despliegue independiente. Si falla un microservicio, el resto podría seguir funcionando.
+5. Elección de la tecnología apropiada para cada microservicio.
+
+#### Aspectos negativos
+1. Cooperación entre distintos equipos para los puntos en común entre microservicios.
+2. Más complejo en general que una solución monolítica.
+>- Necesidad de identificar correctamente los subdominios.
+>- Test en las fronteras entre microservicios.
+>- Despliegue del sistema completo.
+>- Seguridad.
+3. Interfaz de usuario.
+>- Si es única, se puede volver un monolito difícil de mantener, y el equipo que la desarrolla puede ser el cuello de botella.
+>- Si son varias puede haber problemas en la integración en una única UI.
+
+#### Cuándo usar
+>- Sistemas grandes y complejos con subdominios claramente identificables.
+>- Disponibilidad de personal para asignar al equipo de cada microservicio.
+>- Sistemas de alta disponibilidad en los que necesitemos escalar fácilmente cada pieza.
+>- Ahorro de costes.
+
+## Sección 6: Otros Patrones y Arquitecturas
+
+### 35. Introducción al módulo
+
+### 36. Arquitectura Hexagonal
+
+#### Enfoque en el dominio DDD patron de arquitectua
+1. Bases en el diseño guiado por el dominio (DDD).
+>- Arquitectura de cuatro capas.
+2. Intenta aislar aún más el core de nuestro sistema con el exterior.
+3. También conocida como arquitectura de puertos y adaptadores.
+
+#### Arquitectura de cuatro capas
+
+#### arquitectura hexagonal
+##### Puertos
+>- Partes del sistema por las que fluye la información a capas interiores.
+>- No representan puertos físicos de comuniación.
+>- Interfaces en Java
+
+#### Adaptadores
+1. Implementación específica de un puerto.
+>- Adaptador Amazon SQS.
+>- Adaptador HTTP
+>- Adaptador Redis.
+2. No debe existir comunicación ente adaptadores.
+3. En java son clases que implementan las interfaces que representan los puertos.
+4. Deben ser totalmente reemplazables.
+
+#### Servicios de aplicación
+>- Capa de aplicación en DDD.
+>- Servicios que implementan casos de uso e interactúan con las capas externas.
+>- No contienen lógica de dominio
+
+#### Dominio
+1. Capa de dominio de nuestro sistema
+>- Entidades.
+>- Value Objects.
+>- Aggregates.
+>- Servicios de dominio.
+
+### 37. Ejemplo Práctivo Arquitectura Hexagonal
+
+### 38. Pros y Contras Arquitectura Hexagonal
+
+#### Aspectos positivos
+>- Más fácil de testear.
+>- Arquitectura mucho más mantenible a largo plazo.
+>- Flexibilidad en cuanto a tecnologías externas.
+>- Nos permite retrasar al máximo la elección de las tecnologías.
+
+#### Aspectos negativos
+1. Arquitectura muy pesada.
+>- Muchas clases e interfaces añadidas.
+2. Coste de adaptación y mantenimiento.
+3. Confuso al aplicar con framework.
+>- ¿Se debe considerar al framework como algo externo?
+
+#### Cuándo usar
+>- Incertidumbre en las tecnologías externas que se van a utilizar.
+>- Proyectos con un tiempo muy largo de vida.
+>- Necesidad de una mayor flexibilidad.
+>- Equipos relativamente expertos.
+
+### 39. Microkernel Architecture
+
+#### Arquitectura de microkernel
+>- Arquitectura que se compone de los siguientes componentes: 
+>- El microkernel, componente principal encargado de coordinar.
+>- Plug-ins, componentes que aportan funcionalidad y se registran en el microkernel.
+>- Por eso es conocida también como arquitectura de plug-ins.
+
+#### Microkernel y plug-ins
+1. Microkernel
+>- Aporta la funcionalidad mínima para que el sistema se ejecute.
+>- Guarda un registro de los plug-ins que están conectados al sistema.
+>- Canal de comunicación entre plug-ins
+
+2. Plug-ins
+>- Aportan funcionalidad extra al sistema.
+>- No pueden vivir por si mismos.
+
+#### Aspectos positivos
+>- Más fácil de testear.
+>- Más fácil de mantener a largo plazo que una arquitectura monolítica.
+>- Flexibilidad para añadir o eliminar plug-ins, permitiendo así una personalización del sistema según las necesidades.
+
+#### Aspectos negativos
+1. Necesita un análisis previo.
+>- ¿Qué funcionalidades introducimos al microkernel?
+>- ¿Que plug-ins tenemos? ¿Cuán grandes deben ser los plug-ins?
+>- ¿Existe comunicación entre plug-ins?¿Mecanismo de comunicación?
+
+2. No demasiado apto para arquitecturas web
+>- Los microservicios son una mejor opción.
+
+#### Cuándo usar
+>- Aplicaciones de escritorio que necesiten el concepto de plug-ins.
+>- Necesidad de un sistema escalable.
+>- Sistemas con un tiempo de vida largo.
+
+### 40. Arquitectura Testable
+
+#### Despliegues rápidos y fiables
+>- Análisis de requisitos -> Diseño -> Implementación -> Prruebas -> Despliegue y mantenimiento -> Análisis de requisitos
+>- Análisis de requisitos 
+>- Diseño 
+>- Implementación 
+>- Prruebas 
+>- Despliegue y mantenimiento 
+>- Análisis de requisitos
+>- No basta con un despliegue rápido, debemos hacer despliegues fiables.
+
+#### Tests unitarios
+1. Objetivo: Probar los métodos públicos de una clase de forma aislada.
+2. Mockear dependencias.
+3. Buscar una cobertura alta (+90%)
+4. Probar las distintas condiciones.
+
+#### Tests de integración
+1. Objetivo: Probar tu software con BBDD o librerias externas.
+2. Desplegar BBDD real para los tests de integración.
+>- Testcontainers, Docker.
+3. Probar el código que use librerías externas.
+
+#### Tests de contrato
+1. Objetivo: Comprobar que las interfaces entre dos servicios se mantienen correctas.
+2. Muy común en arquitecturas de microservicios.
+3. Se prueban ambas partes de la comunicación.
+>- Productor
+>- Consumidor
+
+#### Test de UI
+1. Objetivo: Comprobar que la interfaz de usuario se mantiene como esperamos.
+2. Distinto de los tests de sistema o e2e.
+3. Se puede probar la interfaz mockeando el backend, por ejemplo.
+>- Angular, react, vue.
+>- Jest, jasmine, mocha
+
+#### Tests de final a final (E2E)
+1. Objetivo: Probar todo nuestro sistema.
+2. Pueden implicar tests de UI, pero no tiene por qué.
+3. Se prueba el sistema desde el punto de entrada al lugar donde se reflejan los resultados.
+4. Selenium, cypress
+
+#### Tests de aceptación
+1. Objetivo: Comprobar las funcionalidades de nuestra aplicación.
+2. Se centran en los casos de uso en concreto.
+3. Sintaxis given-when-then.
+4. Herramientas BDD como Cucumber.
+
+#### Tests exploratorios
+1. Objetivo: Probar manualmente el sistema en busca de problemas.
+2. Ni los mejores tests automáticos son perfectos
+>- Nos podemos olvidar de ciertos casos.
+>- Bugs en nuestros tests.
+3. Probar manualmente intentando romper la aplicación.
+
+### Evolving y Sacrificial Architectures.
+
+#### Evolving y Sacrificial Architectures - Arquitectura que Evoluciona
+1. Una buena arquitectura debe ser flexible.
+>- No importa la arquitectura que se elija: monolítica, DDD, CQRD, microservicios etc.
+2. Una buena arquitectura nos debe dejar tomar decisiones en el mejor momento posible.
+
+#### Sacrificial Architecture
+1. La mayoría de código que estás escribiendo ahora se desechará antes de dos o tres años.
+2. No abandonar la calidad del diseñor y del código.
+>- Nos traerá problemas mucho mayores rápidamente.
+3. Arquitectura modular.
+>- Permitir desechar un módulo o componente afectando lo menor posible al sistema.
+4. Equilibrio entre una buena arquitectura / calidad de código y el hecho de que el código tiene fecha de caducidad a medio plazo.
+
+### 42. Conclusión del Curso
+
+#### Arquitecturas convencionales
+1. Puntos clave
+>- Monolitos y centradas en los datos.
+>- Sin capas o tres capas típica. Presentación, lógica de negocio y acceso a datos.
+>- Desarrollo rápido al inicio y fácil adaptación.
+>- Difícil de mantener y evolucionar a largo plazo.
+>- Proyectos con corto tiempo de vida.
+
+#### Domain Driven Design
+1. Puntos clave.
+>- Centrado en el dominio del problema.
+>- Lenguaje ubicuo, contextos acotados y mapeo de contextos.
+>- Surge una nueva capa, la de dominio. Entidades + Servicios de Dominio.
+>- Desarrollo mucho más rápido a largo plazo. Mantenible y evolucionable.
+>- Lento al principio. Difícil adaptación. Necesario tener expertos de dominio.
+>- Proyectos con largo tiempo de vida y con problemas con un dominio rico.
+
+#### Command Query Responsibility Segregation
+1. Puntos clave.
+>- Tratamiento independiente de lecturas y escrituras
+>- Posibilidad de tener dos Bases de Datos.
+>- Mejora con Event Sourcing
+>- Optimización de lecturas y escrituras.
+>- Gran complejidad y sincronización
+>- Proyectos dónde el rendimiento sea algo crítico.
+
+#### Event Sourcing
+1. Puntos clave
+>- Almacenamiento de eventos en lugar de estado actual.
+>- El estado actual se consigue ejecutando todos los eventos.
+>- Muy útil con CQRS.
+>- Trazabilidad del estado del sistema en el tiempo.
+>- Eficiencia en lecturas y mayor complejidad.
+>- Proyectos dónde se use CQRS o se necesite un log de las acciones.
+
+#### Event Driven Programming
+1. Puntos clave
+>- Interacción mediante eventos en lugar de llamadas directas a métodos.
+>- Desacople entre parte productora del evento y la consumidora.
+>- Flexibilidad para añadir más consumidores del evento sin modificar nada.
+>- Mayor complejidad general.
+>- Cuando en el futuro se necesiten más consumidores. Procesos asíncronos.
+
+#### Microservicios
+1. Puntos clave.
+>- División del dominio en subdominios. Cada uno será un microservicio.
+>- Viven de forma independiente.
+>- Agnósticos de la tecnología.
+>- Sistemas más manejables y escalado independiente en cada microservicio.
+>- Cooperación entre equipos e interfaz de usuario
+>- Sistemas en los que necesitemos una alta disponibilidad.
+
+#### Arquitectura Hexagonal
+1. Puntos clave.
+>- Aislar aún más el core de nuestro sistema.
+>- Puertos y adaptadores.
+>- Fácil de testear y muy flexible.
+>- Arquitectura pesada y confusa al aplicar con frameworks.
+>- Incertidumbre en las tecnologías que se van a utilizar.
+
+#### Arquitectura de microkernel
+1. Puntos clave
+>- Componente con funcionalidad básica, microkernel.
+>- Componentes que ofrecen la funcionalidad, plug-ins.
+>- Flexibilidad y personalización de nuestro sistema.
+>- Necesidad de un gran análisis previo. No demasiado apto para web.
+>- Sistemas en los que el concepto de plug-in sea de utilidad.
+
+#### El software no es una ciencia exacta
+1. El mayor profesor es la experiencia.
+>- Prueba y error.
+
+2. La arquitectura se debe adaptar al problema y al equipo, no al revés.
+>- No sigas al 100% la teoría aunque veas que no se ajusta del todo bien a tu caso particular. Toma los detalles que si lo hagan.
+
+3. Lo más importante es ser flexible y estar abierto al cambio cuando sea necesario.
