@@ -88,3 +88,51 @@
 >- docker logs -f --details --until=1s cb3e7025b98b757a771fe31f7e6f52d1883fc0d7af5b922bd989ce73d68fe75b
 
 ### 16. Eliminar múltiples contenedores
+>- https://docs.docker.com/reference/
+>- docker rm $(docker ps --filter status=exited -q)
+>- docker stop $(docker ps -q)
+1. para ver ids
+>- docker ps -q
+
+2. para ver tamaño de los contenedores
+>- docker ps -s
+3.
+>- docker ps -a
+>- docker ps --filter status=exited -q
+
+### 17. Eliminar todas las imágenes creadas
+>- docker rmi $(docker images)
+
+### 18. Búsqueda de imágenes desde la terminal
+>- docker search ubuntu
+>- docker search --limit=3 ubuntu
+>- docker search --filter stars=70 ubuntu
+>- docker search --filter stars=70 postgres
+>- docker search postgres
+>- docker search --filter is-official=true ubuntu
+>- docker search --filter is-official=true postgres
+
+### 19. Renombrar un contenedor
+>- https://docs.docker.com/engine/reference/commandline/rename/
+>- docker ps
+>- docker rename my_container my_new_container
+
+### 20. Mostrar información de todo el sistema
+>- https://docs.docker.com/engine/reference/commandline/info/
+>- docker info
+
+### 21. Guardar una imagen en un archivo comprimido
+>- https://docs.docker.com/engine/reference/commandline/save/
+>- docker save postgres:latest | gzip > postgres.tar.gz
+>- docker save postgres:latest | gzip >  /c/Users/luis1/Documents/htdocs/cursogithub/postgres.tar.gz
+
+### 22. Importar imagenes procedentes de un archivo docker
+>- https://docs.docker.com/engine/reference/commandline/load/
+>- docker rmi $(docker image ls postgres:latest)
+>- docker stop 39f607106b99
+>- docker load < postgres.tar.gz
+
+### 23. Visualizar estadísticas de los contenedores
+>- https://docs.docker.com/engine/reference/commandline/stats/
+>- docker stats
+>- 
