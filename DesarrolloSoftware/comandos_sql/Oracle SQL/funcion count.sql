@@ -1,5 +1,0 @@
-
-select 
-count(*)
-from
-employees;
