@@ -94,19 +94,19 @@ git diff
 git branch -D rama
 
 ### eliminar rama en la nube
-git push origin --delete rama
+>- git push origin --delete rama
 
 ### crear una bifurcación
-https://www.spanishnewsnow.com/como-bifurcar-un-repositorio-de-github/
+>- https://www.spanishnewsnow.com/como-bifurcar-un-repositorio-de-github/
 
 
 ### agregar un tag
-git rm -r --cached .
-git tag v1.0.0
-git push origin master --tags
+>- git rm -r --cached .
+>- git tag v1.0.0
+>- git push origin master --tags
 
 ### habilitar scripts
-https://stackoverflow.com/questions/69605313/vs-code-terminal-activate-ps1-cannot-be-loaded-because-running-scripts-is-disa
+>- https://stackoverflow.com/questions/69605313/vs-code-terminal-activate-ps1-cannot-be-loaded-because-running-scripts-is-disa
 
 
 ### pruebas de capture
