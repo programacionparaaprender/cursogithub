@@ -365,7 +365,133 @@ a fin de que <beneficio> <br />
 
 #### Enfoque de una planeación ágil
 El equipo del proyecto: <br />
+1. Meta en común.
+2. Sprints cortos.
+3. Un entregable en cada iteración.
+4. Se enfoca en las prioridades.
+5. Revisa y planea cada iteración.
+
+#### Enfoque de una planeación ágil
+>- Estrategia
+>- Portafolio
+>- Producto
+>- Liberación
+>- Sprint
+>- Día
 
 ### 22. Errores comunes
+>- Dar más importancia al plan que a la planeación.
+>- No cambiar el plan con base en el aprendizaje del negocio o técnico.
+>- Hacer planes difíciles de actualizar.
+>- Siempre cambiar la fecha: se puede cambiar el alcance, el tamaño del equipo, etc.
+>- Hacer solo una planeación al inicio del proyecto.
 
 ## Sección 9: El plan de liberaciones
+
+### 23. Qué es y pasos para hacer el plan de liberaciones.
+
+#### ¿Qué es un plan de liberación?
+>- Es un plan a muy alto nivel, cubriendo un periodo más largo a un sprint.
+Beneficios: <br />
+>- Ayuda a que el equipo decida cuánto debe ser desarrollado para hacer una liberación.
+>- Establece las expectativas de lo que probablemente se desarrollará y el periodo.
+>- Da un sentido de avance y satisfacción al equipo.
+
+### 24. Duración del sprint y velocidad del equipo
+>- Determinar las condiciones de satisfacción
+>- Date-driven: La liberación debe ser en cierta fecha, por lo tanto el alcance es negociable.
+
+#### Estimar las historias de usuario
+>- Estimar representa el costo de desarrollar una historia.
+>- No es necesario estimar todo el Product Backlog, sino solo aquellas épicas o historias que potencialmente serán incluídas en la próxima liberación.
+
+#### se entrega en tres meses, sprint muy cortos
+
+>- ¿Cuándo estamos planeaado liberar?
+>-  ¿Cuánta incertidumbre existe del negocio, la velocidad del equipo o aspectos técnicos?
+>- ¿Qué tan fácil es obtener feedback?
+>- ¿Qué tan rápido pueden cambiar las prioridades?
+>- ¿Qué tan costoso es cada sprint?
+>- ¿Qué ritmo de trabajo le da sentido de urgencia al equipo?
+
+#### La velocidad del equipo son los puntos de historia que pueden terminar en cada sprint.
+>- Usar valores historicos.
+>- Correr 1, 2 o 3 sprints
+>- Hacer un pronóstico
+Recuerda considerar el cono de incertidumbre. <br />
+
+### 25. Priorizando las historias de usuario
+>- ¿Cuánto dinero ganará o se ahorrará el negocio con esta historia?
+>- ¿Cuánto costará desarrollar esta historia?
+>- ¿Existe incertidumbre acerca del qué y el cómo lo vamos a desarrollar?
+>- ¿Existe algún riesgo de calendario, costo o funcionalidad? 
+
+## Sección 10: El plan del sprint
+
+### 26. El plan del sprint
+
+#### La planeación del sprint...
+>- Es un plan a corto plazo, en el cual el equipo se enfoca y detalla las tareas necesarias para completar las historias de usuario seleccionadas en el sprint.
+>- Deben participar product owner, equipo scrum y scrum master. Opcionalmente, y de ser necesario, algún stakeholder.
+
+#### tablero de scrum
+>- Historias de usuario.
+>- Tareas requeridas.
+>- Un responsable para cada tarea.
+
+#### plan de liberación
+>- Se planean meses.
+>- Nivel de historias de usuario.
+>- Estimaciones en puntos de historia o días.
+
+#### Un plan de sprint
+>- Se planean semanas.
+>- Nivel de tareas.
+>- Estimaciones quedan en horas.
+
+## Sección 11: Monitoreando el progreso
+
+### 27. Monitoreando el progreso
+>- A nivel de liberación - Burndown chart.
+>- Muestra el trabajo que queda pendiente por hacerse y además el trabajo que se agrega al alcance de la liberación.
+>- Parking-lot
+
+## Sección 12: El desempeño del Product Owner
+
+### 28. Tu desempeño
+>- Ser un buen product owner toma tiempo y requiere dedicación. No es una simple cuestión del título de un puesto o rol, conlleva un conjunto de características, habilidades, aprendizaje y experiencia. <br />
+¿Qué tienes y qué hacer y cuánto te tomará?
+
+#### Recomendación
+>- Dí lo que se necesita hacer
+>- Lanza retos amables al equipo
+>- Interesate en construir un equipo de alto rendimiento
+>- Piensa dirigido al valor del negocio
+>- Protege al equipo de ruidos externos
+>- Incorpora el cambio entre sprints
+
+#### no se debe hacer
+>- Dí cómo hacer las cosas y lo que se deben tardar.
+>- Intimida al equipo con retos no viables.
+>- Enfócate solamente en las entregas a corto plazo.
+>- Apegate al alcance y objetivo original "pase lo que pase".
+>- Estrasa al equipo con cambios que aún no estás seguro de aplicar.
+
+#### Camino a seguir:
+>- Conócete a ti mismo.
+>- Desarróllate y crece.
+>- Consigue un buen coach.
+
+#### Pasos a seguir para tu patrocinador:
+>- Reconocer la importancia de tu rol
+>- Seleccionar al product owner indicado
+>- Empodera y apoya al PO
+>- Impulsa al rol del PO en la organización
+
+#### La transición a PO
+>- ¿Cómo puedo adquirir los conocimientos necesarios para un buen comienzo?
+>- ¿Qué aspectos del rol me parecen difíciles?
+>- ¿Quién me puede ayudar a desarrollarme y crecer como PO?
+>- ¿Hay otros POs en la organización con los que pueda conectar?
+
+
