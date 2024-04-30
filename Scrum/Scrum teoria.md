@@ -6,23 +6,16 @@
 # equipo scrum
 Product Owner, Equipo de Desarrollo y Scrum Master
 
-# equipo scrum también
-Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
-
 # tareas a realizar por sprint
 >- Sprint planning
->- Daily Stand ip
+>- Daily Stand up
 >- Sprint Review
 >- Sprint Retro
-
-
 
 # que se dice en el daily
 >- ¿Que hice para aydar al equipo de desarrollo a lograr el objetivo del sprint?
 >- ¿Que hare hoy para ayudar al equipo de desarrollo a lograr el objetivo del sprint?
 >- ¿Detecto algún impedimento que evite que el equipo de desarrollo o yo logremos el objetivo del sprint?
-
-
 
 # Grooming
 >- Reuniones semanales
@@ -31,26 +24,10 @@ Product Owner, Lider Tecnico, Equipo de Desarrollo y Scrum Master
 
 
 
-# Product Backlog
->- Lista priorizada de todo lo que se conoce que es necesario del producto
->- El Product Owner es el responsable, en contenido, disponibilidad y orden.
->- Nunca esta completo.
->- Compromiso: Objetivo del Producto
->- es una lista ordenada de todo lo conocido que podria ser necesario en el producto
->- Única fuente de requisitos
->- Está vivo
->- Comúnmente incluye descripción, prioridad, valor y estimación
->- Puede incluir criterios de aceptación
->- 1 producto 1 PB 1 PO
->- almacena features pendientes, los que estan arriba tienen más prioridad
-
 # Release
 >- almacena los features terminados
 
-# artefactos
->- Pila de Producto o Produc Backlog (PB)
->- Pila de Sprint o Sprint Backlog (SB)
->- Incremento o Increment
+
 
 # roles
 >- Developers
@@ -160,6 +137,55 @@ El Scrum Team identifica los cambios más útiles para mejorar su efectividad. L
 La Sprint Retrospective concluye el Sprint. Tiene un tiempo limitado a máximo tres horas para un Sprint de un mes. Para Sprints más cortos, el evento suele ser de menor duración.
 </p>
 
+# artefactos de scrum
+>- Pila de Producto o Product Backlog (PB)
+>- Pila de Sprint o Sprint Backlog (SB)
+>- Incremento o Increment
+
+<p>Los artefactos de Scrum representan trabajo o valor. Están diseñados para maximizar la transparencia de la información clave. Por lo tanto, todas las personas que los inspeccionan tienen la misma base de
+adaptación.
+</p>
+<p>
+Cada artefacto contiene un compromiso para garantizar que proporcione información que mejore la
+transparencia y el enfoque frente al cual se pueda medir el progreso:
+</p>
+
+>- Para el Product Backlog, es el Objetivo del Producto.
+>- Para el Sprint Backlog, es el Objetivo del Sprint.
+>- Para el Increment es la Definición de Terminado.
+<p>
+Estos compromisos existen para reforzar el empirismo y los valores de Scrum para el Scrum Team y sus interesados.
+</p>
+
+# 2 me quede aquí página 12
+
+# Product Backlog
+>- Lista priorizada de todo lo que se conoce que es necesario del producto
+>- El Product Owner es el responsable, en contenido, disponibilidad y orden.
+>- Nunca esta completo.
+>- Compromiso: Objetivo del Producto
+>- es una lista ordenada de todo lo conocido que podria ser necesario en el producto
+>- Única fuente de requisitos
+>- Está vivo
+>- Comúnmente incluye descripción, prioridad, valor y estimación
+>- Puede incluir criterios de aceptación
+>- 1 producto 1 PB 1 PO
+>- almacena features pendientes, los que estan arriba tienen más prioridad
+<p>
+El Product Backlog es una lista emergente y ordenada de lo que se necesita para mejorar el producto. Es la única fuente del trabajo realizado por el Scrum Team. Los elementos del Product Backlog que el Scrum Team puede dar por Terminados dentro de un Sprint se consideran preparados para ser seleccionados en un evento de Sprint Planning. Suelen adquirir este grado de transparencia tras las actividades de refinamiento. El refinamiento del Product Backlog es el
+acto de dividir y definir aún más los elementos del Product Backlog en elementos más pequeños y precisos. Esta es una actividad continua para agregar detalles, como una descripción, orden y tamaño.
+</p>
+<p>
+Los atributos suelen variar según el ámbito del trabajo. Los Developers que realizarán el trabajo son responsables del dimensionamiento. El Product Owner
+puede influir en los Developers ayudándolos a entender y seleccionar sus mejores alternativas.
+</p>
+
+# Compromiso: Objetivo del Producto
+<p>
+El Objetivo del Producto describe un estado futuro del producto que puede servir como un objetivo para que el Scrum Team planifique. El Objetivo del Producto está en el Product Backlog. El resto del Product Backlog emerge para definir "qué" cumplirá con el Objetivo del Producto. Un producto es un vehículo para entregar valor. Tiene un límite claro, personas interesadas conocidas, usuarios o clientes bien definidos. Un producto puede ser un servicio, un producto físico o algo más abstracto. El Objetivo del Producto es el objetivo a largo plazo del Scrum Team. Ellos deben cumplir (o abandonar)
+un objetivo antes de asumir el siguiente.
+</p>
+
 # Historias de Usuario - Tareas - Product Backlog Item o User Story - Epicas
 >- Epicas son historias de usuario tan grandes que no se pueden sacar en una sola historia de usuario, las tenemos que dividir en varias historias de usuario
 >- las historias se pueden subdividir según su nivel de dificultad
@@ -222,9 +248,39 @@ La Sprint Retrospective concluye el Sprint. Tiene un tiempo limitado a máximo t
 >- Por hacer
 >- Haciendo
 >- ¡Hecho!
+<p>
+El Sprint Backlog se compone del Objetivo del Sprint (por qué), el conjunto de elementos del Product Backlog seleccionados para el Sprint (qué), así como un plan de acción para entregar el Increment (cómo). El Sprint Backlog es un plan realizado por y para los Developers. Es una imagen muy visible y en tiempo real del trabajo que los Developers planean realizar durante el Sprint para lograr el Objetivo del Sprint. En consecuencia, el Sprint Backlog se actualiza a lo largo del Sprint a medida que se aprende más. Debe tener suficientes detalles para que puedan inspeccionar su progreso en la Daily Scrum.
+</p>
+
+# Compromiso: Objetivo del Sprint
+<p>
+El Objetivo del Sprint es el único propósito del Sprint. Si bien el Objetivo del Sprint es un compromiso de los Developers, proporciona flexibilidad en términos del trabajo exacto necesario para lograrlo. El Objetivo del Sprint también crea coherencia y enfoque, lo que alienta al Scrum Team a trabajar en
+conjunto en lugar de en iniciativas separadas. El Objetivo del Sprint se crea durante el evento Sprint Planning y se agrega al Sprint Backlog. Mientras
+los Developers trabajan durante el Sprint, tienen en mente el Objetivo del Sprint. Si el trabajo resulta ser diferente de lo que esperaban, colaboran con el Product Owner para negociar el alcance del Sprint Backlog dentro del Sprint sin afectar el Objetivo del Sprint.
+</p>
 
 # Increment
 >- Un increment es un peldaño concreto hacia el objetivo del producto. Cada increment se suma a todos los Increments anteriores y se verifica minuciosamente, lo que garantiza que todos los increments funcionen juntos. Para proporcionar valor, el increment debe ser utilizable.
+
+<p>
+Se pueden crear múltiples Increments dentro de un Sprint. La suma de los Increments se presenta en la Sprint Review apoyando así el empirismo. Sin embargo, se puede entregar un Increment a los interesados antes del final del Sprint. La Sprint Review nunca debe considerarse una puerta para liberar
+valor. El trabajo no puede considerarse parte de un Increment a menos que cumpla con la Definición de Terminado.
+</p>
+
+# Compromiso: Definición de Terminado
+<p>
+La Definición de Terminado es una descripción formal del estado del Increment cuando cumple con las medidas de calidad requeridas para el producto.
+En el momento en que un elemento del Product Backlog cumple con la Definición de Terminado, nace un Increment.
+</p>
+La Definición de Terminado crea transparencia al brindar a todos un entendimiento compartido de qué trabajo se completó como parte del Increment. 
+<br />
+Si un elemento del Product Backlog no cumple con la Definición de Terminado, no se puede publicar ni presentar en la Sprint Review. En su lugar, vuelve al
+Product Backlog para su consideración futura.
+<br />
+Si la Definición de Terminado para un Increment es parte de los estándares de la organización, todos los Scrum Teams deben seguirla como mínimo. Si no es un estándar organizacional, el Scrum Team debe crear una Definición de Terminado apropiada para el producto.
+<br />
+Los Developers deben adherirse a la Definición de Terminado. Si hay varios Scrum Teams trabajando juntos en un producto, deben definir y cumplir mutuamente la misma Definición de Terminado.
+<br />
 
 # cuatro valores ágiles
 >- Software funcionando
