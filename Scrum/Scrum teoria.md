@@ -22,18 +22,13 @@ Product Owner, Equipo de Desarrollo y Scrum Master
 >- Historias de usuario cumplen con el metodo INVEST
 >- Para aclarar dudas(Sprint 1 semana)
 
-
-
 # Release
 >- almacena los features terminados
-
-
 
 # roles
 >- Developers
 >- Product Owner
 >- Scrum Master
->- También se puede tener un Lider Tecnico
 
 # Otros roles
 >- Business Team
@@ -142,12 +137,10 @@ La Sprint Retrospective concluye el Sprint. Tiene un tiempo limitado a máximo t
 >- Pila de Sprint o Sprint Backlog (SB)
 >- Incremento o Increment
 
-<p>Los artefactos de Scrum representan trabajo o valor. Están diseñados para maximizar la transparencia de la información clave. Por lo tanto, todas las personas que los inspeccionan tienen la misma base de
-adaptación.
+<p>Los artefactos de Scrum representan trabajo o valor. Están diseñados para maximizar la transparencia de la información clave. Por lo tanto, todas las personas que los inspeccionan tienen la misma base de adaptación.
 </p>
 <p>
-Cada artefacto contiene un compromiso para garantizar que proporcione información que mejore la
-transparencia y el enfoque frente al cual se pueda medir el progreso:
+Cada artefacto contiene un compromiso para garantizar que proporcione información que mejore la transparencia y el enfoque frente al cual se pueda medir el progreso:
 </p>
 
 >- Para el Product Backlog, es el Objetivo del Producto.
@@ -156,8 +149,6 @@ transparencia y el enfoque frente al cual se pueda medir el progreso:
 <p>
 Estos compromisos existen para reforzar el empirismo y los valores de Scrum para el Scrum Team y sus interesados.
 </p>
-
-# 2 me quede aquí página 12
 
 # Product Backlog
 >- Lista priorizada de todo lo que se conoce que es necesario del producto
@@ -182,8 +173,7 @@ puede influir en los Developers ayudándolos a entender y seleccionar sus mejore
 
 # Compromiso: Objetivo del Producto
 <p>
-El Objetivo del Producto describe un estado futuro del producto que puede servir como un objetivo para que el Scrum Team planifique. El Objetivo del Producto está en el Product Backlog. El resto del Product Backlog emerge para definir "qué" cumplirá con el Objetivo del Producto. Un producto es un vehículo para entregar valor. Tiene un límite claro, personas interesadas conocidas, usuarios o clientes bien definidos. Un producto puede ser un servicio, un producto físico o algo más abstracto. El Objetivo del Producto es el objetivo a largo plazo del Scrum Team. Ellos deben cumplir (o abandonar)
-un objetivo antes de asumir el siguiente.
+El Objetivo del Producto describe un estado futuro del producto que puede servir como un objetivo para que el Scrum Team planifique. El Objetivo del Producto está en el Product Backlog. El resto del Product Backlog emerge para definir "qué" cumplirá con el Objetivo del Producto. Un producto es un vehículo para entregar valor. Tiene un límite claro, personas interesadas conocidas, usuarios o clientes bien definidos. Un producto puede ser un servicio, un producto físico o algo más abstracto. El Objetivo del Producto es el objetivo a largo plazo del Scrum Team. Ellos deben cumplir (o abandonar) un objetivo antes de asumir el siguiente.
 </p>
 
 # Historias de Usuario - Tareas - Product Backlog Item o User Story - Epicas
@@ -294,12 +284,10 @@ Los Developers deben adherirse a la Definición de Terminado. Si hay varios Scru
 >- Pruebas
 >- Producción
 
-
 # tres pilares del empirismo o pilares de scrum - pilares empiricos de scrum
 >- Transparencia
 >- Inspección 
 >- Adaptación
-
 
 ## Transparencia
 >- El proceso y el trabajo emergentes deben ser visibles tanto para quienes realizan el trabajo como para quienes lo reciben. Con Scrum, las decisiones importantes se basan en el estado percibido de sus tres artefactos formales. Los artefactos que tienen poca transparencia pueden llevar a decisiones que disminuyan el valor y aumenten el riesgo. La transparencia permite la inspección. La inspección sin transparencia es engañosa y derrochadora.
@@ -317,6 +305,24 @@ Los Developers deben adherirse a la Definición de Terminado. Si hay varios Scru
 >- Respeto
 >- Coraje
 
+# Scrum team
+La unidad fundamental de Scrum es un pequeño equipo de personas, un Scrum Team. 
+<br />
+El Scrum Team consta de un Scrum Master, un Product Owner y Developers. Dentro de un Scrum Team, no hay subequipos ni jerarquías. Es una unidad cohesionada de profesionales enfocados en un objetivo a la vez, el Objetivo del Producto.
+<br />
+Los Scrum Teams son multifuncionales, lo que significa que los miembros tienen todas las habilidades necesarias para crear valor en cada Sprint. También se autogestionan, lo que significa que deciden internamente quién hace qué, cuándo y cómo.
+<br />
+El Scrum Team es lo suficientemente pequeño como para seguir siendo ágil y lo suficientemente grande como para completar un trabajo significativo dentro de un Sprint, generalmente 10 personas o menos.
+<br />
+En general, hemos descubierto que los equipos más pequeños se comunican mejor y 
+son más productivos. Si los Scrum Teams se vuelven demasiado grandes, deberían considerar reorganizarse en múltiples Scrum Teams cohesivos, cada uno enfocado en el mismo producto. Por lo tanto, deben compartir el mismo Objetivo del Producto, el Product Backlog y el Product Owner.
+<br />
+El Scrum Team es responsable de todas las actividades relacionadas con el producto, desde la colaboración de los interesados, la verificación, el mantenimiento, la operación, la experimentación, la investigación y el desarrollo, y cualquier otra cosa que pueda ser necesaria. Están estructurados y
+empoderados por la organización para gestionar su propio trabajo. Trabajar en Sprints a un ritmo sostenible mejora el enfoque y la consistencia del Scrum Team.
+<br />
+Todo el Scrum Team es responsable de crear un Increment valioso y útil en cada Sprint. Scrum define tres responsabilidades específicas dentro del Scrum Team: los Developers, el Product Owner y el Scrum Master.
+
+
 # principios ágiles o principios de scrum
 >- 1 Proceso controlado empíricamente
 >- 2 Equipos auto-organizados
@@ -330,6 +336,8 @@ Los Developers deben adherirse a la Definición de Terminado. Si hay varios Scru
 >- 10
 >- 11
 >- 12
+
+# aquí estudiando
 
 # Developers
 <p>Las personas del Scrum Team que se comprometen a crear cualquier aspecto de un increment utilizable en cada Sprint son Developers.</p>
