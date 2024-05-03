@@ -272,17 +272,30 @@ Si la Definición de Terminado para un Increment es parte de los estándares de 
 Los Developers deben adherirse a la Definición de Terminado. Si hay varios Scrum Teams trabajando juntos en un producto, deben definir y cumplir mutuamente la misma Definición de Terminado.
 <br />
 
+# pendiente buscar
+
+# Métodos o técnicas de Estimación de Historias de Usuario:
+* Planning Poker
+* Estimación por Afinidad
+* Delphi
+
 # cuatro valores ágiles
 >- Software funcionando
 >- Colaboración con el cliente
 >- Valorar a las personas y sus interacciones
 >- Respuesta ante el cambio seguir un plan
 
-# D.O.D - Definition Of Done (Definición de Terminado)
+# D.O.D - Definition Of Done (Definición de Terminado) DoD
 >- Por hacer
 >- Haciendo
 >- Pruebas
 >- Producción
+
+# D.O.R - Definition Of Ready - DoR
+Son todas las condiciones que debe tener las HUs para ser planificadas e iniciar con el desarrollo.
+<br />
+(Definition of Ready) es una serie de reglas o criterios aplicables a cada historia de usuario en el backlog priorizado del producto. Las historias de usuario deben satisfacer la definición de listo antes de ser estimadas e incluidas en un sprint.
+<br />
 
 # tres pilares del empirismo o pilares de scrum - pilares empiricos de scrum
 >- Transparencia
