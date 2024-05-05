@@ -6,6 +6,51 @@
 # equipo scrum
 Product Owner, Equipo de Desarrollo y Scrum Master
 
+# Análisis de Kano
+>- https://www.questionpro.com/blog/es/modelo-kano/
+<br />
+El modelo KANO es una herramienta de análisis de necesidades que pone en perspectiva el nivel de satisfacción de sus clientes en relación con las funciones del producto que les ofreces.
+<br />
+La base de las estrategias, iniciativas y lanzamientos de marketing es el comportamiento del consumidor. Antes de iniciar el diseño y la fabricación, los equipos de marketing de las empresas se concentran en las preferencias de los clientes y en los aspectos que les atraen.
+<br />
+
+# Método de los 100 puntos
+>- https://dharmacon.net/2023/09/28/priorizando-con-el-cliente-descubriendo-el-metodo-de-los-100-puntos/
+<br />
+El Método de los 100 puntos es una técnica innovadora que se originó por Dean Leffingwell y Don Widrig en 2003. Se basa en la idea de que la percepción del cliente es invaluable cuando se trata de priorizar características o funciones dentro de un producto o proyecto. Este método reconoce la importancia del cliente como parte integral del proceso de desarrollo, especialmente en un marco ágil.
+<br />
+
+# Comparación por pares
+>- https://www.aiteco.com/comparacion-por-pares-para-tomar-decisiones/
+<br />
+El sistema de comparación por pares es una poderosa herramienta para inferir la importancia relativa de varias opciones, cuando tal importancia no puede evaluarse mediante una calificación directa. Es decir, cuando no se dispone de criterios objetivos que hagan posible una calificación numérica del valor de cada opción.
+<br />
+En la práctica, la mayor parte de las decisiones se fundamentan en relaciones de preferencia, donde cada pareja de alternativas entraña un grado de predilección de una sobre otra.
+<br />
+La representación de preferencias implica medir mediante la asignación de números a cada par de las opciones comparadas. De esta forma, se representan propiedades no numéricas con propiedades propias de sistemas numéricos.
+<br />
+La comparación por pares es un método sencillo para calificar alternativas y clasificarlas, cuando los criterios de evaluación son subjetivos y, consiguientemente, difíciles de medir.
+<br />
+Es aplicable en los casos en que las alternativas difieren fuertemente entre sí, no disponemos de criterios de priorización claros o hay pocos o ningún dato objetivo.
+<br />
+
+
+# Esquema de priorización MoSCoW
+>- https://www.consuunt.es/el-metodo-moscow/
+<br />
+El Método MoSCoW es una Herramienta de Priorización que ayuda a los Profesionales a Gestionar su Tiempo y Esfuerzos.
+<br />
+Para ello, propone clasificar la importancia de las Diferentes Características de un Producto (o Proyecto) de acuerdo a su Prioridad.
+<br />
+Su nombre es un acrónimo de las 4 Prioridades propuestas (en Inglés):
+<br />
+
+>- Debe Tener (Must Have).
+>- Debería de Tener (Should Have).
+>- Podría Tener (Could Have).
+>- No Tendrá (Won’t Have).
+
+
 # tareas a realizar por sprint
 >- Sprint planning
 >- Daily Stand up
@@ -274,10 +319,20 @@ Los Developers deben adherirse a la Definición de Terminado. Si hay varios Scru
 
 # pendiente buscar
 
+# Time-box - timeboxing
+Timeboxing es una estrategia de gestión del tiempo orientada a los objetivos que puede ayudarte a aumentar la productividad y evitar la procrastinación. Cuando fijas un “bloque de tiempo”, estableces una meta para finalizar una tarea específica dentro en un período determinado.
+<br />
+
 # Métodos o técnicas de Estimación de Historias de Usuario:
 * Planning Poker
 * Estimación por Afinidad
 * Delphi
+
+# Métodos o técnicas de Estimación de Historias de Usuario
+>- Póker de planificación
+>- Wideband Delphi
+>- Estimación por afinidad
+>- Puño de cinco
 
 # cuatro valores ágiles
 >- Software funcionando

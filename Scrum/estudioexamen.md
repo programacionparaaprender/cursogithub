@@ -1,4 +1,7 @@
 
+# pregunta 37 Scrum_Master_-_Preguntas.pdf
+
+
 # 1. Definición de Scrum
 <p>
 Scrum es un marco de trabajo liviano que ayuda a las personas, equipos y organizaciones a generar valor a través de soluciones adaptativas para problemas complejos. En pocas palabras, Scrum requiere un Scrum Master para fomentar un entorno donde:
