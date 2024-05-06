@@ -334,6 +334,34 @@ Timeboxing es una estrategia de gestión del tiempo orientada a los objetivos qu
 >- Estimación por afinidad
 >- Puño de cinco
 
+# Póker de planificación - Planning Poker - Scrum poker
+>- https://asana.com/es/resources/planning-poker
+<br />
+El planning poker (o póquer de planificación) es un método de estimación que ayuda a tu equipo ágil a calcular la cantidad de esfuerzo que se necesita para completar una historia de usuario en un backlog del producto. Se utiliza a menudo en metodologías ágiles de gestión de proyectos, y a veces también se lo conoce como “Scrum poker” o “pointing poker”. El término “póker” del nombre hace referencia a las cartas que cada miembro del equipo usa durante el proceso.
+<br />
+
+# Wideband Delphi - Delphi
+>- https://dharmacon.net/2023/09/28/dominando-la-estimacion-con-la-tecnica-wideband-delphi/
+<br />
+La técnica Wideband Delphi se arraiga en la tradición de estimar tareas y proyectos, pero con un enfoque único en la colaboración y el consenso grupal. Originada a partir del método Delphi, la versión “Wideband” expande su enfoque para involucrar a más participantes y obtener una visión más amplia de las opiniones y conocimientos del equipo.
+<br />
+
+# Estimación por afinidad
+>- https://dharmacon.net/2023/09/27/navegando-las-historias-de-usuario-estimacion-por-afinidad-en-scrum/
+<br />
+La técnica de estimación por afinidad o “T-shirt sizing”, como se le conoce comúnmente, ha cobrado popularidad en el mundo ágil debido a su simplicidad y eficacia al manejar un gran número de historias de usuarios. Esta metodología se inspira en algo tan simple como las tallas de camiseta: pequeña, mediana y grande, lo que proporciona una representación visual y relativa del tamaño de una historia de usuario en comparación con otras.
+<br />
+
+# Puño de cinco
+>- https://dharmacon.net/2023/09/28/estimacion-y-consenso-en-scrum-la-tecnica-del-puno-de-cinco/
+<br />
+El “Puño de cinco”, también conocido como “Fist of Five”, se ha consolidado como una técnica efectiva y ágil en el ámbito de la gestión de proyectos. Utilizado principalmente en contextos Scrum, este método propone un sistema de votación mediante el uso de los dedos, lo que simplifica y agiliza el proceso de toma de decisiones.
+<br />
+El método nace de la necesidad de lograr consensos rápidos y claros durante las reuniones de equipo. La idea es que tras un debate inicial sobre cualquier tema, en lugar de emplear votaciones extensas o debates interminables, se recurre a una representación numérica simple utilizando las manos. Es una forma visual de entender rápidamente el sentir general del equipo sobre un punto en particular.
+<br />
+La escala de 1 a 5 tiene significados específicos. Un dedo representa total desacuerdo o desconocimiento sobre el tema. Dos dedos indican ciertas reservas. Tres dedos muestran una posición neutral. Cuatro dedos indican acuerdo, pero con pequeñas reservas, y finalmente, cinco dedos representan un total acuerdo con la propuesta o tema en cuestión.
+<br />
+
 # cuatro valores ágiles
 >- Software funcionando
 >- Colaboración con el cliente
