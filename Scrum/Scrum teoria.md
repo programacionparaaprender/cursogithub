@@ -141,6 +141,9 @@ La Sprint Planning tiene un límite de tiempo de máximo ocho horas para un Spri
 </p>
 
 ## Daily Scrum - daily - Sprint daliy -  Daily Meeting
+>- ¿Qué hice ayer?
+>- ¿Qué haré hoy?
+>- ¿Qué impedimentos tengo?
 >- El propósito de la Daily Scrum es inspeccionar el progreso hacia el Objetivo del Sprint y adaptar el Sprint Backlog según sea necesario.
 >- Están presentes los Developers.
 >- Es un evento diario de 15 minutos.
@@ -177,7 +180,8 @@ El Scrum Team identifica los cambios más útiles para mejorar su efectividad. L
 La Sprint Retrospective concluye el Sprint. Tiene un tiempo limitado a máximo tres horas para un Sprint de un mes. Para Sprints más cortos, el evento suele ser de menor duración.
 </p>
 
-# artefactos de scrum
+
+# artefactos de scrum - tres artefactos
 >- Pila de Producto o Product Backlog (PB)
 >- Pila de Sprint o Sprint Backlog (SB)
 >- Incremento o Increment
@@ -323,16 +327,11 @@ Los Developers deben adherirse a la Definición de Terminado. Si hay varios Scru
 Timeboxing es una estrategia de gestión del tiempo orientada a los objetivos que puede ayudarte a aumentar la productividad y evitar la procrastinación. Cuando fijas un “bloque de tiempo”, estableces una meta para finalizar una tarea específica dentro en un período determinado.
 <br />
 
-# Métodos o técnicas de Estimación de Historias de Usuario:
-* Planning Poker
-* Estimación por Afinidad
-* Delphi
-
-# Métodos o técnicas de Estimación de Historias de Usuario
->- Póker de planificación
->- Wideband Delphi
->- Estimación por afinidad
->- Puño de cinco
+# Métodos o técnicas de Estimación de Historias de Usuario - tecnicas de estimacion
+>- Planning Poker - Póker de planificación
+>- Estimación por Afinidad
+>- Delphi - Wideband Delphi
+>- Puño de cinco, o Fist of Five
 
 # Póker de planificación - Planning Poker - Scrum poker
 >- https://asana.com/es/resources/planning-poker
@@ -532,6 +531,7 @@ Las habilidades específicas que necesitan los Developers suelen ser amplias y v
 >- Días del sprint
 >- Puntos de historia
 >- Comprometidos en el Sprint
+>- Muestra la cantidad de trabajo pendiente en un sprint
 
 # Medida de Progreso en Software
 >- Si el software funcionando es nuestra medida de progreso, debemos asegurarnos de organizar y tratar nuestro trabajo de una manera que respalde dicho objetivo.

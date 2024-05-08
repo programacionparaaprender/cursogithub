@@ -1,5 +1,5 @@
 
-# pregunta 55 Scrum_Master_-_Preguntas.pdf
+# pregunta 87 Scrum_Master_-_Preguntas.pdf
 
 
 # 1. Definición de Scrum
