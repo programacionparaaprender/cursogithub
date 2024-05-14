@@ -10,3 +10,6 @@
 
 # burdownchart
 >- se construye en base a los puntos vs los días que se definio que demoraran las historias
+
+# sprint review
+>- feedback todo ingresa al product backlog
