@@ -121,6 +121,7 @@ Son eventos de duración fija de un mes o menos para crear consistencia. Un nuev
 >- ¿Qué se puede hacer en este Sprint?
 >- ¿Cómo se realizará el trabajo elegido?
 >- máx 8 horas(Sprint 1 mes)
+>- máx 8h/4 semanas
 
 <p>La Sprint Planning inicia el Sprint al establecer el trabajo que se realizará para el Sprint. El Scrum Team crea este plan resultante mediante trabajo colaborativo. El Product Owner se asegura de que los asistentes estén preparados para discutir los elementos más importantes del Product Backlog y cómo se relacionan con el Objetivo del Producto. El Scrum Team también puede invitar a otras personas a asistir a la Sprint Planning para brindar asesoramiento. La Sprint Planning aborda los siguientes temas:
 </p>
@@ -246,6 +247,7 @@ El Objetivo del Producto describe un estado futuro del producto que puede servir
 # Definition of Ready y Definition of Done (DoR DoD), normas de historias de usuario
 >- El Team member estara revisando si las historias de usuario estan adecuadas
 >- Termina cuando la historia de usuario complete todos esos parametros, se le asigna en la casilla.
+>- lo define la empresa
 
 # User Story Mapping
 >- User tasks
@@ -324,6 +326,7 @@ Los Developers deben adherirse a la Definición de Terminado. Si hay varios Scru
 # pendiente buscar
 
 # Time-box - timeboxing
+>- tiempo maximo de duración de un sprint
 Timeboxing es una estrategia de gestión del tiempo orientada a los objetivos que puede ayudarte a aumentar la productividad y evitar la procrastinación. Cuando fijas un “bloque de tiempo”, estableces una meta para finalizar una tarea específica dentro en un período determinado.
 <br />
 
@@ -372,8 +375,10 @@ La escala de 1 a 5 tiene significados específicos. Un dedo representa total des
 >- Haciendo
 >- Pruebas
 >- Producción
+>- lo define la empresa
 
 # D.O.R - Definition Of Ready - DoR
+>- lo define la empresa
 Son todas las condiciones que debe tener las HUs para ser planificadas e iniciar con el desarrollo.
 <br />
 (Definition of Ready) es una serie de reglas o criterios aplicables a cada historia de usuario en el backlog priorizado del producto. Las historias de usuario deben satisfacer la definición de listo antes de ser estimadas e incluidas en un sprint.
@@ -419,12 +424,12 @@ Todo el Scrum Team es responsable de crear un Increment valioso y útil en cada 
 
 
 # principios ágiles o principios de scrum
->- 1 Proceso controlado empíricamente
->- 2 Equipos auto-organizados
->- 3 Basado en la colaboración
->- 4 Priorización de la entrega de valor
->- 5 Limitación del tiempo
->- 6 Desarrollo del itinerario
+>- 1 Proceso controlado empíricamente (Empirical Process Control)
+>- 2 Equipos auto-organizados (Self-organization)
+>- 3 Basado en la colaboración - Colaboración (Collaboration)
+>- 4 Priorización de la entrega de valor - Priorización basada en valor (Value-based Priorization)
+>- 5 Time-boxing - Limitación del tiempo
+>- 6 Desarrollo del itinerario (Iterative Development)
 >- 7
 >- 8
 >- 9

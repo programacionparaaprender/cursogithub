@@ -13,3 +13,18 @@
 
 # sprint review
 >- feedback todo ingresa al product backlog
+
+# contextos complejos y contextos estables
+
+# priorización
+>- MosCow
+>- Pares
+>- Monopolio
+
+# el scrum master puede ayudar
+
+# partes de una HU preguntar 
+
+# estimación de esfuerzo, complejidad y incertidumbre
+>- planning poker
+
