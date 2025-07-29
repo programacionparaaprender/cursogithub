@@ -177,6 +177,15 @@ git branch -D rama
 >- git config --global user.name ""
 >- git config --global user.email ""
 			
+### enviar y obtener datos de un repositorio original luego de hacer fork
+>- git remote add upstream https://github.com/original-usuario/repositorio-original.git
+>- git remote -v
+>- git fetch upstream
+>- git checkout main
+>- git merge upstream/main
+>- git push origin main
+>- git branch -d nombre-de-la-rama
+
 ### GENERAR WAR E  INDICAR QUE PROPERTIES USAR 
 >- mvn -P PROPERTIES-DESEADO clean install
 		
