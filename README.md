@@ -143,40 +143,51 @@ git branch -D rama
 			
 ### agregar todas tus clases que hiciste cambios
 >- git add .
-			
+
+
 ### si quieres agregar una sola clase que hiciste cambio
 >- git add CLASE-MODIFICADA
-				
+
+
 ### comitear tus cambios
 >- git commit -m 'feat : new change'
 
+
 ### subir tus cambios al repositorio
 >- git push origin TU-RAMA
-		
+
+
 ### ACTUALIZAR TU RAMA
 >- git pull origin RAMA-DE-LA-CUAL-ACTUALIZARAS
+
 
 ### UNIR COMITS
 ### comando para definir cuantos comits uniras. ejemplo 5
 >- git reset --soft HEAD~5
-			
+
+
 ### comando para definir cuantos comits uniras. ejemplo 2
 >- git reset --soft HEAD~2
-		
+
+
 ### descripcion del commit 
 >- git commit -m 'feat :10543 implementacion de logica para descarga de archivos de reclamos CMS y guardado en base de datos'
-			
+
+
 ### subir comit	
 >- git push --force origin NOMBRE-RAMA
 >- git push --force origin feature-topic
 
+
 ### COMANDO PARA CERTIFICADO SSL
 >- git config --global http.sslVerify false
+
 
 ### COMANDO UTILIZADO PARA CAMBIAR DE AUTOR AL MOMENTO DE SUBIR LOS CAMBIOS AL REPOSITORIO
 >- git config --global user.name ""
 >- git config --global user.email ""
-			
+
+
 ### enviar y obtener datos de un repositorio original luego de hacer fork
 >- git remote add upstream https://github.com/original-usuario/repositorio-original.git
 >- git remote -v
@@ -186,13 +197,21 @@ git branch -D rama
 >- git push origin main
 >- git branch -d nombre-de-la-rama
 
-
 ### obtener datos de un fork desde otro fork
 >- git remote -v
 >- git remote add aliasfork git@repo.empresa.com:nombre.apellido/repositorio1-fork.git
 >- git fetch aliasfork
 >- git checkout -b rama-forkpersonal aliasfork rama-repositorio-fork
 >- git pull aliasfork aliasfork rama-repositorio-fork
+
+### obtener datos de un repositorio desde un fork
+>- git remote add upstream https://github.com/original-usuario/repositorio-original.git
+>- git remote -v
+>- git fetch upstream
+>- git checkout main
+>- git merge upstream/main
+>- git push origin main
+>- git branch -d nombre-de-la-rama
 
 
 ### GENERAR WAR E  INDICAR QUE PROPERTIES USAR 
