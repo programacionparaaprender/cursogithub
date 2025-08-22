@@ -186,8 +186,19 @@ git branch -D rama
 >- git push origin main
 >- git branch -d nombre-de-la-rama
 
+
+### obtener datos de un fork desde otro fork
+>- git remote -v
+>- git remote add aliasfork git@repo.empresa.com:nombre.apellido/repositorio1-fork.git
+>- git fetch aliasfork
+>- git checkout -b rama-forkpersonal aliasfork rama-repositorio-fork
+>- git pull aliasfork aliasfork rama-repositorio-fork
+
+
 ### GENERAR WAR E  INDICAR QUE PROPERTIES USAR 
 >- mvn -P PROPERTIES-DESEADO clean install
+
+
 		
 
 
