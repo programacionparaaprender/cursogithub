@@ -214,8 +214,7 @@ git branch -D rama
 >- git branch -d nombre-de-la-rama
 
 
-### GENERAR WAR E  INDICAR QUE PROPERTIES USAR 
->- mvn -P PROPERTIES-DESEADO clean install
+
 
 
 		
