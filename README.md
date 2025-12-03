@@ -204,6 +204,11 @@ git branch -D rama
 >- git checkout -b rama-forkpersonal aliasfork rama-repositorio-fork
 >- git pull aliasfork aliasfork rama-repositorio-fork
 
+### agregar repositorio original a tu fork
+>- git remote add upstream https://github.com/original-usuario/repositorio-original.git
+>- git fetch upstream
+>- git checkout -b nuevo_branch upstream/dev
+
 ### obtener datos de un repositorio desde un fork
 >- git remote add upstream https://github.com/original-usuario/repositorio-original.git
 >- git remote -v
