@@ -105,6 +105,12 @@ git branch -D rama
 >- git tag v1.0.0
 >- git push origin master --tags
 
+### Para interactuar con los últimos 4 commits
+git rebase -i HEAD~4
+
+### Compara tu rama actual con main
+git cherry -v main
+
 ### habilitar scripts
 >- https://stackoverflow.com/questions/69605313/vs-code-terminal-activate-ps1-cannot-be-loaded-because-running-scripts-is-disa
 
